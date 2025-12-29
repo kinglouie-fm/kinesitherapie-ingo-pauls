@@ -1,10 +1,25 @@
 <template>
   <Navbar />
+
+  <section id="home">
     <HeroView />
+  </section>
+
+  <section id="team">
     <TeamView />
+  </section>
+
+  <section id="leistungen">
     <ServicesView />
+  </section>
+
+  <section id="kontakt">
     <ContactView />
+  </section>
+
+  <section id="rezensionen">
     <ReviewsView />
+  </section>
 </template>
 
 <script setup>
@@ -27,13 +42,11 @@ import ReviewsView from "@/views/ReviewsView.vue";
 
 .hero-overlay {
   z-index: 1;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.65) 0%,
-    rgba(0, 0, 0, 0.35) 45%,
-    rgba(0, 0, 0, 0.12) 70%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0.35) 45%,
+      rgba(0, 0, 0, 0.12) 70%,
+      rgba(0, 0, 0, 0) 100%);
 }
 
 .hero-title {
