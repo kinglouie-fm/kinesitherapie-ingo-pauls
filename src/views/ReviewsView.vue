@@ -3,15 +3,13 @@
     <div class="container py-4">
       <div class="text-center mb-5">
         <h2 class="fw-bold mb-2">Rezensionen</h2>
-        <p class="text-muted mb-0">Hier sehen Sie ein paar unserer Rezensionen von Google.</p>
+        <h4 class="text-muted mb-0 mx-auto reviews-subtitle">Hier sehen Sie ein paar unserer Rezensionen von Google.
+        </h4>
 
         <div class="mt-4">
-          <a
-            class="btn btn-danger rounded-3 px-4 py-2"
+          <a class="btn btn-danger rounded-3 px-4 py-2"
             href="https://www.google.com/maps/place/Kin%C3%A9sith%C3%A9rapie+Pauls+Ingo/@49.8631352,6.1597158,17z/data=!4m8!3m7!1s0x47bffd8e54e9b281:0xb84f2b141d0b77fa!8m2!3d49.8631318!4d6.1622961!9m1!1b1!16s%2Fg%2F1tl7mvxx?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+            target="_blank" rel="noopener noreferrer">
             Zu Google Rezensionen <span class="ms-2">→</span>
           </a>
         </div>
@@ -89,5 +87,10 @@ const reviews = [
 
 .review-name {
   color: #111827;
+}
+
+.reviews-subtitle {
+  max-width: 36rem;
+  line-height: 1.5;
 }
 </style>

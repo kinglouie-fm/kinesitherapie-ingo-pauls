@@ -2,11 +2,11 @@
   <section class="services-section py-5">
     <div class="container py-4">
       <div class="text-center mb-5">
-        <h2 class="fw-bold mb-2">Leistungen</h2>
-        <p class="text-muted small mb-0 mx-auto services-subtitle">
+        <h2 class="fw-bold mb-4">Leistungen</h2>
+        <h4 class="text-muted mb-0 mx-auto services-subtitle">
           Hier finden Sie eine Übersicht zu unserem Angebot an Leistungen. Diese können Sie durch ein
           Rezept vom Arzt wahrnehmen, aber auch als Privatleistung.
-        </p>
+        </h4>
       </div>
 
       <div class="row g-4 justify-content-center">
@@ -21,9 +21,9 @@
               <div class="service-meta mb-2">Wirkung</div>
 
               <div class="d-flex align-items-center justify-content-between gap-3">
-                <h3 class="h6 fw-bold mb-0 service-title">
+                <h5 class="fw-bold mb-0 service-title">
                   {{ s.title }}
-                </h3>
+                </h5>
 
                 <span class="chev" :class="{ 'chev-open': openId === s.id }" aria-hidden="true">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
@@ -126,8 +126,8 @@ function toggle(id) {
 }
 
 .services-subtitle {
-  max-width: 650px;
-  line-height: 1.6;
+  max-width: 700px;
+  line-height: 1.5;
 }
 
 .service-card {
@@ -143,7 +143,7 @@ function toggle(id) {
 }
 
 .service-meta {
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.2px;
   color: #e31b23;
 }
