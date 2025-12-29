@@ -12,14 +12,12 @@
               Ingo Pauls
             </h1>
 
-            <h4 class="mb-4 hero-subtitle">
+            <h4 class="mb-5 hero-subtitle">
               Wir beraten Sie individuell bei Ihren Gesundheitsfragen und begleiten Sie
               persönlich mit unserer langjähriger Fachkompetenz.
             </h4>
 
-            <a href="#" class="btn btn-danger px-4 py-2 rounded-3 hero-btn">
-              Termin buchen <span class="ms-2">→</span>
-            </a>
+            <CallButton phone="+352262803831" label="Termin buchen" />
           </div>
         </div>
       </div>
@@ -28,6 +26,7 @@
 </template>
 
 <script setup>
+import CallButton from "@/components/CallButton.vue";
 </script>
 
 <style scoped>

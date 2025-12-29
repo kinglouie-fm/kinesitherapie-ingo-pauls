@@ -12,7 +12,7 @@
         </button>
 
         <div id="mainNav" class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-3 gap-lg-3">
+          <ul class="navbar-nav ms-3 gap-lg-4">
             <li class="nav-item">
               <RouterLink class="nav-link text-white" to="/#home">Startseite</RouterLink>
             </li>
@@ -70,7 +70,17 @@ onBeforeUnmount(() => {
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+  transition: transform 150ms ease;
 }
 </style>

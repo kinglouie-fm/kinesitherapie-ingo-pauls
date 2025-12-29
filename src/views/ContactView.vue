@@ -19,7 +19,7 @@
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" />
               </svg>
             </span>
-            <h3 class="h5 fw-bold mb-0">Öffnungszeiten</h3>
+            <h4 class="fw-bold mb-0">Öffnungszeiten</h4>
           </div>
 
           <div class="opening-table">
@@ -71,9 +71,9 @@
             </div>
           </div>
 
-          <a class="btn btn-danger rounded-3 px-4 py-2 mt-4" href="tel:+352262803831">
-            Termin buchen <span class="ms-2">→</span>
-          </a>
+          <div class="mt-4">
+            <CallButton phone="+352262803831" label="Termin buchen" />
+          </div>
         </div>
 
         <!-- Middle: Image -->
@@ -97,7 +97,7 @@
             </span>
 
             <div>
-              <h3 class="h5 fw-bold mb-2">Telefon</h3>
+              <h4 class="fw-bold mb-2">Telefon</h4>
               <a class="contact-link d-inline-block mb-2" href="tel:+352262803831">
                 +352 26 80 38 31
               </a>
@@ -119,7 +119,7 @@
             </span>
 
             <div>
-              <h3 class="h5 fw-bold mb-2">Hausbesuch</h3>
+              <h4 class="fw-bold mb-2">Hausbesuch</h4>
               <p class="text-muted mb-0 lh-lg">
                 Wenn ein Besuch in der Praxis aus unterschiedlichen Gründen nicht möglich ist,
                 besteht die Möglichkeit zum Hausbesuch!
@@ -134,10 +134,10 @@
 
 <script setup>
 import kontaktImg from "@/assets/images/kontakt.png";
+import CallButton from "@/components/CallButton.vue";
 </script>
 
 <style scoped>
-/* icon pill */
 .icon-badge {
   width: 34px;
   height: 34px;
@@ -146,7 +146,6 @@ import kontaktImg from "@/assets/images/kontakt.png";
   align-items: center;
   justify-content: center;
   color: #e31b23;
-  /* red icons like screenshot */
   background: rgba(227, 27, 35, 0.08);
   flex: 0 0 auto;
 }
@@ -161,7 +160,6 @@ import kontaktImg from "@/assets/images/kontakt.png";
   text-decoration: underline;
 }
 
-/* opening times layout (simple, clean, like screenshot) */
 .opening-table {
   margin-top: 6px;
   max-width: 320px;
@@ -191,11 +189,6 @@ import kontaktImg from "@/assets/images/kontakt.png";
   border-radius: 10px;
   overflow: hidden;
   background: #f3f4f6;
-}
-
-/* Bootstrap helper if needed */
-.object-fit-cover {
-  object-fit: cover;
 }
 
 .contact-subtitle {
