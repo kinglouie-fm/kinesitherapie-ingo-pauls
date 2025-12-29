@@ -4,7 +4,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-0">
         <a class="navbar-brand d-flex align-items-center gap-2" href="#">
           <img
-            src="/images/favicon.ico"
+            src="/images/logo.webp"
             alt="Logo"
             width="44"
             height="44"
@@ -27,16 +27,16 @@
         <div id="mainNav" class="collapse navbar-collapse">
           <ul class="navbar-nav ms-3 gap-lg-3">
             <li class="nav-item">
-              <a class="nav-link text-white-75" href="#">Startseite</a>
+              <RouterLink class="nav-link text-white-75" to="/">Startseite</RouterLink>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white-75" href="#">Leistungen</a>
+              <RouterLink class="nav-link text-white-75" to="/team">Unser Team</RouterLink>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white-75" href="#">Unser Team</a>
+              <RouterLink class="nav-link text-white-75" to="/leistungen">Leistungen</RouterLink>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white-75" href="#">Kontakt</a>
+              <RouterLink class="nav-link text-white-75" to="/kontakt">Kontakt</RouterLink>
             </li>
           </ul>
         </div>
@@ -44,6 +44,10 @@
     </div>
   </header>
 </template>
+
+<script setup>
+import { RouterLink, useRouter } from 'vue-router'
+</script>
 
 <style scoped>
 /* Bootstrap doesn't include text-white-75 by default */

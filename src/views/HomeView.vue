@@ -1,45 +1,21 @@
 <template>
-  <section class="hero d-flex align-items-center position-relative">
-    <Navbar />
-
-    <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
-
-    <div class="container position-relative z-2">
-      <div class="row">
-        <div class="col-12 col-md-7 col-lg-6 pt-5 pt-lg-0">
-          <div class="pt-5">
-            <h1 class="text-white fw-bold display-4 lh-1 mb-3 hero-title">
-              Kinesitherapie<br />
-              Ingo Pauls
-            </h1>
-
-            <p class="mb-4 hero-subtitle">
-              Wir beraten Sie individuell bei Ihren Gesundheitsfragen und begleiten Sie
-              persönlich mit unserer langjähriger Fachkompetenz.
-            </p>
-
-            <a href="#" class="btn btn-danger px-4 py-2 rounded-3 hero-btn">
-              Mehr dazu <span class="ms-2">→</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <TeamView />
-  </section>
+  <Navbar />
+  <HeroView />
+  <TeamView />
+  <ServicesView />
 </template>
 
 <script setup>
 import Navbar from "@/components/Navbar.vue";
+import HeroView from "@/views/HeroView.vue";
 import TeamView from "@/views/TeamView.vue";
+import ServicesView from "@/views/ServicesView.vue";
 </script>
 
 <style scoped>
 .hero {
   min-height: 100vh;
-  background-image: url("@/assets/images/background.jpg");
+  background-image: url("@/assets/images/hero.png");
   background-size: cover;
   background-position: center;
   overflow: hidden;

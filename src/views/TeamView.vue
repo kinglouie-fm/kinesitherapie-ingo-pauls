@@ -23,38 +23,42 @@
         </div>
       </div>
 
-      <!-- Cards -->
-      <div class="row justify-content-center g-4">
-        <div
-          v-for="(m, idx) in members"
-          :key="idx"
-          class="col-12 col-md-4 col-lg-3"
-        >
-          <div class="card border-0 shadow-sm h-100 team-card">
-            <div class="ratio ratio-1x1 team-photo">
-              <img
-                :src="m.image"
-                class="w-100 h-100 object-fit-cover"
-                :alt="m.name"
-              />
-            </div>
+        <!-- Cards -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="row g-4">
+                    <div
+                        v-for="(m, idx) in members"
+                        :key="idx"
+                        class="col-12 col-md-4"
+                    >
+                        <div class="card border-0 h-100 team-card">
+                            <div class="ratio ratio-1x1 member-photo">
+                                <img
+                                :src="m.image"
+                                class="w-100 h-100 object-fit-cover"
+                                :alt="m.name"
+                                />
+                        </div>
 
-            <div class="card-body text-center pt-3 pb-4">
-              <div class="fw-bold team-name mb-1">{{ m.name }}</div>
-              <div class="text-muted small">{{ m.role }}</div>
+                            <div class="card-body text-center pt-3 pb-4">
+                                <div class="fw-bold team-name mb-1">{{ m.name }}</div>
+                                <div class="text-muted small">{{ m.role }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
   </section>
 </template>
 
 <script setup>
-import teamImage from "@/assets/team.webp";
-import member1 from "@/assets/member-ingo.webp";
-import member2 from "@/assets/member-paul.webp";
-import member3 from "@/assets/member-gilles.webp";
+import teamImage from "@/assets/images/team.png";
+import member1 from "@/assets/images/member.png";
+import member2 from "@/assets/images/member.png";
+import member3 from "@/assets/images/member.png";
 
 const members = [
   { name: "Ingo", role: "Geschäftsführer & Physiotherapeut", image: member1 },
@@ -74,19 +78,20 @@ const members = [
   border-radius: 14px;
   overflow: hidden;
   background: #f3f4f6;
+  height: 500px;
 }
 
 /* Cards */
 .team-card {
-  border-radius: 14px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
-.team-photo {
-  border-radius: 14px;
+.member-photo {
+  border-radius: 10px;
   overflow: hidden;
-  margin: 14px 14px 0;
   background: #f3f4f6;
+  height: 400px;
 }
 
 /* Name color like screenshot */
