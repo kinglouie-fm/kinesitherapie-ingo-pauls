@@ -1,0 +1,26 @@
+{
+    "nav": {
+        "home": "Startseite",
+        "team": "Unser Team",
+        "services": "Leistungen",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "subtitle": "Wir beraten Sie individuell bei Ihren Gesundheitsfragen und begleiten Sie persönlich mit unserer langjähriger Fachkompetenz.",
+        "cta": "Termin buchen"
+    },
+    "team": {
+        "title": "Lerne unser Team kennen",
+        "subtitle": "Unser Ziel ist es, Ihren Gesundheitszustand mit Hilfe eines ganzheitlichen Ansatz langfristig zu verbessern."
+    },
+    "services": {
+        "title": "Leistungen",
+        "subtitle": "Hier finden Sie eine Übersicht zu unserem Angebot an Leistungen. Diese können Sie durch ein Rezept vom Arzt wahrnehmen, aber auch als Privatleistung.",
+        "effect": "Wirkung"
+    },
+    "reviews": {
+        "title": "Rezensionen",
+        "subtitle": "Hier sehen Sie ein paar unserer Rezensionen von Google.",
+        "cta": "Zu Google Rezensionen"
+    }
+}

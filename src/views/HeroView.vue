@@ -8,16 +8,15 @@
         <div class="col-12 col-md-7 col-lg-6 pt-5 pt-lg-0">
           <div class="pt-5">
             <h1 class="text-white fw-bold lh-1 mb-4 hero-title">
-              Kinesitherapie<br />
+              Kinésithérapie<br />
               Ingo Pauls
             </h1>
 
             <h4 class="mb-5 hero-subtitle">
-              Wir beraten Sie individuell bei Ihren Gesundheitsfragen und begleiten Sie
-              persönlich mit unserer langjähriger Fachkompetenz.
+              {{ t("hero.subtitle") }}
             </h4>
 
-            <CallButton phone="+352262803831" label="Termin buchen" />
+            <CallButton phone="+352262803831" :label="t('hero.cta')" />
           </div>
         </div>
       </div>
@@ -27,6 +26,9 @@
 
 <script setup>
 import CallButton from "@/components/CallButton.vue";
+import { useI18n } from "@/i18n";
+
+const { t } = useI18n();
 </script>
 
 <style scoped>

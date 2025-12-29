@@ -1,0 +1,26 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "team": "Notre équipe",
+        "services": "Prestations",
+        "contact": "Contact"
+    },
+    "hero": {
+        "subtitle": "Nous vous conseillons individuellement pour vos questions de santé et vous accompagnons avec notre expertise professionnelle.",
+        "cta": "Prendre rendez-vous"
+    },
+    "team": {
+        "title": "Découvrez notre équipe",
+        "subtitle": "Notre objectif est d’améliorer durablement votre santé grâce à une approche globale."
+    },
+    "services": {
+        "title": "Prestations",
+        "subtitle": "Vous trouverez ici un aperçu de nos prestations. Elles peuvent être effectuées sur ordonnance ou en prestation privée.",
+        "effect": "Effet"
+    },
+    "reviews": {
+        "title": "Avis",
+        "subtitle": "Voici quelques avis Google.",
+        "cta": "Voir les avis Google"
+    }
+}
