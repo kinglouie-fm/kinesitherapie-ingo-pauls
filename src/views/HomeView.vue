@@ -1,8 +1,10 @@
 <template>
   <Navbar />
-  <HeroView />
-  <TeamView />
-  <ServicesView />
+    <HeroView />
+    <TeamView />
+    <ServicesView />
+    <ContactView />
+    <ReviewsView />
 </template>
 
 <script setup>
@@ -10,6 +12,8 @@ import Navbar from "@/components/Navbar.vue";
 import HeroView from "@/views/HeroView.vue";
 import TeamView from "@/views/TeamView.vue";
 import ServicesView from "@/views/ServicesView.vue";
+import ContactView from "@/views/ContactView.vue";
+import ReviewsView from "@/views/ReviewsView.vue";
 </script>
 
 <style scoped>

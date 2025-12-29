@@ -22,7 +22,7 @@
             <div class="ratio ratio-4x3">
               <img
                 :src="serviceImg"
-                class="w-100 object-fit-cover"
+                class="w-100 h-100 object-fit-cover"
                 :alt="s.title"
               />
             </div>

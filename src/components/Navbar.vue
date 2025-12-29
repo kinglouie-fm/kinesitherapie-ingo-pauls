@@ -1,8 +1,11 @@
 <template>
-  <header class="position-absolute top-0 start-0 w-100 z-3">
+  <header
+    class="topbar w-100 z-3"
+    :class="{ 'is-scrolled': isScrolled }"
+  >
     <div class="container py-3">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-0">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <RouterLink class="navbar-brand d-flex align-items-center gap-2" to="/">
           <img
             src="/images/logo.webp"
             alt="Logo"
@@ -10,7 +13,7 @@
             height="44"
             class="rounded-circle bg-white p-1 shadow-sm"
           />
-        </a>
+        </RouterLink>
 
         <button
           class="navbar-toggler border-0"
@@ -46,10 +49,43 @@
 </template>
 
 <script setup>
-import { RouterLink, useRouter } from 'vue-router'
+import { ref, onMounted, onBeforeUnmount } from "vue";
+import { RouterLink } from "vue-router";
+
+const isScrolled = ref(false);
+
+function onScroll() {
+  isScrolled.value = window.scrollY > 20; // threshold
+}
+
+onMounted(() => {
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("scroll", onScroll);
+});
 </script>
 
 <style scoped>
+/* Always on top and follows the scroll */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 200ms ease, box-shadow 200ms ease, backdrop-filter 200ms ease;
+  background: transparent;
+}
+
+/* After scroll: readable background */
+.topbar.is-scrolled {
+  background: rgba(17, 24, 39, 0.75); /* dark glass */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
 /* Bootstrap doesn't include text-white-75 by default */
 .text-white-75 {
   color: rgba(255, 255, 255, 0.85) !important;

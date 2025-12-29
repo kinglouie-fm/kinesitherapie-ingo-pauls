@@ -18,7 +18,7 @@
             </p>
 
             <a href="#" class="btn btn-danger px-4 py-2 rounded-3 hero-btn">
-              Mehr dazu <span class="ms-2">→</span>
+              Termin buchen <span class="ms-2">→</span>
             </a>
           </div>
         </div>
