@@ -10,31 +10,14 @@
       </div>
 
       <div class="row g-4 justify-content-center">
-        <div
-          v-for="s in services"
-          :key="s.id"
-          class="col-12 col-md-6 col-lg-4"
-        >
-          <article
-            class="card border-0 shadow-sm service-card"
-            :class="{ 'is-open': openId === s.id }"
-          >
+        <div v-for="s in services" :key="s.id" class="col-12 col-md-6 col-lg-3">
+          <article class="card border-0 shadow-sm service-card" :class="{ 'is-open': openId === s.id }">
             <div class="ratio ratio-4x3">
-              <img
-                :src="serviceImg"
-                class="w-100 h-100 object-fit-cover"
-                :alt="s.title"
-              />
+              <img :src="serviceImg" class="w-100 h-100 object-fit-cover" :alt="s.title" />
             </div>
 
-            <div
-              class="card-body service-body"
-              role="button"
-              tabindex="0"
-              @click="toggle(s.id)"
-              @keydown.enter.prevent="toggle(s.id)"
-              @keydown.space.prevent="toggle(s.id)"
-            >
+            <div class="card-body service-body" role="button" tabindex="0" @click="toggle(s.id)"
+              @keydown.enter.prevent="toggle(s.id)" @keydown.space.prevent="toggle(s.id)">
               <div class="service-meta mb-2">Wirkung</div>
 
               <div class="d-flex align-items-center justify-content-between gap-3">
@@ -44,13 +27,8 @@
 
                 <span class="chev" :class="{ 'chev-open': openId === s.id }" aria-hidden="true">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M8 10l4 4 4-4"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
+                    <path d="M8 10l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
                 </span>
               </div>
@@ -154,7 +132,7 @@ function toggle(id) {
 
 .service-card {
   border-radius: 14px;
-  overflow: hidden; /* clip image corners */
+  overflow: hidden;
   background: #fff;
 }
 
