@@ -1,7 +1,7 @@
 <template>
-  <section class="py-5 bg-white">
+  <section ref="root" class="py-5 bg-white">
     <div class="container py-4">
-      <div class="text-center mb-4">
+      <div class="text-center mb-4 gsap-team-heading">
         <h2 class="fw-bold mb-4">Lerne unser Team kennen</h2>
         <h4 class="text-muted mb-0 team-subtitle mx-auto">
           Unser Ziel ist es, Ihren Gesundheitszustand mit Hilfe eines ganzheitlichen Ansatz
@@ -9,7 +9,7 @@
         </h4>
       </div>
 
-      <div class="row justify-content-center mb-4">
+      <div class="row justify-content-center mb-4 gsap-team-hero">
         <div class="col-12 col-lg-10">
           <div class="ratio ratio-21x9 team-hero shadow-sm">
             <img :src="teamImage" class="w-100 h-100 object-fit-cover" alt="Unser Team" />
@@ -20,7 +20,7 @@
       <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
           <div class="row g-4" ref="teamWrapperRef">
-            <div v-for="(m, idx) in members" :key="idx" class="col-12 col-md-4">
+            <div v-for="(m, idx) in members" :key="idx" class="col-12 col-md-4 gsap-team-card">
               <div class="card border-0 h-100 team-card team-interactive" :class="{ 'is-flipped': flippedIdx === idx }"
                 role="button" tabindex="0" @click="toggleFlip(idx)" @keydown.enter.prevent="toggleFlip(idx)"
                 @keydown.space.prevent="toggleFlip(idx)">
@@ -63,7 +63,10 @@
 
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from "vue";
+import { ref, onMounted, onBeforeUnmount, nextTick } from "vue";
+import gsap from "gsap";
+import { revealEach } from "@/animations/scroll";
+
 import teamImage from "@/assets/images/team.png";
 import member1 from "@/assets/images/member.png";
 import member2 from "@/assets/images/member.png";
@@ -71,6 +74,8 @@ import member3 from "@/assets/images/member.png";
 
 const flippedIdx = ref(null);
 const teamWrapperRef = ref(null);
+const root = ref(null);
+let ctx;
 
 const members = [
   {
@@ -106,12 +111,27 @@ function handleOutsideClick(event) {
   }
 }
 
-onMounted(() => {
+onMounted(async () => {
   document.addEventListener("click", handleOutsideClick, true);
+  await nextTick();
+
+  ctx = gsap.context((self) => {
+    const q = self.selector;
+
+    // heading block
+    revealEach(q, { elements: ".gsap-team-heading", y: 18 });
+
+    // big image
+    revealEach(q, { elements: ".gsap-team-hero", y: 18 });
+
+    // each card individually
+    revealEach(q, { elements: ".gsap-team-card", y: 16, start: "top 90%" });
+  }, root.value);
 });
 
 onBeforeUnmount(() => {
   document.removeEventListener("click", handleOutsideClick, true);
+  ctx?.revert()
 });
 </script>
 
