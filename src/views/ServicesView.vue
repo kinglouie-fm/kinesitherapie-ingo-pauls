@@ -134,6 +134,9 @@ function toggle(id) {
   border-radius: 14px;
   overflow: hidden;
   background: #fff;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .service-body {

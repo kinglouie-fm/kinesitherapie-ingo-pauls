@@ -5,7 +5,7 @@
 
     <div class="container position-relative z-2">
       <div class="row">
-        <div class="col-12 col-md-7 col-lg-6 pt-5 pt-lg-0">
+        <div class="col-12 col-md-7 col-lg-6 pt-5 pt-lg-0 text-center text-md-start">
           <div class="pt-5">
             <h1 class="text-white fw-bold lh-1 mb-4 hero-title">
               Kinésithérapie<br />
@@ -43,9 +43,9 @@ const { t } = useI18n();
 .hero-overlay {
   z-index: 1;
   background: linear-gradient(90deg,
-      rgba(0, 0, 0, 0.65) 0%,
-      rgba(0, 0, 0, 0.35) 45%,
-      rgba(0, 0, 0, 0.12) 70%,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0.55) 45%,
+      rgba(0, 0, 0, 0.25) 70%,
       rgba(0, 0, 0, 0) 100%);
 }
 
@@ -62,5 +62,21 @@ const { t } = useI18n();
 .hero-btn {
   font-size: 18px;
   box-shadow: 0 10px 25px rgba(227, 27, 35, 0.25);
+}
+
+@media (max-width: 576px) {
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero {
+    min-height: 75vh;
+    background-position: 40% 30%;
+  }
+
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.7);
+  }
 }
 </style>
