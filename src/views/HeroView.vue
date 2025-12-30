@@ -43,9 +43,9 @@ const { t } = useI18n();
 .hero-overlay {
   z-index: 1;
   background: linear-gradient(90deg,
-      rgba(0, 0, 0, 0.65) 0%,
-      rgba(0, 0, 0, 0.35) 45%,
-      rgba(0, 0, 0, 0.12) 70%,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0.55) 45%,
+      rgba(0, 0, 0, 0.25) 70%,
       rgba(0, 0, 0, 0) 100%);
 }
 
@@ -68,6 +68,15 @@ const { t } = useI18n();
   .hero-subtitle {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .hero {
+    min-height: 75vh;
+    background-position: 40% 30%;
+  }
+
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.7);
   }
 }
 </style>

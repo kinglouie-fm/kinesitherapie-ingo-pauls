@@ -3,7 +3,7 @@
     <div class="container py-3">
       <nav class="navbar navbar-expand-lg navbar-dark p-0">
         <!-- Logo moved a bit right on mobile via ms-2 ms-lg-0 -->
-        <RouterLink class="navbar-brand d-flex align-items-center gap-2 ms-2 ms-lg-0" to="/">
+        <RouterLink class="navbar-brand d-flex align-items-center gap-2 ms-3 ms-lg-0" to="/">
           <img src="/images/logo.webp" alt="Logo" class="logo rounded-circle bg-white p-1 shadow-sm" />
         </RouterLink>
 
@@ -56,10 +56,9 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from "vue";
+import { ref, onMounted, onBeforeUnmount, nextTick } from "vue";
 import { RouterLink } from "vue-router";
 import { useI18n } from "@/i18n";
-import { Collapse } from "bootstrap";
 
 const { locale, setLocale, t } = useI18n();
 
@@ -70,17 +69,22 @@ function onScroll() {
   isScrolled.value = window.scrollY > 20;
 }
 
-function closeMenu() {
-  const el = document.getElementById("mainNav");
-  if (!el) return;
+// Closes the collapse by "toggling" it only if it's currently open
+async function closeMenu() {
+  await nextTick();
 
-  const instance = Collapse.getInstance(el) || new Collapse(el, { toggle: false });
-  instance.hide();
+  const collapseEl = document.getElementById("mainNav");
+  const isOpen = collapseEl?.classList.contains("show");
+
+  // only close on mobile when it's open
+  if (isOpen && togglerRef.value) {
+    togglerRef.value.click(); // ✅ triggers Bootstrap's own close logic
+  }
 }
 
-function setLocaleAndClose(l) {
+async function setLocaleAndClose(l) {
   setLocale(l);
-  closeMenu();
+  await closeMenu();
 }
 
 onMounted(() => {
@@ -92,6 +96,7 @@ onBeforeUnmount(() => {
   window.removeEventListener("scroll", onScroll);
 });
 </script>
+
 
 <style scoped>
 .topbar {
@@ -115,8 +120,8 @@ onBeforeUnmount(() => {
   height: 70px;
 }
 
-.navbar-toggler {
-  filter: brightness(0) invert(1);
+.navbar-toggler-icon {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .nav-link {
@@ -142,4 +147,15 @@ onBeforeUnmount(() => {
   background: rgba(255, 255, 255, 0.18);
   border-color: rgba(255, 255, 255, 0.7);
 }
+
+@media (max-width: 991.98px) {
+  /* Background appears immediately when opening (collapsing) and stays while open (show) */
+  .topbar:has(#mainNav.collapsing),
+  .topbar:has(#mainNav.show) {
+    background: rgba(17, 24, 39, 0.75);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+}
+
 </style>

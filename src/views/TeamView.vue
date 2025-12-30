@@ -87,4 +87,18 @@ const members = [
 .team-name {
   color: #e31b23;
 }
+
+@media (max-width: 576px) {
+  .team-hero {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .team-card {
+    max-width: 280px;   /* control width */
+    margin-left: auto;
+    margin-right: auto; /* center it */
+  }
+}
 </style>
