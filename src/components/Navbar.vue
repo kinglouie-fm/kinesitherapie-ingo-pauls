@@ -1,23 +1,15 @@
 <template>
   <header class="topbar w-100 z-3" :class="{ 'is-scrolled': isScrolled }">
     <div class="container py-3">
-      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+      <nav ref="navRef" class="navbar navbar-expand-lg navbar-dark p-0">
         <!-- Logo moved a bit right on mobile via ms-2 ms-lg-0 -->
         <RouterLink class="navbar-brand d-flex align-items-center gap-2 ms-3 ms-lg-0" to="/">
           <img src="/images/logo.webp" alt="Logo" class="logo rounded-circle bg-white p-1 shadow-sm" />
         </RouterLink>
 
         <!-- White hamburger icon -->
-        <button
-          ref="togglerRef"
-          class="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNav"
-          aria-controls="mainNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button ref="togglerRef" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -65,8 +57,27 @@ const { locale, setLocale, t } = useI18n();
 const isScrolled = ref(false);
 const togglerRef = ref(null);
 
+const navRef = ref(null);
+
 function onScroll() {
   isScrolled.value = window.scrollY > 20;
+}
+
+async function onDocumentClick(e) {
+  // only for mobile
+  if (window.matchMedia("(min-width: 992px)").matches) return;
+
+  const collapseEl = document.getElementById("mainNav");
+  const isOpen = collapseEl?.classList.contains("show");
+  if (!isOpen) return;
+
+  const target = e.target;
+
+  // If click is inside the navbar, do nothing
+  if (navRef.value && navRef.value.contains(target)) return;
+
+  // Otherwise close
+  await closeMenu();
 }
 
 // Closes the collapse by "toggling" it only if it's currently open
@@ -90,10 +101,12 @@ async function setLocaleAndClose(l) {
 onMounted(() => {
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
+  document.addEventListener("pointerdown", onDocumentClick, { passive: true });
 });
 
 onBeforeUnmount(() => {
   window.removeEventListener("scroll", onScroll);
+  document.removeEventListener("pointerdown", onDocumentClick);
 });
 </script>
 
@@ -116,8 +129,8 @@ onBeforeUnmount(() => {
 
 /* Logo */
 .logo {
-  width: 70px;
-  height: 70px;
+  width: 65px;
+  height: 65px;
 }
 
 .navbar-toggler-icon {
@@ -140,15 +153,18 @@ onBeforeUnmount(() => {
   font-size: 0.8rem;
   transition: background 150ms ease, border-color 150ms ease;
 }
+
 .lang-btn:hover {
   border-color: rgba(255, 255, 255, 0.7);
 }
+
 .lang-btn.active {
   background: rgba(255, 255, 255, 0.18);
   border-color: rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 991.98px) {
+
   /* Background appears immediately when opening (collapsing) and stays while open (show) */
   .topbar:has(#mainNav.collapsing),
   .topbar:has(#mainNav.show) {
@@ -157,5 +173,4 @@ onBeforeUnmount(() => {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   }
 }
-
 </style>

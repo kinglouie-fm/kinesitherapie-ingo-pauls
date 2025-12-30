@@ -88,17 +88,18 @@ const members = [
   color: #e31b23;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .team-hero {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
+    height: 250px;
   }
-  
+
   .team-card {
-    max-width: 280px;   /* control width */
+    max-width: 280px;
     margin-left: auto;
-    margin-right: auto; /* center it */
+    margin-right: auto;
   }
 }
 </style>
