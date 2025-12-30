@@ -1,7 +1,7 @@
 <template>
-  <section class="services-section py-5">
+  <section ref="root" class="services-section py-5">
     <div class="container py-4">
-      <div class="text-center mb-5">
+      <div class="text-center mb-5 gsap-services-heading">
         <h2 class="fw-bold mb-4">Leistungen</h2>
         <h4 class="text-muted mb-0 mx-auto services-subtitle">
           Hier finden Sie eine Übersicht zu unserem Angebot an Leistungen. Diese können Sie durch ein
@@ -10,7 +10,7 @@
       </div>
 
       <div class="row g-4 justify-content-center">
-        <div v-for="s in services" :key="s.id" class="col-12 col-md-6 col-lg-3">
+        <div v-for="s in services" :key="s.id" class="col-12 col-md-6 col-lg-3 gsap-services-card">
           <article class="card border-0 shadow-sm service-card" :class="{ 'is-open': openId === s.id }">
             <div class="ratio ratio-4x3">
               <img :src="serviceImg" class="w-100 h-100 object-fit-cover" :alt="s.title" />
@@ -47,10 +47,14 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted, onBeforeUnmount, nextTick } from "vue";
+import gsap from "gsap";
+import { revealEach } from "@/animations/scroll";
 import serviceImg from "@/assets/images/service.png";
 
 const openId = ref(null);
+const root = ref(null);
+let ctx;
 
 const services = [
   {
@@ -118,6 +122,19 @@ const services = [
 function toggle(id) {
   openId.value = openId.value === id ? null : id;
 }
+
+onMounted(async () => {
+  await nextTick();
+
+  ctx = gsap.context((self) => {
+    const q = self.selector;
+
+    revealEach(q, { elements: ".gsap-services-heading", y: 18, start: "top 85%" });
+    revealEach(q, { elements: ".gsap-services-card", y: 16, start: "top 90%" });
+  }, root.value);
+});
+
+onBeforeUnmount(() => ctx?.revert());
 </script>
 
 <style scoped>
