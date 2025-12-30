@@ -35,12 +35,9 @@
                     <div class="photo-face photo-back">
                       <div class="member-photo photo-back-surface">
                         <div class="photo-back-content text-center px-3">
-                          <p class="text-muted small mb-0 lh-lg">
+                          <p class="small mb-0 lh-lg">
                             {{ m.about }}
                           </p>
-                          <div class="small text-muted mt-2 d-md-none">
-                            Tippe erneut zum Zurückdrehen
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -124,7 +121,6 @@ onBeforeUnmount(() => {
   line-height: 1.5;
 }
 
-/* Big image container */
 .team-hero {
   border-radius: 14px;
   overflow: hidden;
@@ -132,7 +128,6 @@ onBeforeUnmount(() => {
   height: 500px;
 }
 
-/* Cards */
 .team-card {
   border-radius: 10px;
   overflow: hidden;
@@ -165,7 +160,6 @@ onBeforeUnmount(() => {
   perspective: 1100px;
 }
 
-/* this is the thing that rotates */
 .photo-flip-inner {
   position: relative;
   width: 100%;
@@ -188,14 +182,12 @@ onBeforeUnmount(() => {
 
 .photo-front {
   position: relative;
-  /* establishes height via its content */
 }
 
 .photo-back {
   transform: rotateY(180deg);
 }
 
-/* make back have a surface/background */
 .photo-back-surface {
   height: 100%;
   display: flex;
@@ -210,19 +202,16 @@ onBeforeUnmount(() => {
   text-align: center;
 }
 
-/* Mobile/tap flip */
 .team-interactive.is-flipped .photo-flip-inner {
   transform: rotateY(180deg);
 }
 
-/* Desktop/hover flip (only on real hover devices) */
 @media (hover: hover) and (pointer: fine) {
   .team-interactive:hover .photo-flip-inner {
     transform: rotateY(180deg);
   }
 }
 
-/* Your existing mobile sizing */
 @media (max-width: 768px) {
   .team-hero {
     max-width: 90%;
