@@ -19,19 +19,40 @@
 
       <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
-          <div class="row g-4">
+          <div class="row g-4" ref="teamWrapperRef">
             <div v-for="(m, idx) in members" :key="idx" class="col-12 col-md-4">
-              <div class="card border-0 h-100 team-card">
-                <div class="ratio ratio-1x1 member-photo">
-                  <img :src="m.image" class="w-100 h-100 object-fit-cover" :alt="m.name" />
+              <div class="card border-0 h-100 team-card team-interactive" :class="{ 'is-flipped': flippedIdx === idx }"
+                role="button" tabindex="0" @click="toggleFlip(idx)" @keydown.enter.prevent="toggleFlip(idx)"
+                @keydown.space.prevent="toggleFlip(idx)">
+                <div class="photo-flip">
+                  <div class="photo-flip-inner">
+                    <div class="photo-face photo-front">
+                      <div class="ratio ratio-1x1 member-photo">
+                        <img :src="m.image" class="w-100 h-100 object-fit-cover" :alt="m.name" />
+                      </div>
+                    </div>
+
+                    <div class="photo-face photo-back">
+                      <div class="member-photo photo-back-surface">
+                        <div class="photo-back-content text-center px-3">
+                          <p class="text-muted small mb-0 lh-lg">
+                            {{ m.about }}
+                          </p>
+                          <div class="small text-muted mt-2 d-md-none">
+                            Tippe erneut zum Zurückdrehen
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="card-body text-center pt-3 pb-4">
                   <div class="fw-bold team-name mb-1">
-                    <h3>{{ m.name }}</h3>
+                    <h3 class="mb-0">{{ m.name }}</h3>
                   </div>
                   <div class="text-muted small">
-                    <h5>{{ m.role }}</h5>
+                    <h5 class="mb-0">{{ m.role }}</h5>
                   </div>
                 </div>
               </div>
@@ -43,17 +64,58 @@
   </section>
 </template>
 
+
 <script setup>
+import { ref, onMounted, onBeforeUnmount } from "vue";
 import teamImage from "@/assets/images/team.png";
 import member1 from "@/assets/images/member.png";
 import member2 from "@/assets/images/member.png";
 import member3 from "@/assets/images/member.png";
 
+const flippedIdx = ref(null);
+const teamWrapperRef = ref(null);
+
 const members = [
-  { name: "Ingo", role: "Geschäftsführer & Physiotherapeut", image: member1 },
-  { name: "Paul", role: "Physiotherapeut", image: member2 },
-  { name: "Gilles", role: "Physiotherapeut", image: member3 },
+  {
+    name: "Ingo",
+    role: "Geschäftsführer & Physiotherapeut",
+    image: member1,
+    about: "Gründer der Praxis mit über 20 Jahren Berufserfahrung in Physiotherapie und manueller Therapie. Nach Tätigkeiten in verschiedenen Praxen im In- und Ausland liegt sein Fokus heute auf ganzheitlicher Behandlung, individueller Betreuung und nachhaltigen Therapieerfolgen.",
+  },
+  {
+    name: "Paul",
+    role: "Physiotherapeut",
+    image: member2,
+    about: "Physiotherapeut mit Erfahrung aus mehreren orthopädischen und sporttherapeutischen Praxen. Sein Schwerpunkt liegt auf aktiver Therapie, funktionellem Training und verständlicher Anleitung, damit Patientinnen und Patienten langfristig selbstständig bleiben.",
+  },
+  {
+    name: "Gilles",
+    role: "Physiotherapeut",
+    image: member3,
+    about: "Ausgebildeter Physiotherapeut mit beruflicher Erfahrung in Rehabilitationszentren und ambulanten Praxen. Er arbeitet ruhig und präzise und legt großen Wert auf alltagstaugliche Lösungen sowie eine vertrauensvolle Zusammenarbeit.",
+  },
 ];
+
+function toggleFlip(idx) {
+  flippedIdx.value = flippedIdx.value === idx ? null : idx;
+}
+
+function handleOutsideClick(event) {
+  if (!teamWrapperRef.value) return;
+
+  const clickedInside = teamWrapperRef.value.contains(event.target);
+  if (!clickedInside) {
+    flippedIdx.value = null;
+  }
+}
+
+onMounted(() => {
+  document.addEventListener("click", handleOutsideClick, true);
+});
+
+onBeforeUnmount(() => {
+  document.removeEventListener("click", handleOutsideClick, true);
+});
 </script>
 
 <style scoped>
@@ -74,6 +136,7 @@ const members = [
 .team-card {
   border-radius: 10px;
   overflow: hidden;
+  background: #fff;
 }
 
 .member-photo {
@@ -83,22 +146,103 @@ const members = [
   height: 400px;
 }
 
-/* Name color like screenshot */
 .team-name {
   color: #e31b23;
 }
 
-@media (max-width: 576px) {
+.team-interactive {
+  cursor: pointer;
+  outline: none;
+}
+
+.team-interactive:focus-visible {
+  outline: 2px solid rgba(227, 27, 35, 0.45);
+  outline-offset: 4px;
+  border-radius: 12px;
+}
+
+.photo-flip {
+  perspective: 1100px;
+}
+
+/* this is the thing that rotates */
+.photo-flip-inner {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 420ms ease;
+  height: 400px;
+}
+
+/* two faces (same square) */
+.photo-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+}
+
+.photo-flip-inner,
+.photo-face {
+  height: 100%;
+}
+
+.photo-front {
+  position: relative;
+  /* establishes height via its content */
+}
+
+.photo-back {
+  transform: rotateY(180deg);
+}
+
+/* make back have a surface/background */
+.photo-back-surface {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 3px solid #e5e7eb;
+}
+
+.photo-back-content {
+  max-width: 260px;
+  text-align: center;
+}
+
+/* Mobile/tap flip */
+.team-interactive.is-flipped .photo-flip-inner {
+  transform: rotateY(180deg);
+}
+
+/* Desktop/hover flip (only on real hover devices) */
+@media (hover: hover) and (pointer: fine) {
+  .team-interactive:hover .photo-flip-inner {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Your existing mobile sizing */
+@media (max-width: 768px) {
   .team-hero {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
+    height: 250px;
   }
-  
+
   .team-card {
-    max-width: 280px;   /* control width */
+    max-width: 280px;
     margin-left: auto;
-    margin-right: auto; /* center it */
+    margin-right: auto;
+  }
+
+  .member-photo {
+    height: 280px;
+  }
+
+  .photo-flip-inner {
+    height: 280px;
   }
 }
 </style>

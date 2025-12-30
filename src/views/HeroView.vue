@@ -64,7 +64,7 @@ const { t } = useI18n();
   box-shadow: 0 10px 25px rgba(227, 27, 35, 0.25);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .hero-subtitle {
     margin-left: auto;
     margin-right: auto;
