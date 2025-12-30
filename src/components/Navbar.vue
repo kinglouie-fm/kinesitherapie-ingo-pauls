@@ -22,7 +22,7 @@
         </button>
 
         <div id="mainNav" class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-auto gap-lg-4 text-end">
+          <ul class="navbar-nav ms-5 gap-lg-4 text-end">
             <li class="nav-item">
               <RouterLink class="nav-link text-white" to="/#home" @click="closeMenu">
                 {{ t("nav.home") }}
