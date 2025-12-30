@@ -5,7 +5,7 @@
 
     <div class="container position-relative z-2">
       <div class="row">
-        <div class="col-12 col-md-7 col-lg-6 pt-5 pt-lg-0">
+        <div class="col-12 col-md-7 col-lg-6 pt-5 pt-lg-0 text-center text-md-start">
           <div class="pt-5">
             <h1 class="text-white fw-bold lh-1 mb-4 hero-title">
               Kinésithérapie<br />
@@ -62,5 +62,12 @@ const { t } = useI18n();
 .hero-btn {
   font-size: 18px;
   box-shadow: 0 10px 25px rgba(227, 27, 35, 0.25);
+}
+
+@media (max-width: 576px) {
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 </style>

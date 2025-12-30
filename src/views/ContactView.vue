@@ -1,7 +1,7 @@
 <!-- src/views/ContactView.vue -->
 <template>
   <section class="py-5 bg-white">
-    <div class="container py-4">
+    <div class="container py-4 text-center text-lg-start">
       <!-- Heading -->
       <div class="text-center mb-5">
         <h2 class="fw-bold mb-4">Kontaktieren Sie uns</h2>
@@ -10,13 +10,16 @@
 
       <div class="row align-items-start justify-content-center gy-5">
         <!-- Left: Opening times -->
-        <div class="col-12 col-lg-4">
-          <div class="d-flex align-items-center gap-2 mb-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-3 justify-content-center justify-content-lg-start">
             <span class="icon-badge" aria-hidden="true">
-              <!-- calendar icon -->
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                <path d="M8 3v3M16 3v3M4 9h16M6 6h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <path
+                  d="M8 3v3M16 3v3M4 9h16M6 6h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
               </svg>
             </span>
             <h4 class="fw-bold mb-0">Öffnungszeiten</h4>
@@ -84,47 +87,59 @@
         </div>
 
         <!-- Right: Contact info -->
-        <div class="col-12 col-lg-4">
-          <!-- Telefon -->
-          <div class="d-flex gap-3 mb-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <!-- Telefon header row (icon stays next to title) -->
+          <div class="d-flex align-items-center gap-2 mb-2 justify-content-center justify-content-lg-start">
             <span class="icon-badge icon-red" aria-hidden="true">
-              <!-- phone icon -->
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                 <path
                   d="M22 16.9v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.18 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.5a2 2 0 0 1-.45 2.11L8.1 9.4a16 16 0 0 0 6 6l1.07-1.08a2 2 0 0 1 2.11-.45c.8.24 1.64.42 2.5.54A2 2 0 0 1 22 16.9Z"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
               </svg>
             </span>
-
-            <div>
-              <h4 class="fw-bold mb-2">Telefon</h4>
-              <a class="contact-link d-inline-block mb-2" href="tel:+352262803831">
-                +352 26 80 38 31
-              </a>
-              <p class="text-muted mb-0 lh-lg">
-                Sollte niemand Ihren Anruf beantworten, hinterlassen Sie bitte Ihren Namen und
-                Ihre Telefonnummer auf dem Anrufbeantworter.
-              </p>
-            </div>
+            <h4 class="fw-bold mb-0">Telefon</h4>
           </div>
 
-          <!-- Hausbesuch -->
-          <div class="d-flex gap-3">
+          <!-- Telefon content aligned under title on desktop -->
+          <div class="info-body px-3 mb-4">
+            <a class="contact-link d-inline-block mb-2" href="tel:+352262803831">
+              +352 26 80 38 31
+            </a>
+            <p class="text-muted mb-0 lh-lg">
+              Sollte niemand Ihren Anruf beantworten, hinterlassen Sie bitte Ihren Namen und
+              Ihre Telefonnummer auf dem Anrufbeantworter.
+            </p>
+          </div>
+
+          <!-- Hausbesuch header row (same pattern as Telefon) -->
+          <div class="d-flex align-items-center gap-2 mb-2 justify-content-center justify-content-lg-start">
             <span class="icon-badge icon-red" aria-hidden="true">
-              <!-- pin icon -->
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                <path d="M12 22s7-4.5 7-12a7 7 0 1 0-14 0c0 7.5 7 12 7 12Z" stroke="currentColor" stroke-width="2" />
-                <path d="M12 11.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" stroke="currentColor" stroke-width="2" />
+                <path
+                  d="M12 22s7-4.5 7-12a7 7 0 1 0-14 0c0 7.5 7 12 7 12Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M12 11.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
               </svg>
             </span>
 
-            <div>
-              <h4 class="fw-bold mb-2">Hausbesuch</h4>
-              <p class="text-muted mb-0 lh-lg">
-                Wenn ein Besuch in der Praxis aus unterschiedlichen Gründen nicht möglich ist,
-                besteht die Möglichkeit zum Hausbesuch!
-              </p>
-            </div>
+            <h4 class="fw-bold mb-0">Hausbesuch</h4>
+          </div>
+
+          <div class="info-body px-3">
+            <p class="text-muted mb-0 lh-lg">
+              Wenn ein Besuch in der Praxis aus unterschiedlichen Gründen nicht möglich ist,
+              besteht die Möglichkeit zum Hausbesuch!
+            </p>
           </div>
         </div>
       </div>
@@ -155,34 +170,44 @@ import CallButton from "@/components/CallButton.vue";
   text-decoration: none;
   font-weight: 600;
 }
-
 .contact-link:hover {
   text-decoration: underline;
 }
 
+/* Desktop: table starts under the header (not centered) */
 .opening-table {
   margin-top: 6px;
-  max-width: 320px;
+  width: fit-content;
+
+  display: grid;
+  grid-template-columns: max-content 190px;
+  column-gap: 24px;
+  row-gap: 10px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .opening-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 14px;
-  padding: 3px 0;
-  font-size: 16px;
+  display: contents;
 }
 
 .day {
-  color: #111827;
-}
-
-.time {
+  text-align: left;
   color: #111827;
   white-space: nowrap;
 }
 
-/* center image */
+.times {
+  color: #111827;
+  line-height: 1.4;
+  white-space: nowrap;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* right align each line */
+  gap: 2px;
+}
+
 .contact-image {
   width: 250px;
   height: 400px;
@@ -194,5 +219,30 @@ import CallButton from "@/components/CallButton.vue";
 .contact-subtitle {
   max-width: 700px;
   line-height: 1.5;
+}
+
+.info-body {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .info-body {
+    text-align: left;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .opening-table {
+    grid-template-columns: max-content 165px;
+    column-gap: 16px;
+
+    margin-left: auto;
+    margin-right: auto; /* center whole block on mobile */
+  }
+  .contact-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 </style>
