@@ -11,16 +11,149 @@
     },
     "team": {
         "title": "Découvrez notre équipe",
-        "subtitle": "Notre objectif est d’améliorer durablement votre santé grâce à une approche globale."
+        "subtitle": "Notre objectif est d’améliorer durablement votre santé grâce à une approche globale.",
+        "imageAlt": "Notre équipe",
+        "members": {
+            "ingo": {
+                "name": "Ingo",
+                "role": "Gérant & Kinésithérapeute",
+                "about": "Fondateur du cabinet, avec plus de 20 ans d’expérience en kinésithérapie et thérapie manuelle. Après avoir travaillé dans différents cabinets au Luxembourg et à l’étranger, il se concentre aujourd’hui sur une prise en charge globale, un suivi individuel et des résultats durables."
+            },
+            "paul": {
+                "name": "Paul",
+                "role": "Kinésithérapeute",
+                "about": "Kinésithérapeute avec de l’expérience acquise dans plusieurs cabinets orthopédiques et de thérapie du sport. Son approche met l’accent sur la thérapie active, l’entraînement fonctionnel et des explications claires afin que les patients gagnent en autonomie sur le long terme."
+            },
+            "gilles": {
+                "name": "Gilles",
+                "role": "Kinésithérapeute",
+                "about": "Kinésithérapeute diplômé avec une expérience professionnelle en centres de rééducation et en cabinets ambulatoires. Il travaille avec calme et précision, et accorde une grande importance à des solutions applicables au quotidien ainsi qu’à une collaboration basée sur la confiance."
+            }
+        }
     },
     "services": {
         "title": "Prestations",
         "subtitle": "Vous trouverez ici un aperçu de nos prestations. Elles peuvent être effectuées sur ordonnance ou en prestation privée.",
-        "effect": "Effet"
+        "meta": "Effet",
+        "items": {
+            "omt": {
+                "title": "Thérapie manuelle selon l’OMT",
+                "description": "La thérapie manuelle correspond à une formation complémentaire d’au moins 2 ans pour les kinésithérapeutes. Les thérapeutes manuels formés sont spécialisés dans la biomécanique articulaire. La base de la thérapie manuelle repose sur des techniques de mobilisation et des manipulations spécifiques."
+            },
+            "stosswelle": {
+                "title": "Thérapie par ondes de choc",
+                "description": "La thérapie par ondes de choc est une méthode moderne utilisée pour les douleurs tendineuses et musculaires. Elle vise à stimuler les processus de guérison, réduire la douleur et améliorer la mobilité."
+            },
+            "dry-needling": {
+                "title": "Dry Needling",
+                "description": "Le dry needling est une technique de traitement des points gâchettes myofasciaux. Grâce à de fines aiguilles, les tensions musculaires peuvent être relâchées, la douleur diminuée et la fonction musculaire soutenue."
+            },
+            "faszien": {
+                "title": "Thérapie des fascias",
+                "description": "La thérapie des fascias cible le tissu conjonctif (fascias) afin de relâcher les tensions, améliorer la mobilité et réduire la douleur. Elle peut aider en cas d’adhérences, de déséquilibres et de limitations de mouvement."
+            },
+            "ivrt": {
+                "title": "Thérapie des vertiges selon l’IVRT (rééducation vestibulaire)",
+                "description": "La rééducation vestibulaire (IVRT) est un concept d’entraînement ciblé en cas de vertiges et de troubles de l’équilibre. Des exercices spécifiques permettent d’améliorer la stabilité, l’orientation et la sécurité au quotidien."
+            },
+            "cmd": {
+                "title": "CMD (Dysfonction cranio-mandibulaire)",
+                "description": "En cas de CMD, des troubles peuvent apparaître au niveau de l’articulation temporo-mandibulaire, du visage ou de la nuque. La thérapie vise à réduire les tensions musculaires, soulager l’articulation et améliorer la fonction."
+            },
+            "lymph": {
+                "title": "Drainage lymphatique",
+                "description": "Le drainage lymphatique manuel est une technique douce qui favorise l’écoulement de la lymphe. Il peut aider en cas de gonflements et d’œdèmes, soulager les tissus et améliorer le bien-être."
+            },
+            "training": {
+                "title": "Thérapie par l’exercice",
+                "description": "La thérapie par l’exercice est un programme personnalisé visant à améliorer la force, l’endurance, la mobilité et la coordination. Elle soutient la rééducation, la prévention et la stabilisation à long terme."
+            },
+            "fussreflex": {
+                "title": "Réflexologie plantaire",
+                "description": "La réflexologie plantaire utilise des pressions ciblées sur des zones réflexes du pied. Elle peut favoriser la détente, améliorer la perception corporelle et soutenir en cas de stress et de tensions."
+            },
+            "physikalisch": {
+                "title": "Thérapie physique",
+                "description": "La thérapie physique regroupe des applications telles que la chaleur, le froid, l’électrothérapie ou les ultrasons. Selon les symptômes, ces mesures peuvent soulager la douleur et soutenir les processus de guérison."
+            }
+        }
     },
     "reviews": {
         "title": "Avis",
         "subtitle": "Voici quelques avis Google.",
-        "cta": "Voir les avis Google"
+        "cta": "Voir les avis Google",
+        "items": {
+            "1": {
+                "text": "(Traduit) Je suis suivie ici depuis des années. Ingo prend beaucoup de temps et adopte une approche globale, très compétent et toujours aimable ! Merci beaucoup ! Le cabinet est vivement recommandé. Des thérapeutes aussi compétents et sympathiques sont difficiles à trouver.",
+                "name": "Maria Louise"
+            },
+            "2": {
+                "text": "(Traduit) Je suis en traitement depuis de nombreuses années avec cette équipe extrêmement compétente, sympathique, toujours serviable et à la recherche de solutions 😀 Même pour mon cas de santé particulier, ils cherchent toujours des solutions efficaces et des modèles de traitement adaptés à moi. Merci pour votre super travail 😀",
+                "name": "Sabrina Gloden"
+            },
+            "3": {
+                "text": "J'y vais depuis 2 semaines et pour longtemps encore pour me remettre. Deux kinés qualifiés avec beaucoup de savoi-faire. Spacieux cadre, pas de cabines mais des chambres d'appartement. Les appareils techniques sont performants et up to date, le maniement efficasse est garantie avec les connaissances des kinés.",
+                "name": "Marc Wagner"
+            }
+        }
+    },
+    "contact": {
+        "title": "Contactez-nous",
+        "subtitle": "Prenez rendez-vous dès maintenant.",
+        "cta": "Prendre rendez-vous",
+        "openingHours": {
+            "title": "Horaires d’ouverture",
+            "days": {
+                "monday": "Lundi",
+                "tuesday": "Mardi",
+                "wednesday": "Mercredi",
+                "thursday": "Jeudi",
+                "friday": "Vendredi",
+                "weekend": "Week-end"
+            },
+            "times": {
+                "mon": [
+                    "06h40 – 12h00",
+                    "13h00 – 19h00"
+                ],
+                "tue": [
+                    "06h40 – 12h00",
+                    "13h00 – 19h00"
+                ],
+                "wed": [
+                    "07h30 – 12h00",
+                    "13h00 – 19h00"
+                ],
+                "thu": [
+                    "06h40 – 12h00",
+                    "13h00 – 19h00"
+                ],
+                "fri": [
+                    "06h40 – 12h00",
+                    "13h00 – 19h00"
+                ],
+                "weekend": [
+                    "fermé"
+                ]
+            }
+        },
+        "phone": {
+            "title": "Téléphone",
+            "hint": "Si personne ne répond à votre appel, merci de laisser votre nom et votre numéro de téléphone sur le répondeur."
+        },
+        "houseVisit": {
+            "title": "Visite à domicile",
+            "text": "Si une visite au cabinet n’est pas possible pour diverses raisons, une visite à domicile est possible !"
+        },
+        "imageAlt": "Contact"
+    },
+    "footer": {
+        "name": "Kinésithérapie Ingo Pauls",
+        "address": {
+            "line1": "19, Rue Pierre Olinger",
+            "line2": "L-9264 Diekirch",
+            "line3": "Luxembourg"
+        },
+        "rights": "Tous droits réservés."
     }
 }

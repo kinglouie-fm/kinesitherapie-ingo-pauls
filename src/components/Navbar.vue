@@ -2,12 +2,10 @@
   <header class="topbar w-100 z-3" :class="{ 'is-scrolled': isScrolled }">
     <div class="container py-3">
       <nav ref="navRef" class="navbar navbar-expand-lg navbar-dark p-0">
-        <!-- Logo moved a bit right on mobile via ms-2 ms-lg-0 -->
         <RouterLink class="navbar-brand d-flex align-items-center gap-2 ms-3 ms-lg-0" to="/">
           <img src="/images/logo.webp" alt="Logo" class="logo rounded-circle bg-white p-1 shadow-sm" />
         </RouterLink>
 
-        <!-- White hamburger icon -->
         <button ref="togglerRef" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
           data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -16,7 +14,7 @@
         <div id="mainNav" class="collapse navbar-collapse">
           <ul class="navbar-nav ms-5 gap-lg-4 text-end">
             <li class="nav-item">
-              <RouterLink class="nav-link text-white" to="/#home" @click="closeMenu">
+              <RouterLink class="nav-link text-white" to="/" @click="closeMenu">
                 {{ t("nav.home") }}
               </RouterLink>
             </li>
@@ -38,6 +36,7 @@
           </ul>
 
           <div class="ms-auto d-flex justify-content-end align-items-center gap-2 mt-3 mt-lg-0">
+            <button class="lang-btn" :class="{ active: locale === 'lu' }" @click="setLocaleAndClose('lu')">LU</button>
             <button class="lang-btn" :class="{ active: locale === 'de' }" @click="setLocaleAndClose('de')">DE</button>
             <button class="lang-btn" :class="{ active: locale === 'fr' }" @click="setLocaleAndClose('fr')">FR</button>
           </div>

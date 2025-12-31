@@ -1,0 +1,159 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "team": "Eis Ekipp",
+        "services": "Leeschtungen",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "subtitle": "Individuell Therapie. Ganzheetlechen Usaz. Laangfristeg Resultater.",
+        "cta": "Elo uruffen"
+    },
+    "team": {
+        "title": "Léier eis Ekipp kennen",
+        "subtitle": "Eist Zil ass et, Äre Gesondheetszoustand mat Hëllef vun engem ganzheetlechen Usaz laangfristeg ze verbesseren.",
+        "imageAlt": "Eis Ekipp",
+        "members": {
+            "ingo": {
+                "name": "Ingo",
+                "role": "Gerant & Physiotherapeut",
+                "about": "Grënner vun der Praxis mat iwwer 20 Joer Beruffserfarung an der Physiotherapie an der manueller Therapie. No Aktivitéiten a verschiddene Praxen am In- an Ausland läit säi Fokus haut op ganzheetlecher Behandlung, individueller Betreiung a nohaltege Therapieerfolleger."
+            },
+            "paul": {
+                "name": "Paul",
+                "role": "Physiotherapeut",
+                "about": "Physiotherapeut mat Erfarung aus verschiddenen orthopädeschen a sporttherapeutesche Praxen. Säi Schwéierpunkt läit op aktiver Therapie, funktionellem Training an verständlecher Uleedung, sou datt Patientinnen a Patiente laangfristeg selbstänneg bleiwen."
+            },
+            "gilles": {
+                "name": "Gilles",
+                "role": "Physiotherapeut",
+                "about": "Ausgebiltene Physiotherapeut mat berufflecher Erfarung a Rehabilitatiounszentren an ambulante Praxen. Hie schafft roueg a präzis a leet grousse Wäert op alldaags-tauglech Léisungen an eng vertrauensvoll Zesummenaarbecht."
+            }
+        }
+    },
+    "services": {
+        "title": "Leeschtungen",
+        "subtitle": "Hei fannt Dir en Iwwerbléck iwwer eis Leeschtungen. Dir kënnt se mat engem Dokterrezept notzen oder och als Privatleeschtung.",
+        "meta": "Wierkung",
+        "items": {
+            "omt": {
+                "title": "Manuell Therapie no OMT",
+                "description": "Bei der manueller Therapie geet et ëm eng Weiderbildung vu mindestens 2 Joer fir Physiotherapeuten. Weidergebilten Manualtherapeute si Spezialisten an der Gelenkmechanik. D’Basis si speziell Grëff- a Mobilisatiounstechniken."
+            },
+            "stosswelle": {
+                "title": "Stousswelltherapie",
+                "description": "D’Stousswelltherapie ass eng modern Behandlungsmethod, déi bei Seenen- a Muskelbeschwieren agesat ka ginn. Zil ass et, Heelungsprozesser unzereegen, Schmäerzen ze reduzéieren an d’Beweglechkeet ze verbesseren."
+            },
+            "dry-needling": {
+                "title": "Dry Needling",
+                "description": "Dry Needling ass eng Technik fir myofaszial Triggerpunkten ze behandelen. Mat dënnen Nadelen kënnen Muskelverspannungen geléist, Schmäerzen reduzéiert an d’Funktioun vun der Muskulatur ënnerstëtzt ginn."
+            },
+            "faszien": {
+                "title": "Faszien-Therapie",
+                "description": "D’Faszien-Therapie riicht sech op d’Bindegewebe (Faszien), fir Spannungen ze léisen, d’Beweglechkeet ze verbesseren an Schmäerzen ze reduzéieren. Si kann bei Verklebungen, Dysbalancen a Bewegungseinschränkunge hëllefen."
+            },
+            "ivrt": {
+                "title": "Schwindeltherapie no IVRT (vestibulär Rehabilitatiounstherapie)",
+                "description": "D’vestibulär Rehabilitatiounstherapie (IVRT) ass e gezielte Trainingskonzept bei Schwindel a Gläichgewiichtsstéierungen. Mat spezifeschen Übunge kënne Stabilitéit, Orientéierung a Sécherheet am Alldag verbessert ginn."
+            },
+            "cmd": {
+                "title": "CMD (Craniomandibulär Dysfunktioun)",
+                "description": "Bei CMD kënnen Beschwieren am Kiefergelenk, am Gesiicht oder am Néck optrieden. D’Therapie zielt drop of, muskulär Spannungen ze reduzéieren, d’Kiefergelenk ze entlaaschten an d’Funktioun ze verbesseren."
+            },
+            "lymph": {
+                "title": "Lymphdrainage",
+                "description": "Manuell Lymphdrainage ass eng sanft Technik fir den Lymphofloss z’ënnerstëtzen. Si kann bei Schwellungen an Ödemen hëllefen, d’Gewebe entlaaschten an d’Wuelbefannen verbesseren."
+            },
+            "training": {
+                "title": "Trainingstherapie",
+                "description": "Trainingstherapie ass en individuell ugepasst Übungsprogramm fir Kraaft, Ausdauer, Beweglechkeet a Koordinatioun ze verbesseren. Si ënnerstëtzt Rehabilitatioun, Preventioun an laangfristeg Stabiliséierung."
+            },
+            "fussreflex": {
+                "title": "Foussreflexologie",
+                "description": "Foussreflexologie schafft mat gezielte Grëffer op Reflexzonen um Fouss. Si kann entspanend wierken, d’Kierperwouergehuele fërderen an ënnerstëtzend bei Stress a Spannungszoustand agesat ginn."
+            },
+            "physikalisch": {
+                "title": "Physikalesch Therapie",
+                "description": "Ënner physikalescher Therapie fale Moossname wéi Hëtzt, Keelt, Elektrotherapie oder Ultraschall. Je no Beschwerdebild kënnen dës Uwendunge schmäerzliindernd wierken an Heelungsprozesser ënnerstëtzen."
+            }
+        }
+    },
+    "reviews": {
+        "title": "Bewäertungen",
+        "subtitle": "Hei gesitt Dir e puer vun eisen Google-Bewäertungen.",
+        "cta": "Zu de Google-Bewäertungen",
+        "items": {
+            "1": {
+                "text": "(Iwwersat) Ech sinn zanter Joren hei a Behandlung. Den Ingo hëlt sech vill Zäit a geet ganzheetlech op d’Patientinnen an, ganz kompetent a ëmmer frëndlech! Villmools Merci! D’Praxis ass absolut ze recommandéieren. Sou kompetent a léif Therapeuten an Therapeutinne si schwéier ze fannen.",
+                "name": "Maria Louise"
+            },
+            "2": {
+                "text": "(Iwwersat) Ech sinn zanter ville Joren a Behandlung bei dëser aussergewéinlech kompetenter, frëndlecher an ëmmer hëllefsbereeter Ekipp😀 Och bei mengem spezielle gesondheetleche Fall gëtt ëmmer no effizienten an op mech zougeschniddene Léisungen a Behandlungsmodeller gesicht. Villmools Merci fir är super Aarbecht😀",
+                "name": "Sabrina Gloden"
+            },
+            "3": {
+                "text": "(Iwwersat) Ech ginn zanter 2 Wochen dohinner – a nach fir eng gutt Zäit, fir erëm op d’Been ze kommen. Zwee qualifizéiert Kinéen mat vill Know-how. Grouss a frëndlech Raimlechkeeten, keng Kabinnen, mee eenzel Zëmmeren. D’technesch Apparater si performant an um neiste Stand; eng effizient Uwendung ass dank dem Fachwëssen vun de Kinéen garantéiert.",
+                "name": "Marc Wagner"
+            }
+        }
+    },
+    "contact": {
+        "title": "Kontaktéiert eis",
+        "subtitle": "Elo en Termin ofmaachen.",
+        "cta": "Termin buchen",
+        "openingHours": {
+            "title": "Ëffnungszäiten",
+            "days": {
+                "monday": "Méindeg",
+                "tuesday": "Dënschdeg",
+                "wednesday": "Mëttwoch",
+                "thursday": "Donneschdeg",
+                "friday": "Freideg",
+                "weekend": "Weekend"
+            },
+            "times": {
+                "mon": [
+                    "06.40 – 12.00 Auer",
+                    "13.00 – 19.00 Auer"
+                ],
+                "tue": [
+                    "06.40 – 12.00 Auer",
+                    "13.00 – 19.00 Auer"
+                ],
+                "wed": [
+                    "07.30 – 12.00 Auer",
+                    "13.00 – 19.00 Auer"
+                ],
+                "thu": [
+                    "06.40 – 12.00 Auer",
+                    "13.00 – 19.00 Auer"
+                ],
+                "fri": [
+                    "06.40 – 12.00 Auer",
+                    "13.00 – 19.00 Auer"
+                ],
+                "weekend": [
+                    "zou"
+                ]
+            }
+        },
+        "phone": {
+            "title": "Telefon",
+            "hint": "Sollt keen Ären Uruff beäntweren, hannerloosst w.e.g. Ären Numm an Är Telefonsnummer um Äntwertapparat."
+        },
+        "houseVisit": {
+            "title": "Hausbesuch",
+            "text": "Wann en Besuch an der Praxis aus verschiddene Grënn net méiglech ass, besteet d’Méiglechkeet fir en Hausbesuch!"
+        },
+        "imageAlt": "Kontakt"
+    },
+    "footer": {
+        "name": "Kinésithérapie Ingo Pauls",
+        "address": {
+            "line1": "19, Rue Pierre Olinger",
+            "line2": "L-9264 Diekirch",
+            "line3": "Lëtzebuerg"
+        },
+        "rights": "All Rechter virbehalen."
+    }
+}

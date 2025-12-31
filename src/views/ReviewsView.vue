@@ -2,14 +2,15 @@
   <section ref="root" class="reviews-section py-5">
     <div class="container py-4">
       <div class="text-center mb-5 gsap-reviews-heading">
-        <h2 class="fw-bold mb-2">Rezensionen</h2>
-        <h4 class="text-muted mb-0 mx-auto reviews-subtitle">Hier sehen Sie ein paar unserer Rezensionen von Google.
+        <h2 class="fw-bold mb-2">{{ t("reviews.title") }}</h2>
+        <h4 class="text-muted mb-0 mx-auto reviews-subtitle">
+          {{ t("reviews.subtitle") }}
         </h4>
 
         <div class="mt-4 gsap-reviews-btn">
           <Button
             link="https://www.google.com/maps/place/Kin%C3%A9sith%C3%A9rapie+Pauls+Ingo/@49.8631352,6.1597158,17z/data=!4m8!3m7!1s0x47bffd8e54e9b281:0xb84f2b141d0b77fa!8m2!3d49.8631318!4d6.1622961!9m1!1b1!16s%2Fg%2F1tl7mvxx?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
-            label="Zu Google Rezensionen" />
+            :label="t('reviews.cta')" />
         </div>
       </div>
 
@@ -35,34 +36,34 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount, nextTick } from "vue";
+import { ref, onMounted, onBeforeUnmount, nextTick, computed } from "vue";
 import gsap from "gsap";
 import { revealEach } from "@/animations/scroll";
 import Button from "@/components/Button.vue";
+import { useI18n } from "@/i18n";
+
+const { t } = useI18n();
 
 const root = ref(null);
 let ctx;
 
-const reviews = [
+const reviews = computed(() => [
   {
     id: 1,
-    text:
-      "Ich bin seit Jahren hier in Behandlung. Ingo nimmt sich viel Zeit und geht ganzheitlich auf die Patientinnen ein, sehr kompetent, immer freundlich! Vielen Dank! Die Praxis ist sehr zu empfehlen! Solch kompetente und nette Therapeuten und Therapeutinnen sind schwer zu finden.",
-    name: "Maria Louise",
+    text: t("reviews.items.1.text"),
+    name: t("reviews.items.1.name")
   },
   {
     id: 2,
-    text:
-      "Ich bin seit etlichen Jahren in Behandlung bei dieser überaus kompetenten, freundlichen, immer hilfsbedürftigen und lösungsuchenden Truppe😀 Auch in Bezug auf meinen speziellen gesundheitlichen Fall,wird stets nach effizienten und auf mich zugeschnitte Lösungen und Behandlungsmodelle gesucht. Vielen Dank für eure super Arbeit😀",
-    name: "Sabrina Gloden",
+    text: t("reviews.items.2.text"),
+    name: t("reviews.items.2.name")
   },
   {
     id: 3,
-    text:
-      "J'y vais depuis 2 semaines et pour longtemps encore pour me remettre. Deux kinés qualifiés avec beaucoup de savoi-faire. Spacieux cadre, pas de cabines mais des chambres d'appartement. Les appareils techniques sont performants et up to date, le maniement efficasse est garantie avec les connaissances des kinés.",
-    name: "Marc Wagner",
+    text: t("reviews.items.3.text"),
+    name: t("reviews.items.3.name")
   },
-];
+]);
 
 onMounted(async () => {
   await nextTick();
