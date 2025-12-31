@@ -117,14 +117,8 @@ onMounted(async () => {
 
   ctx = gsap.context((self) => {
     const q = self.selector;
-
-    // heading block
     revealEach(q, { elements: ".gsap-team-heading", y: 18 });
-
-    // big image
     revealEach(q, { elements: ".gsap-team-hero", y: 18 });
-
-    // each card individually
     revealEach(q, { elements: ".gsap-team-card", y: 16, start: "top 90%" });
   }, root.value);
 });
