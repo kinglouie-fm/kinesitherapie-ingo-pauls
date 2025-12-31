@@ -3,20 +3,20 @@
         <div class="container">
             <div class="row align-items-center gy-3">
                 <div class="col-12 col-lg-4 text-center text-lg-start">
-                    <div class="footer-name">Kinésithérapie Ingo Pauls</div>
+                    <div class="footer-name">{{ t("footer.name") }}</div>
                 </div>
 
                 <div class="col-12 col-lg-4 text-center">
                     <address class="footer-address mb-0">
-                        19, Rue Pierre Olinger<br />
-                        L-9264 Diekirch<br />
-                        Luxemburg
+                        {{ t("footer.address.line1") }}<br />
+                        {{ t("footer.address.line2") }}<br />
+                        {{ t("footer.address.line3") }}
                     </address>
                 </div>
 
                 <div class="col-12 col-lg-4 text-center text-lg-end">
                     <div class="footer-copy">
-                        © {{ year }} Kinésithérapie Ingo Pauls. Alle Rechte vorbehalten.
+                        © {{ year }} {{ t("footer.name") }}. {{ t("footer.rights") }}
                     </div>
                 </div>
             </div>
@@ -25,13 +25,15 @@
 </template>
 
 <script setup>
+import { useI18n } from "@/i18n";
+
+const { t } = useI18n();
 const year = new Date().getFullYear();
 </script>
 
 <style scoped>
 .footer {
     background: #111827;
-    /* dark like your navbar */
     color: rgba(255, 255, 255, 0.85);
 }
 
@@ -52,7 +54,6 @@ const year = new Date().getFullYear();
     color: rgba(255, 255, 255, 0.75);
 }
 
-/* Small tweak for mobile readability */
 @media (max-width: 576px) {
     .footer-copy {
         font-size: 0.9rem;

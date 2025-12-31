@@ -1,8 +1,9 @@
 import { computed, reactive } from "vue";
 import de from "@/locales/de.json";
 import fr from "@/locales/fr.json";
+import lu from "@/locales/lu.json";
 
-const messages = { de, fr };
+const messages = { de, fr, lu };
 
 const state = reactive({
   locale: localStorage.getItem("locale") || "de",

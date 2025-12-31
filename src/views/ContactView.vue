@@ -2,8 +2,8 @@
   <section ref="root" class="py-5 bg-white">
     <div class="container py-4 text-center text-lg-start">
       <div class="text-center mb-5 gsap-contact-heading">
-        <h2 class="fw-bold mb-4">Kontaktieren Sie uns</h2>
-        <h4 class="text-muted mb-0 mx-auto contact-subtitle">Jetzt Termin vereinbaren.</h4>
+        <h2 class="fw-bold mb-4">{{ t("contact.title") }}</h2>
+        <h4 class="text-muted mb-0 mx-auto contact-subtitle">{{ t("contact.subtitle") }}</h4>
       </div>
 
       <div class="row align-items-start justify-content-center gy-5">
@@ -15,66 +15,66 @@
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" />
               </svg>
             </span>
-            <h4 class="fw-bold mb-0">Öffnungszeiten</h4>
+            <h4 class="fw-bold mb-0">{{ t("contact.openingHours.title") }}</h4>
           </div>
 
           <div class="opening-table">
             <div class="opening-row gsap-opening-row">
-              <div class="day">Montag</div>
+              <div class="day">{{ t("contact.openingHours.days.monday") }}</div>
               <div class="times">
-                <div>06.40 – 12.00 Uhr</div>
-                <div>13.00 – 19.00 Uhr</div>
+                <div>{{ t("contact.openingHours.times.mon.0") }}</div>
+                <div>{{ t("contact.openingHours.times.mon.1") }}</div>
               </div>
             </div>
 
             <div class="opening-row gsap-opening-row">
-              <div class="day">Dienstag</div>
+              <div class="day">{{ t("contact.openingHours.days.tuesday") }}</div>
               <div class="times">
-                <div>06.40 – 12.00 Uhr</div>
-                <div>13.00 – 19.00 Uhr</div>
+                <div>{{ t("contact.openingHours.times.tue.0") }}</div>
+                <div>{{ t("contact.openingHours.times.tue.1") }}</div>
               </div>
             </div>
 
             <div class="opening-row gsap-opening-row">
-              <div class="day">Mittwoch</div>
+              <div class="day">{{ t("contact.openingHours.days.wednesday") }}</div>
               <div class="times">
-                <div>07.30 – 12.00 Uhr</div>
-                <div>13.00 – 19.00 Uhr</div>
+                <div>{{ t("contact.openingHours.times.wed.0") }}</div>
+                <div>{{ t("contact.openingHours.times.wed.1") }}</div>
               </div>
             </div>
 
             <div class="opening-row gsap-opening-row">
-              <div class="day">Donnerstag</div>
+              <div class="day">{{ t("contact.openingHours.days.thursday") }}</div>
               <div class="times">
-                <div>06.40 – 12.00 Uhr</div>
-                <div>13.00 – 19.00 Uhr</div>
+                <div>{{ t("contact.openingHours.times.thu.0") }}</div>
+                <div>{{ t("contact.openingHours.times.thu.1") }}</div>
               </div>
             </div>
 
             <div class="opening-row gsap-opening-row">
-              <div class="day">Freitag</div>
+              <div class="day">{{ t("contact.openingHours.days.friday") }}</div>
               <div class="times">
-                <div>06.40 – 12.00 Uhr</div>
-                <div>13.00 – 19.00 Uhr</div>
+                <div>{{ t("contact.openingHours.times.fri.0") }}</div>
+                <div>{{ t("contact.openingHours.times.fri.1") }}</div>
               </div>
             </div>
 
             <div class="opening-row gsap-opening-row">
-              <div class="day">Wochenende</div>
+              <div class="day">{{ t("contact.openingHours.days.weekend") }}</div>
               <div class="times">
-                <div>geschlossen</div>
+                <div>{{ t("contact.openingHours.times.weekend.0") }}</div>
               </div>
             </div>
           </div>
 
           <div class="mt-4 gsap-contact-cta">
-            <CallButton phone="+352262803831" label="Termin buchen" />
+            <CallButton phone="+352262803831" :label="t('contact.cta')" />
           </div>
         </div>
 
         <div class="col-12 col-lg-3 d-flex justify-content-center gsap-contact-image">
           <div class="contact-image shadow-sm">
-            <img :src="kontaktImg" class="w-100 h-100 object-fit-cover" alt="Kontakt" />
+            <img :src="kontaktImg" class="w-100 h-100 object-fit-cover" :alt="t('contact.imageAlt')" />
           </div>
         </div>
 
@@ -87,7 +87,7 @@
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </span>
-            <h4 class="fw-bold mb-0">Telefon</h4>
+            <h4 class="fw-bold mb-0">{{ t("contact.phone.title") }}</h4>
           </div>
 
           <div class="info-body px-3 mb-4">
@@ -95,8 +95,7 @@
               +352 26 80 38 31
             </a>
             <p class="text-muted mb-0 lh-lg">
-              Sollte niemand Ihren Anruf beantworten, hinterlassen Sie bitte Ihren Namen und
-              Ihre Telefonnummer auf dem Anrufbeantworter.
+              {{ t("contact.phone.hint") }}
             </p>
           </div>
 
@@ -108,13 +107,12 @@
               </svg>
             </span>
 
-            <h4 class="fw-bold mb-0">Hausbesuch</h4>
+            <h4 class="fw-bold mb-0">{{ t("contact.houseVisit.title") }}</h4>
           </div>
 
           <div class="info-body px-3">
             <p class="text-muted mb-0 lh-lg">
-              Wenn ein Besuch in der Praxis aus unterschiedlichen Gründen nicht möglich ist,
-              besteht die Möglichkeit zum Hausbesuch!
+              {{ t("contact.houseVisit.text") }}
             </p>
           </div>
         </div>
@@ -127,9 +125,12 @@
 import { ref, onMounted, onBeforeUnmount, nextTick } from "vue";
 import gsap from "gsap";
 import { revealEach } from "@/animations/scroll";
+import { useI18n } from "@/i18n";
 
 import kontaktImg from "@/assets/images/kontakt.png";
 import CallButton from "@/components/CallButton.vue";
+
+const { t } = useI18n();
 
 const root = ref(null);
 let ctx;
@@ -178,7 +179,6 @@ onBeforeUnmount(() => ctx?.revert());
   text-decoration: underline;
 }
 
-/* Desktop: table starts under the header (not centered) */
 .opening-table {
   margin-top: 6px;
   width: fit-content;
@@ -209,7 +209,6 @@ onBeforeUnmount(() => ctx?.revert());
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  /* right align each line */
   gap: 2px;
 }
 
@@ -244,7 +243,6 @@ onBeforeUnmount(() => ctx?.revert());
 
     margin-left: auto;
     margin-right: auto;
-    /* center whole block on mobile */
   }
 
   .contact-image {

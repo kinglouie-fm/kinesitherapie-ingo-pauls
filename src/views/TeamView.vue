@@ -2,17 +2,16 @@
   <section ref="root" class="py-5 bg-white">
     <div class="container py-4">
       <div class="text-center mb-4 gsap-team-heading">
-        <h2 class="fw-bold mb-4">Lerne unser Team kennen</h2>
+        <h2 class="fw-bold mb-4">{{ t("team.title") }}</h2>
         <h4 class="text-muted mb-0 team-subtitle mx-auto">
-          Unser Ziel ist es, Ihren Gesundheitszustand mit Hilfe eines ganzheitlichen Ansatz
-          langfristig zu verbessern.
+          {{ t("team.subtitle") }}
         </h4>
       </div>
 
       <div class="row justify-content-center mb-4 gsap-team-hero">
         <div class="col-12 col-lg-10">
           <div class="ratio ratio-21x9 team-hero shadow-sm">
-            <img :src="teamImage" class="w-100 h-100 object-fit-cover" alt="Unser Team" />
+            <img :src="teamImage" class="w-100 h-100 object-fit-cover" :alt="t('team.imageAlt')" />
           </div>
         </div>
       </div>
@@ -61,42 +60,44 @@
   </section>
 </template>
 
-
 <script setup>
-import { ref, onMounted, onBeforeUnmount, nextTick } from "vue";
+import { ref, onMounted, onBeforeUnmount, nextTick, computed } from "vue";
 import gsap from "gsap";
 import { revealEach } from "@/animations/scroll";
+import { useI18n } from "@/i18n";
 
 import teamImage from "@/assets/images/team.png";
 import member1 from "@/assets/images/member.png";
 import member2 from "@/assets/images/member.png";
 import member3 from "@/assets/images/member.png";
 
+const { t } = useI18n();
+
 const flippedIdx = ref(null);
 const teamWrapperRef = ref(null);
 const root = ref(null);
 let ctx;
 
-const members = [
+const members = computed(() => [
   {
-    name: "Ingo",
-    role: "Geschäftsführer & Physiotherapeut",
     image: member1,
-    about: "Gründer der Praxis mit über 20 Jahren Berufserfahrung in Physiotherapie und manueller Therapie. Nach Tätigkeiten in verschiedenen Praxen im In- und Ausland liegt sein Fokus heute auf ganzheitlicher Behandlung, individueller Betreuung und nachhaltigen Therapieerfolgen.",
+    name: t("team.members.ingo.name"),
+    role: t("team.members.ingo.role"),
+    about: t("team.members.ingo.about")
   },
   {
-    name: "Paul",
-    role: "Physiotherapeut",
     image: member2,
-    about: "Physiotherapeut mit Erfahrung aus mehreren orthopädischen und sporttherapeutischen Praxen. Sein Schwerpunkt liegt auf aktiver Therapie, funktionellem Training und verständlicher Anleitung, damit Patientinnen und Patienten langfristig selbstständig bleiben.",
+    name: t("team.members.paul.name"),
+    role: t("team.members.paul.role"),
+    about: t("team.members.paul.about")
   },
   {
-    name: "Gilles",
-    role: "Physiotherapeut",
     image: member3,
-    about: "Ausgebildeter Physiotherapeut mit beruflicher Erfahrung in Rehabilitationszentren und ambulanten Praxen. Er arbeitet ruhig und präzise und legt großen Wert auf alltagstaugliche Lösungen sowie eine vertrauensvolle Zusammenarbeit.",
-  },
-];
+    name: t("team.members.gilles.name"),
+    role: t("team.members.gilles.role"),
+    about: t("team.members.gilles.about")
+  }
+]);
 
 function toggleFlip(idx) {
   flippedIdx.value = flippedIdx.value === idx ? null : idx;
@@ -104,11 +105,8 @@ function toggleFlip(idx) {
 
 function handleOutsideClick(event) {
   if (!teamWrapperRef.value) return;
-
   const clickedInside = teamWrapperRef.value.contains(event.target);
-  if (!clickedInside) {
-    flippedIdx.value = null;
-  }
+  if (!clickedInside) flippedIdx.value = null;
 }
 
 onMounted(async () => {
@@ -125,7 +123,7 @@ onMounted(async () => {
 
 onBeforeUnmount(() => {
   document.removeEventListener("click", handleOutsideClick, true);
-  ctx?.revert()
+  ctx?.revert();
 });
 </script>
 
@@ -182,7 +180,6 @@ onBeforeUnmount(() => {
   height: 400px;
 }
 
-/* two faces (same square) */
 .photo-face {
   position: absolute;
   inset: 0;

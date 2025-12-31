@@ -36,6 +36,7 @@
           </ul>
 
           <div class="ms-auto d-flex justify-content-end align-items-center gap-2 mt-3 mt-lg-0">
+            <button class="lang-btn" :class="{ active: locale === 'lu' }" @click="setLocaleAndClose('lu')">LU</button>
             <button class="lang-btn" :class="{ active: locale === 'de' }" @click="setLocaleAndClose('de')">DE</button>
             <button class="lang-btn" :class="{ active: locale === 'fr' }" @click="setLocaleAndClose('fr')">FR</button>
           </div>

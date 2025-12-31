@@ -2,10 +2,9 @@
   <section ref="root" class="services-section py-5">
     <div class="container py-4">
       <div class="text-center mb-5 gsap-services-heading">
-        <h2 class="fw-bold mb-4">Leistungen</h2>
+        <h2 class="fw-bold mb-4">{{ t("services.title") }}</h2>
         <h4 class="text-muted mb-0 mx-auto services-subtitle">
-          Hier finden Sie eine Übersicht zu unserem Angebot an Leistungen. Diese können Sie durch ein
-          Rezept vom Arzt wahrnehmen, aber auch als Privatleistung.
+          {{ t("services.subtitle") }}
         </h4>
       </div>
 
@@ -18,7 +17,7 @@
 
             <div class="card-body service-body" role="button" tabindex="0" @click="toggle(s.id)"
               @keydown.enter.prevent="toggle(s.id)" @keydown.space.prevent="toggle(s.id)">
-              <div class="service-meta mb-2">Wirkung</div>
+              <div class="service-meta mb-2">{{ t("services.meta") }}</div>
 
               <div class="d-flex align-items-center justify-content-between gap-3">
                 <h5 class="fw-bold mb-0 service-title">
@@ -42,82 +41,76 @@
           </article>
         </div>
       </div>
+
     </div>
   </section>
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount, nextTick } from "vue";
+import { ref, onMounted, onBeforeUnmount, nextTick, computed } from "vue";
 import gsap from "gsap";
 import { revealEach } from "@/animations/scroll";
+import { useI18n } from "@/i18n";
 import serviceImg from "@/assets/images/service.png";
+
+const { t } = useI18n();
 
 const openId = ref(null);
 const root = ref(null);
 let ctx;
 
-const services = [
+const services = computed(() => [
   {
     id: "omt",
-    title: "Manuelle Therapie nach OMT",
-    description:
-      "Bei der Manuellen Therapie handelt es sich um eine mindestens 2-jährige Fortbildung für Physiotherapeuten. Fortgebildete Manualtherapeuten sind Spezialisten der Gelenkmechanik. Die Grundlage der Manuellen Therapie sind spezielle Handgrifftechniken und Mobilisationstechniken.",
+    title: t("services.items.omt.title"),
+    description: t("services.items.omt.description")
   },
   {
     id: "stosswelle",
-    title: "Stoßwellentherapie",
-    description:
-      "Die Stoßwellentherapie ist eine moderne Behandlungsmethode, die bei Sehnen- und Muskelbeschwerden eingesetzt werden kann. Ziel ist es, Heilungsprozesse anzuregen, Schmerzen zu reduzieren und die Beweglichkeit zu verbessern.",
+    title: t("services.items.stosswelle.title"),
+    description: t("services.items.stosswelle.description")
   },
   {
     id: "dry-needling",
-    title: "Dry Needling",
-    description:
-      "Dry Needling ist eine Technik zur Behandlung myofaszialer Triggerpunkte. Mit feinen Nadeln können Muskelverspannungen gelöst, Schmerzen reduziert und die Funktion der Muskulatur unterstützt werden.",
+    title: t("services.items.dry-needling.title"),
+    description: t("services.items.dry-needling.description")
   },
   {
     id: "faszien",
-    title: "Faszientherapie",
-    description:
-      "Die Faszientherapie richtet sich auf das Bindegewebe (Faszien), um Spannungen zu lösen, die Beweglichkeit zu verbessern und Schmerzen zu reduzieren. Sie kann bei Verklebungen, Dysbalancen und Bewegungseinschränkungen unterstützen.",
+    title: t("services.items.faszien.title"),
+    description: t("services.items.faszien.description")
   },
   {
     id: "ivrt",
-    title: "Schwindeltherapie nach IVRT (vestibuläre Rehabilitationstherapie)",
-    description:
-      "Die vestibuläre Rehabilitationstherapie (IVRT) ist ein gezieltes Trainingskonzept bei Schwindel und Gleichgewichtsstörungen. Durch spezielle Übungen können Stabilität, Orientierung und Sicherheit im Alltag verbessert werden.",
+    title: t("services.items.ivrt.title"),
+    description: t("services.items.ivrt.description")
   },
   {
     id: "cmd",
-    title: "CMD (Craniomandibuläre Dysfunktion)",
-    description:
-      "Bei CMD können Beschwerden im Kiefergelenk, im Gesicht oder im Nacken auftreten. Die Therapie zielt darauf ab, muskuläre Spannungen zu reduzieren, das Kiefergelenk zu entlasten und die Funktion zu verbessern.",
+    title: t("services.items.cmd.title"),
+    description: t("services.items.cmd.description")
   },
   {
     id: "lymph",
-    title: "Lymphdrainage",
-    description:
-      "Die manuelle Lymphdrainage ist eine sanfte Technik zur Unterstützung des Lymphabflusses. Sie kann bei Schwellungen und Ödemen helfen, das Gewebe entlasten und das Wohlbefinden verbessern.",
+    title: t("services.items.lymph.title"),
+    description: t("services.items.lymph.description")
   },
   {
     id: "training",
-    title: "Trainingstherapie",
-    description:
-      "Trainingstherapie ist ein individuell abgestimmtes Übungsprogramm zur Verbesserung von Kraft, Ausdauer, Beweglichkeit und Koordination. Sie unterstützt Rehabilitation, Prävention und die langfristige Stabilisierung.",
+    title: t("services.items.training.title"),
+    description: t("services.items.training.description")
   },
   {
     id: "fussreflex",
-    title: "Fußreflexologie",
-    description:
-      "Die Fußreflexologie arbeitet mit gezielten Griffen an Reflexzonen am Fuß. Sie kann entspannend wirken, die Körperwahrnehmung fördern und unterstützend bei Stress- und Spannungszuständen eingesetzt werden.",
+    title: t("services.items.fussreflex.title"),
+    description: t("services.items.fussreflex.description")
   },
   {
     id: "physikalisch",
-    title: "Physikalische Therapie",
-    description:
-      "Unter physikalischer Therapie werden Anwendungen wie Wärme, Kälte, Elektrotherapie oder Ultraschall zusammengefasst. Je nach Beschwerdebild können diese Maßnahmen schmerzlindernd wirken und Heilungsprozesse unterstützen.",
-  },
-];
+    title: t("services.items.physikalisch.title"),
+    description: t("services.items.physikalisch.description")
+  }
+]);
 
 function toggle(id) {
   openId.value = openId.value === id ? null : id;
@@ -128,7 +121,6 @@ onMounted(async () => {
 
   ctx = gsap.context((self) => {
     const q = self.selector;
-
     revealEach(q, { elements: ".gsap-services-heading", y: 18, start: "top 85%" });
     revealEach(q, { elements: ".gsap-services-card", y: 16, start: "top 90%" });
   }, root.value);
@@ -184,7 +176,6 @@ onBeforeUnmount(() => ctx?.revert());
   transform: rotate(180deg);
 }
 
-/* collapse animation */
 .collapse-wrap {
   overflow: hidden;
   max-height: 0;
@@ -197,7 +188,6 @@ onBeforeUnmount(() => ctx?.revert());
   opacity: 1;
 }
 
-/* optional emphasis on open card */
 .service-card.is-open {
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12) !important;
 }
