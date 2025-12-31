@@ -20,6 +20,8 @@
   <section id="rezensionen">
     <ReviewsView />
   </section>
+
+  <FooterView />
 </template>
 
 <script setup>
@@ -29,7 +31,7 @@ import TeamView from "@/views/TeamView.vue";
 import ServicesView from "@/views/ServicesView.vue";
 import ContactView from "@/views/ContactView.vue";
 import ReviewsView from "@/views/ReviewsView.vue";
+import FooterView from "@/views/FooterView.vue";
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
