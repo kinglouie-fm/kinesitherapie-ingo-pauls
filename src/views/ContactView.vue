@@ -6,7 +6,7 @@
         <h4 class="text-muted mb-0 mx-auto contact-subtitle">{{ t("contact.subtitle") }}</h4>
       </div>
 
-      <div class="row align-items-start justify-content-center gy-5">
+      <div class="row align-items-center justify-content-center gy-5">
         <div class="col-12 col-md-6 col-lg-4 gsap-contact-left">
           <div class="d-flex align-items-center gap-2 mb-3 justify-content-center justify-content-lg-start">
             <span class="icon-badge" aria-hidden="true">
