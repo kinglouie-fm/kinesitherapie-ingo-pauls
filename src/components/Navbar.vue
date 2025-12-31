@@ -16,7 +16,7 @@
         <div id="mainNav" class="collapse navbar-collapse">
           <ul class="navbar-nav ms-5 gap-lg-4 text-end">
             <li class="nav-item">
-              <RouterLink class="nav-link text-white" to="/#home" @click="closeMenu">
+              <RouterLink class="nav-link text-white" to="/" @click="closeMenu">
                 {{ t("nav.home") }}
               </RouterLink>
             </li>
