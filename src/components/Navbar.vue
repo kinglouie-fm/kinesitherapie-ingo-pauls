@@ -141,6 +141,7 @@ onBeforeUnmount(() => {
   font-weight: 500;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 18px;
 }
 
 .lang-btn {
@@ -163,14 +164,17 @@ onBeforeUnmount(() => {
   border-color: rgba(255, 255, 255, 0.7);
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
 
-  /* Background appears immediately when opening (collapsing) and stays while open (show) */
   .topbar:has(#mainNav.collapsing),
   .topbar:has(#mainNav.show) {
     background: rgba(17, 24, 39, 0.75);
     backdrop-filter: blur(10px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .nav-link {
+    font-size: 16px;
   }
 }
 </style>
