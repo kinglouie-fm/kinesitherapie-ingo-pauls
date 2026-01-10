@@ -6,8 +6,11 @@
         "contact": "Kontakt"
     },
     "hero": {
-        "subtitle": "Individuell Therapie. Ganzheetlechen Usaz. Laangfristeg Resultater.",
-        "cta": "Elo uruffen"
+        "title": "Kinésithérapie",
+        "titleSecondLine": "Lëtzebuerg",
+        "titleThirdLine": "Ingo Pauls",
+        "subtitle": "Physiotherapie fir laangfristeg manner Péng a besser Beweglechkeet",
+        "cta": "Rendez-vous huelen"
     },
     "team": {
         "title": "Léier eis Ekipp kennen",

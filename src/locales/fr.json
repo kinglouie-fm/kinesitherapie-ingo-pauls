@@ -6,7 +6,10 @@
         "contact": "Contact"
     },
     "hero": {
-        "subtitle": "Nous vous conseillons individuellement pour vos questions de santé et vous accompagnons avec notre expertise professionnelle.",
+        "title": "Kinésithérapie",
+        "titleSecondLine": "Luxembourg",
+        "titleThirdLine": "Ingo Pauls",
+        "subtitle": "Physiothérapie pour un soulagement durable de la douleur et une meilleure mobilité",
         "cta": "Prendre rendez-vous"
     },
     "team": {

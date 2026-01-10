@@ -8,8 +8,9 @@
         <div class="col-12 col-md-7 col-lg-6 pt-5 pt-lg-0 text-center text-md-start">
           <div class="pt-5">
             <h1 class="text-white fw-bold lh-1 mb-4 hero-title">
-              Kinésithérapie<br />
-              Ingo Pauls
+              {{ t("hero.title") }}<br />
+              {{ t("hero.titleSecondLine") }}<br />
+              {{ t("hero.titleThirdLine") }}
             </h1>
 
             <h4 class="mb-5 hero-subtitle">

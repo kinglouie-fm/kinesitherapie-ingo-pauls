@@ -6,8 +6,11 @@
         "contact": "Kontakt"
     },
     "hero": {
-        "subtitle": "Individuelle Therapie. Ganzheitlicher Ansatz. Nachhaltige Ergebnisse.",
-        "cta": "Jetzt anrufen"
+        "title": "Kinésithérapie",
+        "titleSecondLine": "Luxemburg",
+        "titleThirdLine": "Ingo Pauls",
+        "subtitle": "Physiotherapie für nachhaltige Schmerzlinderung und Beweglichkeit",
+        "cta": "Termin vereinbaren"
     },
     "team": {
         "title": "Lerne unser Team kennen",
