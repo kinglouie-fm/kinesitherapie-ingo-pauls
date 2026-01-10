@@ -11,7 +11,7 @@
       <div class="row justify-content-center mb-4 gsap-team-hero">
         <div class="col-12 col-lg-10">
           <div class="ratio ratio-21x9 team-hero shadow-sm">
-            <img :src="teamImage" class="w-100 h-100 object-fit-cover" :alt="t('team.imageAlt')" />
+            <img :src="teamImage" class=" team-image w-100 h-100 object-fit-cover" :alt="t('team.imageAlt')" />
           </div>
         </div>
       </div>
@@ -66,7 +66,7 @@ import gsap from "gsap";
 import { revealEach } from "@/animations/scroll";
 import { useI18n } from "@/i18n";
 
-import teamImage from "@/assets/images/team.png";
+import teamImage from "@/assets/images/DSF0866_small.jpg";
 import member1 from "@/assets/images/member.png";
 import member2 from "@/assets/images/member.png";
 import member3 from "@/assets/images/member.png";
@@ -217,6 +217,11 @@ onBeforeUnmount(() => {
   transform: rotateY(180deg);
 }
 
+.team-image {
+  object-fit: cover;
+  object-position: center 50%;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .team-interactive:hover .photo-flip-inner {
     transform: rotateY(180deg);
@@ -243,6 +248,12 @@ onBeforeUnmount(() => {
 
   .photo-flip-inner {
     height: 280px;
+  }
+}
+
+@media (min-width: 992px) {
+  .team-image {
+    object-position: center 25%;
   }
 }
 </style>
