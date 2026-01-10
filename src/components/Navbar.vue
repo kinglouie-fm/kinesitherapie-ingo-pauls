@@ -163,6 +163,13 @@ onBeforeUnmount(() => {
   border-color: rgba(255, 255, 255, 0.7);
 }
 
+.nav-link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding-bottom: 0;
+}
+
 @media (max-width: 992px) {
 
   .topbar:has(#mainNav.collapsing),
@@ -174,6 +181,27 @@ onBeforeUnmount(() => {
 
   .nav-link {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    padding-bottom: 0;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
   }
 }
 </style>
