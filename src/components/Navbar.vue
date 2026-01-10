@@ -160,14 +160,13 @@ onBeforeUnmount(() => {
 
 .lang-btn.active {
   background: rgba(255, 255, 255, 0.18);
-  border-color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(186, 136, 136, 0.7);
 }
 
 .nav-link {
   position: relative;
   color: white;
   text-decoration: none;
-  padding-bottom: 0;
 }
 
 @media (max-width: 992px) {
