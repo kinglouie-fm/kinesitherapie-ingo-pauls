@@ -3,13 +3,18 @@ import de from "@/locales/de.json";
 import fr from "@/locales/fr.json";
 import lu from "@/locales/lu.json";
 
-const messages = { de, fr, lu };
+const messages = { de, fr, lb: lu };
 
 const state = reactive({
-  locale: localStorage.getItem("locale") || "de",
+  locale: "de",
 });
 
 function setLocale(locale) {
+  state.locale = locale;
+  localStorage.setItem("locale", locale);
+}
+
+export function setLocaleFromRoute(locale) {
   state.locale = locale;
   localStorage.setItem("locale", locale);
 }
@@ -24,9 +29,5 @@ function t(key) {
 }
 
 export function useI18n() {
-  return {
-    locale: computed(() => state.locale),
-    setLocale,
-    t,
-  };
+  return { locale: computed(() => state.locale), setLocale, t };
 }

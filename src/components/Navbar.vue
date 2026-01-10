@@ -2,7 +2,7 @@
   <header class="topbar w-100 z-3" :class="{ 'is-scrolled': isScrolled }">
     <div class="container py-3">
       <nav ref="navRef" class="navbar navbar-expand-lg navbar-dark p-0">
-        <RouterLink class="navbar-brand d-flex align-items-center gap-2 ms-3 ms-lg-0" to="/">
+        <RouterLink class="navbar-brand d-flex align-items-center gap-2 ms-3 ms-lg-0" :to="homeTo">
           <img src="/images/logo.webp" alt="Logo" class="logo rounded-circle bg-white p-1 shadow-sm" />
         </RouterLink>
 
@@ -14,29 +14,29 @@
         <div id="mainNav" class="collapse navbar-collapse">
           <ul class="navbar-nav ms-5 gap-lg-4 text-end">
             <li class="nav-item">
-              <RouterLink class="nav-link text-white" to="/" @click="closeMenu">
+              <RouterLink class="nav-link text-white" :to="homeTo" @click="closeMenu">
                 {{ t("nav.home") }}
               </RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link text-white" to="/#team" @click="closeMenu">
+              <RouterLink class="nav-link text-white" :to="hashTo('#team')" @click="closeMenu">
                 {{ t("nav.team") }}
               </RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link text-white" to="/#leistungen" @click="closeMenu">
+              <RouterLink class="nav-link text-white" :to="hashTo('#leistungen')" @click="closeMenu">
                 {{ t("nav.services") }}
               </RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link text-white" to="/#kontakt" @click="closeMenu">
+              <RouterLink class="nav-link text-white" :to="hashTo('#kontakt')" @click="closeMenu">
                 {{ t("nav.contact") }}
               </RouterLink>
             </li>
           </ul>
 
           <div class="ms-auto d-flex justify-content-end align-items-center gap-2 mt-3 mt-lg-0">
-            <button class="lang-btn" :class="{ active: locale === 'lu' }" @click="setLocaleAndClose('lu')">LU</button>
+            <button class="lang-btn" :class="{ active: locale === 'lb' }" @click="setLocaleAndClose('lb')">LU</button>
             <button class="lang-btn" :class="{ active: locale === 'de' }" @click="setLocaleAndClose('de')">DE</button>
             <button class="lang-btn" :class="{ active: locale === 'fr' }" @click="setLocaleAndClose('fr')">FR</button>
           </div>
@@ -47,9 +47,15 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount, nextTick } from "vue";
-import { RouterLink } from "vue-router";
+import { computed, ref, onMounted, onBeforeUnmount, nextTick } from "vue";
+import { RouterLink, useRouter, useRoute } from "vue-router";
 import { useI18n } from "@/i18n";
+
+const router = useRouter();
+const route = useRoute();
+
+const homeTo = computed(() => `/${locale.value}/`);
+const hashTo = (hash) => ({ path: `/${locale.value}/`, hash });
 
 const { locale, setLocale, t } = useI18n();
 
@@ -94,6 +100,9 @@ async function closeMenu() {
 
 async function setLocaleAndClose(l) {
   setLocale(l);
+
+  await router.push({ path: `/${l}/`, hash: route.hash });
+
   await closeMenu();
 }
 
