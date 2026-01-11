@@ -1,4 +1,10 @@
 {
+    "seo": {
+        "home": {
+            "title": "Kinésithérapie Ingo Pauls - Physiotherapie in Luxemburg",
+            "description": "Willkommen bei Kinésithérapie Ingo Pauls in Luxemburg. Wir bieten professionelle Physiotherapie für nachhaltige Schmerzlinderung und Beweglichkeit."
+        }
+    },
     "nav": {
         "home": "Home",
         "team": "Team",
