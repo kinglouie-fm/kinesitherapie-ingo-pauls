@@ -36,10 +36,10 @@ import { useHead } from "@vueuse/head";
 import { useI18n } from "@/i18n";
 
 const { t, locale } = useI18n();
-const siteUrl = "https://example.com"; // put into env var in real use
+const siteUrl = import.meta.env.VITE_SITE_URL;
 
 useHead(() => ({
-  htmlAttrs: { lang: locale.value }, // de / fr / lb
+  htmlAttrs: { lang: locale.value },
   title: t("seo.home.title"),
   meta: [
     { name: "description", content: t("seo.home.description") },
@@ -47,7 +47,6 @@ useHead(() => ({
   link: [
     { rel: "canonical", href: `${siteUrl}/${locale.value}/` },
 
-    // hreflang: include ALL versions + x-default
     { rel: "alternate", hreflang: "de", href: `${siteUrl}/de/` },
     { rel: "alternate", hreflang: "fr", href: `${siteUrl}/fr/` },
     { rel: "alternate", hreflang: "lb", href: `${siteUrl}/lb/` },

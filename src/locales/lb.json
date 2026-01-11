@@ -1,4 +1,10 @@
 {
+    "seo": {
+        "home": {
+            "title": "Kinésithérapie Ingo Pauls - Physiotherapie zu Lëtzebuerg",
+            "description": "Wëllkomm bei Kinésithérapie Ingo Pauls zu Lëtzebuerg. Mir bidden professionell Physiotherapie fir laangfristeg manner Péng a besser Beweglechkeet."
+        }
+    },
     "nav": {
         "home": "Accueil",
         "team": "Eis Ekipp",
