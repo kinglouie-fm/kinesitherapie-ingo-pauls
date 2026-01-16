@@ -66,10 +66,10 @@ import gsap from "gsap";
 import { revealEach } from "@/animations/scroll";
 import { useI18n } from "@/i18n";
 
-import teamImage from "@/assets/images/DSF0866_small.jpg";
-import member1 from "@/assets/images/member.png";
-import member2 from "@/assets/images/member.png";
-import member3 from "@/assets/images/member.png";
+import teamImage from "@/assets/images/team/Team.webp";
+import member1 from "@/assets/images/team/Ingo.webp";
+import member2 from "@/assets/images/team/Paul.webp";
+import member3 from "@/assets/images/team/Gilles.webp";
 
 const { t } = useI18n();
 
@@ -151,6 +151,11 @@ onBeforeUnmount(() => {
   overflow: hidden;
   background: #f3f4f6;
   height: 400px;
+}
+
+.member-photo img,
+.team-image {
+  object-position: center 25%;
 }
 
 .team-name {

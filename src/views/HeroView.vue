@@ -35,7 +35,7 @@ const { t } = useI18n();
 <style scoped>
 .hero {
   min-height: 100vh;
-  background-image: url("@/assets/images/hero.png");
+  background-image: url("@/assets/images/other/Hero.webp");
   background-size: cover;
   background-position: center;
   overflow: hidden;

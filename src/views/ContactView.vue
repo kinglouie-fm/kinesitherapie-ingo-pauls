@@ -127,7 +127,7 @@ import gsap from "gsap";
 import { revealEach } from "@/animations/scroll";
 import { useI18n } from "@/i18n";
 
-import kontaktImg from "@/assets/images/kontakt.png";
+import kontaktImg from "@/assets/images/other/Kontakt.webp";
 import CallButton from "@/components/CallButton.vue";
 
 const { t } = useI18n();
