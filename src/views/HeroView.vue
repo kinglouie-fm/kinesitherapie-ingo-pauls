@@ -77,7 +77,7 @@ const { t } = useI18n();
   }
 
   .hero-overlay {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
   }
 }
 </style>
