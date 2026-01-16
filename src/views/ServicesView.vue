@@ -12,7 +12,7 @@
         <div v-for="s in services" :key="s.id" class="col-12 col-md-6 col-lg-4 col-xl-3 gsap-services-card">
           <article class="card border-0 shadow-sm service-card" :class="{ 'is-open': openId === s.id }">
             <div class="ratio ratio-4x3">
-              <img :src="serviceImg" class="w-100 h-100 object-fit-cover" :alt="s.title" />
+              <img :src="s.img" class="w-100 h-100 object-fit-cover" :alt="s.title" loading="lazy" />
             </div>
 
             <div class="card-body service-body" role="button" tabindex="0" @click="toggle(s.id)"
@@ -51,7 +51,15 @@ import { ref, onMounted, onBeforeUnmount, nextTick, computed } from "vue";
 import gsap from "gsap";
 import { revealEach } from "@/animations/scroll";
 import { useI18n } from "@/i18n";
-import serviceImg from "@/assets/images/service.png";
+import CMDImg from "@/assets/images/services/CMD.webp";
+import DryNeedlingImg from "@/assets/images/services/Dryneedling.webp";
+import FaszienImg from "@/assets/images/services/Faszientherapie.webp";
+import LymphImg from "@/assets/images/services/Lymphdrainage.webp";
+import ManuelleTherapieImg from "@/assets/images/services/Manuelle_Therapie.webp";
+import IVRTImg from "@/assets/images/services/Schwindeltherapie.webp";
+import StosswelleImg from "@/assets/images/services/Stosswellentherapie.webp";
+import TrainingImg from "@/assets/images/services/Trainingstherapie.webp";
+import UltraschallImg from "@/assets/images/services/Ultraschall-Physikalische_Therapie.webp";
 
 const { t } = useI18n();
 
@@ -62,51 +70,55 @@ let ctx;
 const services = computed(() => [
   {
     id: "omt",
+    img: ManuelleTherapieImg,
     title: t("services.items.omt.title"),
     description: t("services.items.omt.description")
   },
   {
     id: "stosswelle",
+    img: StosswelleImg,
     title: t("services.items.stosswelle.title"),
     description: t("services.items.stosswelle.description")
   },
   {
     id: "dry-needling",
+    img: DryNeedlingImg,
     title: t("services.items.dry-needling.title"),
     description: t("services.items.dry-needling.description")
   },
   {
     id: "faszien",
+    img: FaszienImg,
     title: t("services.items.faszien.title"),
     description: t("services.items.faszien.description")
   },
   {
     id: "ivrt",
+    img: IVRTImg,
     title: t("services.items.ivrt.title"),
     description: t("services.items.ivrt.description")
   },
   {
     id: "cmd",
+    img: CMDImg,
     title: t("services.items.cmd.title"),
     description: t("services.items.cmd.description")
   },
   {
     id: "lymph",
+    img: LymphImg,
     title: t("services.items.lymph.title"),
     description: t("services.items.lymph.description")
   },
   {
     id: "training",
+    img: TrainingImg,
     title: t("services.items.training.title"),
     description: t("services.items.training.description")
   },
   {
-    id: "fussreflex",
-    title: t("services.items.fussreflex.title"),
-    description: t("services.items.fussreflex.description")
-  },
-  {
     id: "physikalisch",
+    img: UltraschallImg,
     title: t("services.items.physikalisch.title"),
     description: t("services.items.physikalisch.description")
   }
