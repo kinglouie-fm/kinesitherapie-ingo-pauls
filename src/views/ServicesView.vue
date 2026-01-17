@@ -32,10 +32,16 @@
                 </span>
               </div>
 
-              <div class="collapse-wrap" :class="{ open: openId === s.id }">
-                <p class="mt-3 mb-0 text-muted small lh-lg">
-                  {{ s.description }}
-                </p>
+              <div class="collapse-wrap mt-3" :class="{ open: openId === s.id }">
+                <div class="collapse-inner">
+                  <p class="text-muted small">
+                    {{ s.description }}
+                  </p>
+
+                  <ul v-if="s.bullets?.length" class="service-bullets text-muted small">
+                    <li v-for="(b, i) in s.bullets" :key="i">{{ b }}</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </article>
@@ -72,55 +78,64 @@ const services = computed(() => [
     id: "omt",
     img: ManuelleTherapieImg,
     title: t("services.items.omt.title"),
-    description: t("services.items.omt.description")
+    description: t("services.items.omt.description"),
+    bullets: t("services.items.omt.bullets") || []
   },
   {
     id: "stosswelle",
     img: StosswelleImg,
     title: t("services.items.stosswelle.title"),
-    description: t("services.items.stosswelle.description")
+    description: t("services.items.stosswelle.description"),
+    bullets: t("services.items.stosswelle.bullets") || []
   },
   {
     id: "dry-needling",
     img: DryNeedlingImg,
     title: t("services.items.dry-needling.title"),
-    description: t("services.items.dry-needling.description")
+    description: t("services.items.dry-needling.description"),
+    bullets: t("services.items.dry-needling.bullets") || []
   },
   {
     id: "faszien",
     img: FaszienImg,
     title: t("services.items.faszien.title"),
-    description: t("services.items.faszien.description")
+    description: t("services.items.faszien.description"),
+    bullets: t("services.items.faszien.bullets") || []
   },
   {
     id: "ivrt",
     img: IVRTImg,
     title: t("services.items.ivrt.title"),
-    description: t("services.items.ivrt.description")
+    description: t("services.items.ivrt.description"),
+    bullets: t("services.items.ivrt.bullets") || []
   },
   {
     id: "cmd",
     img: CMDImg,
     title: t("services.items.cmd.title"),
-    description: t("services.items.cmd.description")
+    description: t("services.items.cmd.description"),
+    bullets: t("services.items.cmd.bullets") || []
   },
   {
     id: "lymph",
     img: LymphImg,
     title: t("services.items.lymph.title"),
-    description: t("services.items.lymph.description")
+    description: t("services.items.lymph.description"),
+    bullets: t("services.items.lymph.bullets") || []
   },
   {
     id: "training",
     img: TrainingImg,
     title: t("services.items.training.title"),
-    description: t("services.items.training.description")
+    description: t("services.items.training.description"),
+    bullets: t("services.items.training.bullets") || []
   },
   {
     id: "physikalisch",
     img: UltraschallImg,
     title: t("services.items.physikalisch.title"),
-    description: t("services.items.physikalisch.description")
+    description: t("services.items.physikalisch.description"),
+    bullets: t("services.items.physikalisch.bullets") || []
   }
 ]);
 
@@ -189,18 +204,49 @@ onBeforeUnmount(() => ctx?.revert());
 }
 
 .collapse-wrap {
-  overflow: hidden;
-  max-height: 0;
+  display: grid;
+  grid-template-rows: 0fr;
   opacity: 0;
-  transition: max-height 220ms ease, opacity 220ms ease;
+  transition: grid-template-rows 260ms ease, opacity 220ms ease;
 }
 
 .collapse-wrap.open {
-  max-height: 260px;
+  grid-template-rows: 1fr;
   opacity: 1;
+}
+
+.collapse-wrap>* {
+  overflow: hidden;
+}
+
+.collapse-inner {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.collapse-inner p,
+.collapse-inner ul {
+  margin: 0;
+  line-height: 1.8;
 }
 
 .service-card.is-open {
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12) !important;
+}
+
+.service-bullets {
+  padding-left: 1.1rem;
+  line-height: 1.6;
+}
+
+.service-bullets li::marker {
+  color: #e31b23;
+}
+
+@media (max-width: 768px) {
+  .service-bullets {
+    padding-left: 1rem;
+  }
 }
 </style>
