@@ -1,0 +1,213 @@
+{
+    "seo": {
+        "home": {
+            "title": "Physiotherapy Ingo Pauls - Physiotherapy in Luxembourg",
+            "description": "Welcome to Physiotherapy Ingo Pauls in Luxembourg. We offer professional physiotherapy for sustainable pain relief and mobility."
+        }
+    },
+    "nav": {
+        "home": "Home",
+        "team": "Team",
+        "services": "Services",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Physiotherapy",
+        "titleSecondLine": "Luxembourg",
+        "titleThirdLine": "Ingo Pauls",
+        "subtitle": "Our practice has been established since 2005 and specializes in treating orthopedic, neurological, post-operative and sports-specific complaints. Using modern therapeutic approaches as well as specialized techniques such as dizziness therapy or craniomandibular dysfunction therapy, we support you on your path to a life free of symptoms. Through continuous professional development, we stay up to date with the latest knowledge to provide you with the best possible treatment.",
+        "cta": "Book an appointment"
+    },
+    "team": {
+        "title": "Get to know the team",
+        "subtitle": "For us, the person is at the center. Our team is committed to relieving your pain and improving your health in the long term.",
+        "imageAlt": "Our team",
+        "members": {
+            "ingo": {
+                "name": "Ingo",
+                "role": "Managing Director & Physiotherapist",
+                "about": "Founder of the practice with over 20 years of professional experience in physiotherapy and manual therapy. After working in various practices in Luxembourg and abroad, his focus today is on holistic treatment, individualized care, and sustainable therapy outcomes."
+            },
+            "paul": {
+                "name": "Paul",
+                "role": "Physiotherapist",
+                "about": "Physiotherapist with experience from several orthopedic and sports therapy practices. His focus is on active therapy, functional training and clear guidance so that patients can remain independent in the long term."
+            },
+            "birgit": {
+                "name": "Birgit",
+                "role": "Physiotherapist",
+                "about": "Experienced physiotherapist specializing in orthopedic and neurological rehabilitation. She places great value on individualized and holistic care in order to achieve the best possible therapy outcomes for her patients."
+            },
+            "gilles": {
+                "name": "Gilles",
+                "role": "Physiotherapist",
+                "about": "Trained physiotherapist with professional experience in rehabilitation centers and outpatient practices. He works calmly and precisely and places great value on practical, everyday solutions as well as a relationship based on trust."
+            }
+        }
+    },
+    "services": {
+        "title": "Services",
+        "subtitle": "In addition to classic physiotherapy, we offer the following services:",
+        "meta": "Effect",
+        "items": {
+            "omt": {
+                "title": "Manual Therapy according to S.O.M.T",
+                "description": "Manual therapy is a method concerned with diagnosing and treating functional disorders of joints, muscles and nerves and their pathological consequences. Helps with:",
+                "bullets": [
+                    "Joint blockages and resulting pain",
+                    "Restricted movement"
+                ]
+            },
+            "stosswelle": {
+                "title": "Shockwave Therapy",
+                "description": "Radial shockwave therapy is a non-invasive method in which high-energy pressure waves are directed from outside onto painful areas of the body to stimulate self-healing processes and loosen hardenings such as calcifications. Helps with:",
+                "bullets": [
+                    "Heel spur",
+                    "Tendon problems such as inflammation and calcifications",
+                    "Hypertonic muscles",
+                    "Myofascial syndromes"
+                ]
+            },
+            "dry-needling": {
+                "title": "Dry Needling",
+                "description": "Dry needling is a special physiotherapy technique in which a thin, sterile acupuncture needle is inserted directly into cramped muscle areas, so-called trigger points. This releases adhesions in the fascia and improves oxygen supply to tense muscle fibers. Helps with:",
+                "bullets": [
+                    "Muscle pain",
+                    "Muscle tension",
+                    "Tendon problems"
+                ]
+            },
+            "faszien": {
+                "title": "Fascial Therapy",
+                "description": "Fascial therapy is an umbrella term for manual techniques that treat connective tissue (fascia) to release adhesions, increase elasticity, relieve pain and improve freedom of movement. Helps with:",
+                "bullets": [
+                    "Chronic muscle complaints",
+                    "Sports injuries",
+                    "Post-operative complaints",
+                    "Reduced joint mobility"
+                ]
+            },
+            "ivrt": {
+                "title": "Dizziness Therapy according to IVRT",
+                "description": "The vestibular system includes parts of the inner ear and brain that process information involved in balance control and eye movements. If a disease or injury damages these information-processing areas, a vestibular disorder can arise. It can also develop for unknown reasons. Helps with:",
+                "bullets": [
+                    "Vertigo caused by disorders of the vestibular system",
+                    "Balance problems"
+                ]
+            },
+            "cmd": {
+                "title": "Craniomandibular Dysfunction (CMD)",
+                "description": "Craniomandibular dysfunction is an umbrella term for painful dysfunctions of the masticatory system, in which the interaction between the temporomandibular joint, chewing muscles, teeth and often the cervical spine is disturbed. This can lead to symptoms such as headaches, facial and ear pain, jaw clicking, tinnitus, dizziness or back complaints, and is often triggered by stress or teeth grinding. Helps with:",
+                "bullets": [
+                    "Pain caused by temporomandibular joint dysfunction",
+                    "Reduced jaw mobility"
+                ]
+            },
+            "lymph": {
+                "title": "Manual Lymphatic Drainage and Complex Decongestive Therapy",
+                "description": "Manual lymphatic drainage is a special type of medical massage that stimulates the transport of lymph fluid in the lymph vessels through gentle manual techniques. Helps with:",
+                "bullets": [
+                    "Primary lymphedema (malformations in the lymphatic vessel system)",
+                    "Secondary lymphedema (e.g., due to surgical procedures, radiation, etc.)",
+                    "Phlebedema",
+                    "Lipedema and lipo-lymphedema"
+                ]
+            },
+            "training": {
+                "title": "Medical Exercise Therapy",
+                "description": "Medical exercise therapy is a targeted, therapeutically supervised conditioning program that strengthens strength, endurance and coordination to restore or improve physical performance for everyday life and sports after injuries, operations or in chronic conditions. Our practice has a well-equipped training room, and our training program is individually tailored to improve each person’s specific complaints. Helps with:",
+                "bullets": [
+                    "Muscle atrophy (muscle wasting)",
+                    "Weakness of the cardiovascular system",
+                    "Loss of coordination & balance"
+                ]
+            },
+            "physikalisch": {
+                "title": "Physical Therapy",
+                "description": "Physical therapy includes treatments that use physical influences such as pressure, heat, cold or electricity to act on the body. The main goals of physical therapy are pain relief, promoting blood circulation and metabolic activity, as well as maintaining and improving mobility and muscle strength. Our practice offers deep heat via high-frequency electrotherapy, ultrasound devices, electrical stimulation, and deep oscillation therapy. Helps with:",
+                "bullets": [
+                    "Tendon problems such as inflammation and calcifications",
+                    "Muscle tension"
+                ]
+            }
+        }
+    },
+    "reviews": {
+        "title": "Reviews",
+        "subtitle": "Here you can see a few of our Google reviews.",
+        "cta": "Go to Google reviews",
+        "items": {
+            "1": {
+                "text": "(Translated) I have been in treatment with this extremely competent, friendly, always helpful and solution-oriented team for many years 😀 Even with regard to my specific health case, they are always looking for efficient, tailored solutions and treatment models. Thank you very much for your great work 😀",
+                "name": "Sabrina G."
+            },
+            "2": {
+                "text": "(Translated) I have been going there for two weeks—and will continue for a longer time—in order to get fit again. Two qualified physiotherapists with a lot of know-how. Spacious premises, no cubicles but individual rooms. The technical equipment is powerful and state-of-the-art; efficient application is guaranteed thanks to the therapists’ expertise.",
+                "name": "Marc W."
+            },
+            "3": {
+                "text": "(Translated) Very satisfied! Ingo Pauls and his colleague do excellent work, and they do it with a lot of wit, humor and friendliness! I’m already looking forward to seeing them again! Very competent! 👍👍👍👍👍👍",
+                "name": "Mariette S."
+            }
+        }
+    },
+    "contact": {
+        "title": "Contact us",
+        "subtitle": "Book an appointment now.",
+        "cta": "Book an appointment",
+        "openingHours": {
+            "title": "Opening hours",
+            "days": {
+                "monday": "Monday",
+                "tuesday": "Tuesday",
+                "wednesday": "Wednesday",
+                "thursday": "Thursday",
+                "friday": "Friday",
+                "weekend": "Weekend"
+            },
+            "times": {
+                "mon": [
+                    "06:40 – 12:00",
+                    "13:00 – 19:00"
+                ],
+                "tue": [
+                    "06:40 – 12:00",
+                    "13:00 – 19:00"
+                ],
+                "wed": [
+                    "07:30 – 12:00",
+                    "13:00 – 19:00"
+                ],
+                "thu": [
+                    "06:40 – 12:00",
+                    "13:00 – 19:00"
+                ],
+                "fri": [
+                    "06:40 – 12:00",
+                    "13:00 – 19:00"
+                ],
+                "weekend": [
+                    "closed"
+                ]
+            }
+        },
+        "phone": {
+            "title": "Phone",
+            "hint": "If nobody answers your call, please leave your name and phone number on the voicemail."
+        },
+        "houseVisit": {
+            "title": "Home visit",
+            "text": "If a visit to the practice is not possible for various reasons, a home visit can be arranged."
+        },
+        "imageAlt": "Contact"
+    },
+    "footer": {
+        "name": "Physiotherapy Ingo Pauls",
+        "address": {
+            "line1": "19, Rue Pierre Olinger",
+            "line2": "L-9264 Diekirch",
+            "line3": "Luxembourg"
+        },
+        "rights": "All rights reserved."
+    }
+}

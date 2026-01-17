@@ -2,7 +2,7 @@
     "seo": {
         "home": {
             "title": "Kinésithérapie Ingo Pauls - Physiotherapie zu Lëtzebuerg",
-            "description": "Wëllkomm bei Kinésithérapie Ingo Pauls zu Lëtzebuerg. Mir bidden professionell Physiotherapie fir laangfristeg manner Péng a besser Beweglechkeet."
+            "description": "Wëllkomm bei der Kinésithérapie Ingo Pauls zu Lëtzebuerg. Mir bidden professionell Physiotherapie fir laangfristeg manner Péng a besser Beweglechkeet un."
         }
     },
     "nav": {
@@ -15,75 +15,120 @@
         "title": "Kinésithérapie",
         "titleSecondLine": "Lëtzebuerg",
         "titleThirdLine": "Ingo Pauls",
-        "subtitle": "Physiotherapie fir laangfristeg manner Péng a besser Beweglechkeet",
+        "subtitle": "Eis Praxis besteet zanter 2005 an ass spezialiséiert op d’Behandlung vun orthopädeschen, neurologeschen, postoperativen a sportsspezifesche Doléancen. Mat moderne Therapieusätz souwéi Spezialtechniken wéi Schwindeltherapie oder Therapie bei kraniomandibulärer Dysfunktioun begleede mir Iech um Wee zu engem Liewen ouni Doléancen. Duerch kontinuéierlech Weiderbildungen si mir um neiste Stand vum Wëssen, fir Iech eng optimal méiglech Behandlung ze garantéieren.",
         "cta": "Rendez-vous huelen"
     },
     "team": {
-        "title": "Léier eis Ekipp kennen",
-        "subtitle": "Eist Zil ass et, Äre Gesondheetszoustand mat Hëllef vun engem ganzheetlechen Usaz laangfristeg ze verbesseren.",
-        "imageAlt": "Eis Ekipp",
+        "title": "Léiert d’Team kennen",
+        "subtitle": "Bei eis steet de Mënsch am Mëttelpunkt. Eist Team ass beméit, Är Schmäerzen ze linderen an Äre Gesondheetszoustand laangfristeg ze verbesseren.",
+        "imageAlt": "Eist Team",
         "members": {
             "ingo": {
                 "name": "Ingo",
                 "role": "Gerant & Physiotherapeut",
-                "about": "Grënner vun der Praxis mat iwwer 20 Joer Beruffserfarung an der Physiotherapie an der manueller Therapie. No Aktivitéiten a verschiddene Praxen am In- an Ausland läit säi Fokus haut op ganzheetlecher Behandlung, individueller Betreiung a nohaltege Therapieerfolleger."
+                "about": "Grënner vun der Praxis mat iwwer 20 Joer Beruffserfarung an der Physiotherapie an der manueller Therapie. No Aktivitéiten a verschiddene Praxen am In- an Ausland läit säi Fokus haut op enger ganzheetlecher Behandlung, individueller Betreiung an nohaltege Therapieerfolleger."
             },
             "paul": {
                 "name": "Paul",
                 "role": "Physiotherapeut",
-                "about": "Physiotherapeut mat Erfarung aus verschiddenen orthopädeschen a sporttherapeutesche Praxen. Säi Schwéierpunkt läit op aktiver Therapie, funktionellem Training an verständlecher Uleedung, sou datt Patientinnen a Patiente laangfristeg selbstänneg bleiwen."
+                "about": "Physiotherapeut mat Erfarung aus verschiddenen orthopädeschen a sporttherapeutesche Praxen. Säi Schwéierpunkt läit op aktiver Therapie, funktionellem Training an enger verständlecher Uleedung, fir datt Patientinnen a Patienten laangfristeg selbstänneg bleiwen."
+            },
+            "birgit": {
+                "name": "Birgit",
+                "role": "Physiotherapeutin",
+                "about": "Erfueren Physiotherapeutin mat Schwéierpunkt op orthopädescher an neurologescher Rehabilitatioun. Si leet grousse Wäert op eng individuell a ganzheetlech Betreiung, fir déi beschtméiglech Therapieerresultater fir hir Patientinnen a Patienten z’erreechen."
             },
             "gilles": {
                 "name": "Gilles",
                 "role": "Physiotherapeut",
-                "about": "Ausgebiltene Physiotherapeut mat berufflecher Erfarung a Rehabilitatiounszentren an ambulante Praxen. Hie schafft roueg a präzis a leet grousse Wäert op alldaags-tauglech Léisungen an eng vertrauensvoll Zesummenaarbecht."
+                "about": "Ausgebilte Physiotherapeut mat berufflecher Erfarung a Rehabilitatiounszentren an ambulante Praxen. Hie schafft roueg a präzis a leet grousse Wäert op alltagsdaaglech Léisungen an eng vertrauensvoll Zesummenaarbecht."
             }
         }
     },
     "services": {
         "title": "Leeschtungen",
-        "subtitle": "Hei fannt Dir en Iwwerbléck iwwer eis Leeschtungen. Dir kënnt se mat engem Dokterrezept notzen oder och als Privatleeschtung.",
+        "subtitle": "Zousätzlech zu der klassescher Physiotherapie bidden mir follgend Leeschtungen un:",
         "meta": "Wierkung",
         "items": {
             "omt": {
-                "title": "Manuell Therapie no OMT",
-                "description": "Bei der manueller Therapie geet et ëm eng Weiderbildung vu mindestens 2 Joer fir Physiotherapeuten. Weidergebilten Manualtherapeute si Spezialisten an der Gelenkmechanik. D’Basis si speziell Grëff- a Mobilisatiounstechniken."
+                "title": "Manuell Therapie no S.O.M.T",
+                "description": "D’manuell Therapie ass eng Method, déi sech mat der Diagnostik an der Behandlung vu Funktiounsstéierungen vun de Gelenker, Muskelen an Nerven an hiren pathologesche Folgewierkungen befaasst. Hëlleft bei:",
+                "bullets": [
+                    "Gelenkblockaden an deenen doduerch verursaachte Schmäerzen",
+                    "Aschränkunge vun der Beweglechkeet"
+                ]
             },
             "stosswelle": {
                 "title": "Stousswelltherapie",
-                "description": "D’Stousswelltherapie ass eng modern Behandlungsmethod, déi bei Seenen- a Muskelbeschwieren agesat ka ginn. Zil ass et, Heelungsprozesser unzereegen, Schmäerzen ze reduzéieren an d’Beweglechkeet ze verbesseren."
+                "description": "D’radial Stousswelltherapie ass eng net-invasiv Method, bei där energie-räich Drockwellen vun baussen op schmerzhafte Kierperstellen geriicht ginn, fir d'Selbstheelungsprozesser unzereegen an Verhärtungen wéi Verkalkungen ze léisen. Hëlleft bei:",
+                "bullets": [
+                    "Fersesporn",
+                    "Sehneproblemer wéi Entzündungen a Verkalkungen",
+                    "hypertonen Muskelen",
+                    "myofaszialen Syndromer"
+                ]
             },
             "dry-needling": {
                 "title": "Dry Needling",
-                "description": "Dry Needling ass eng Technik fir myofaszial Triggerpunkten ze behandelen. Mat dënnen Nadelen kënnen Muskelverspannungen geléist, Schmäerzen reduzéiert an d’Funktioun vun der Muskulatur ënnerstëtzt ginn."
+                "description": "Dry Needling ass eng speziell physiotherapeutesch Technik, bei där eng dënn, steril Akupunkturnol direkt an verkrampte Muskelberäicher, sougenannte Triggerpunkten, agefouert gëtt. Doduerch ginn d’Verklebunge vun de Faszien geléist an d’Sauerstoffversuergung vun de verspaannten Muskelfaseren verbessert. Hëlleft bei:",
+                "bullets": [
+                    "Muskelpéng",
+                    "Verspaanungen",
+                    "Sehneproblemer"
+                ]
             },
             "faszien": {
                 "title": "Faszien-Therapie",
-                "description": "D’Faszien-Therapie riicht sech op d’Bindegewebe (Faszien), fir Spannungen ze léisen, d’Beweglechkeet ze verbesseren an Schmäerzen ze reduzéieren. Si kann bei Verklebungen, Dysbalancen a Bewegungseinschränkunge hëllefen."
+                "description": "Faszien-Therapie ass den Iwwerbegrëff fir manuell Techniken, déi d’Bënnegewebe (Faszien) behandelen, fir Verklebungen ze léisen, d’Elastizitéit ze erhéijen, Schmäerzen ze linderen an d’Beweeglechkeet ze verbesseren. Hëlleft bei:",
+                "bullets": [
+                    "chronesche Muskelbeschwéieren",
+                    "Sportverletzungen",
+                    "postoperativen Beschwéieren",
+                    "reduzéierter Gelenkmobilitéit"
+                ]
             },
             "ivrt": {
-                "title": "Schwindeltherapie no IVRT (vestibulär Rehabilitatiounstherapie)",
-                "description": "D’vestibulär Rehabilitatiounstherapie (IVRT) ass e gezielte Trainingskonzept bei Schwindel a Gläichgewiichtsstéierungen. Mat spezifeschen Übunge kënne Stabilitéit, Orientéierung a Sécherheet am Alldag verbessert ginn."
+                "title": "Schwindeltherapie no IVRT",
+                "description": "Zum vestibuläre System gehéieren Deeler vum bannenzegen Ouer an dem Gehir, déi Informatiounen, déi bei der Gläichgewiichtskontroll an den Aebeweegunge matbedeelegt sinn, veraarbechten. Wann eng Krankheet oder Verletzung dës veraarbechtend Beräicher beaflosst, kann eng vestibulär Stéierung entstoen. Eng Entstoe mat onbekannte Grënn ass och méiglech. Hëlleft bei:",
+                "bullets": [
+                    "Dreischwindel, deen duerch Stéierungen am vestibuläre System ausgeléist gouf",
+                    "Problemer mam Gläichgewiicht"
+                ]
             },
             "cmd": {
-                "title": "CMD (Craniomandibulär Dysfunktioun)",
-                "description": "Bei CMD kënnen Beschwieren am Kiefergelenk, am Gesiicht oder am Néck optrieden. D’Therapie zielt drop of, muskulär Spannungen ze reduzéieren, d’Kiefergelenk ze entlaaschten an d’Funktioun ze verbesseren."
+                "title": "Kraniomandibulär Dysfunktioun (CMD)",
+                "description": "D’kraniomandibulär Dysfunktioun ass en Sammelbegriff fir schmerzhafte Fehlfunktioune vum Kaukapparat, bei där d’Zesummespill tëscht Kiefergelenk, Kaumuskulatur, Zänn an dacks och der Halswirbelsail gestéiert ass. Dëst kann zu Symptomer wéi Kapp-, Gesiichts- an Oerschmäerzen, Kieferknacken, Tinnitus, Schwindel oder och Réckbeschwéieren féieren a gëtt dacks duerch Stress oder Zännknirschen ausgeléist. Hëlleft bei:",
+                "bullets": [
+                    "Schmäerzen, déi duerch eng Fehlfunktioun vum Kiefergelenk ausgeléist ginn",
+                    "reduzéierter Beweglechkeet vum Kiefer"
+                ]
             },
             "lymph": {
-                "title": "Lymphdrainage",
-                "description": "Manuell Lymphdrainage ass eng sanft Technik fir den Lymphofloss z’ënnerstëtzen. Si kann bei Schwellungen an Ödemen hëllefen, d’Gewebe entlaaschten an d’Wuelbefannen verbesseren."
+                "title": "Manuell Lymphdrainage an komplex Entstauungstherapie",
+                "description": "D’manuell Lymphdrainage ass eng speziell Form vun der medezinescher Massage, déi den Transport vun der Lymphflëssegkeet an de Lymphgefässer duerch sanft Grëfftechniken ureegt. Hëlleft bei:",
+                "bullets": [
+                    "primäre Lymphödemer (Fehlanlagen am Lymphgefäss-System)",
+                    "sekundäre Lymphödemer (z. B. wéinst operativen Agrëffer, Bestralung, asw.)",
+                    "Phlebödemer",
+                    "Lipödemer a Lipolymphödemer"
+                ]
             },
             "training": {
-                "title": "Trainingstherapie",
-                "description": "Trainingstherapie ass en individuell ugepasst Übungsprogramm fir Kraaft, Ausdauer, Beweglechkeet a Koordinatioun ze verbesseren. Si ënnerstëtzt Rehabilitatioun, Preventioun an laangfristeg Stabiliséierung."
-            },
-            "fussreflex": {
-                "title": "Foussreflexologie",
-                "description": "Foussreflexologie schafft mat gezielte Grëffer op Reflexzonen um Fouss. Si kann entspanend wierken, d’Kierperwouergehuele fërderen an ënnerstëtzend bei Stress a Spannungszoustand agesat ginn."
+                "title": "Medezinesch Trainingstherapie",
+                "description": "Medezinesch Trainingstherapie ass en gezielt, therapeutesch begleetent Opbautraining, dat Kraaft, Ausdauer a Koordinatioun stäerkt, fir no Verletzungen, Operatiounen oder bei chronesche Krankheeten d’kierperlech Leeschtungsfäegkeet fir den Alldag an de Sport erëm hierzestellen oder ze verbesseren. Eis Praxis verfüügt iwwer e gutt equipéierte Trainingsraum, an eist Trainingsprogramm gëtt individuell ugepasst, fir déi jeeweileg Beschwéieren ze verbesseren. Hëlleft bei:",
+                "bullets": [
+                    "Atrophie vun der Muskulatur (Muskelschwund)",
+                    "Schwächt vum Häerz-Kreeslaf-System",
+                    "Verloscht vu Koordinatioun & Gläichgewiicht"
+                ]
             },
             "physikalisch": {
                 "title": "Physikalesch Therapie",
-                "description": "Ënner physikalescher Therapie fale Moossname wéi Hëtzt, Keelt, Elektrotherapie oder Ultraschall. Je no Beschwerdebild kënnen dës Uwendunge schmäerzliindernd wierken an Heelungsprozesser ënnerstëtzen."
+                "description": "D’physikalesch Therapie ëmfaasst Behandlungen, déi physikalesch Aflëss wéi Drock, Hëtzt, Keelt oder Elektrizitéit notzen, fir op de Kierper anzewierken. D’Haaptziler vun der physikalescher Therapie sinn d'Schmerzlinderung, d’Fërderung vun der Duerchbluddung an der Stoffwiesselaktivitéit souwéi d’Erhale respektiv d’Verbesserung vun der Beweglechkeet an der Muskelkraaft. Eis Praxis verfüügt iwwer Déifewiermt duerch héichfrequent Elektrotherapie, Ultraschallapparater, Elektrostimulatioun souwéi Déifenoszillatioun. Hëlleft bei:",
+                "bullets": [
+                    "Sehneproblemer wéi Entzündungen a Verkalkungen",
+                    "Verspaanungen"
+                ]
             }
         }
     },
@@ -93,22 +138,22 @@
         "cta": "Zu de Google-Bewäertungen",
         "items": {
             "1": {
-                "text": "(Iwwersat) Ech sinn zanter Joren hei a Behandlung. Den Ingo hëlt sech vill Zäit a geet ganzheetlech op d’Patientinnen an, ganz kompetent a ëmmer frëndlech! Villmools Merci! D’Praxis ass absolut ze recommandéieren. Sou kompetent a léif Therapeuten an Therapeutinne si schwéier ze fannen.",
-                "name": "Maria Louise"
-            },
-            "2": {
-                "text": "(Iwwersat) Ech sinn zanter ville Joren a Behandlung bei dëser aussergewéinlech kompetenter, frëndlecher an ëmmer hëllefsbereeter Ekipp😀 Och bei mengem spezielle gesondheetleche Fall gëtt ëmmer no effizienten an op mech zougeschniddene Léisungen a Behandlungsmodeller gesicht. Villmools Merci fir är super Aarbecht😀",
+                "text": "(Iwwersat) Ech sinn zanter ville Joren a Behandlung bei dëser aussergewéinlech kompetenter, frëndlecher an ëmmer hëllefsbereeter Ekipp 😀 Och bei mengem spezielle gesondheetleche Fall gëtt ëmmer no effizienten an op mech zougeschniddene Léisungen a Behandlungsmodeller gesicht. Villmools Merci fir är super Aarbecht😀",
                 "name": "Sabrina Gloden"
             },
-            "3": {
+            "2": {
                 "text": "(Iwwersat) Ech ginn zanter 2 Wochen dohinner – a nach fir eng gutt Zäit, fir erëm op d’Been ze kommen. Zwee qualifizéiert Kinéen mat vill Know-how. Grouss a frëndlech Raimlechkeeten, keng Kabinnen, mee eenzel Zëmmeren. D’technesch Apparater si performant an um neiste Stand; eng effizient Uwendung ass dank dem Fachwëssen vun de Kinéen garantéiert.",
                 "name": "Marc Wagner"
+            },
+            "3": {
+                "text": "(Iwwersat) Ech si ganz zefridden! Ingo Pauls a säi Mataarbechter leeschten exzellent Aarbecht – a dat mat vill Witz, Humor a Frëndlechkeet! Ech freeë mech schonn op e Wiedergesinn! Ganz kompetent! 👍👍👍👍👍👍",
+                "name": "Mariette S."
             }
         }
     },
     "contact": {
         "title": "Kontaktéiert eis",
-        "subtitle": "Elo en Termin ofmaachen.",
+        "subtitle": "Huelt elo en Rendez-vous",
         "cta": "Termin buchen",
         "openingHours": {
             "title": "Ëffnungszäiten",
@@ -148,11 +193,11 @@
         },
         "phone": {
             "title": "Telefon",
-            "hint": "Sollt keen Ären Uruff beäntweren, hannerloosst w.e.g. Ären Numm an Är Telefonsnummer um Äntwertapparat."
+            "hint": "Sollt keen Ären Uruff beäntweren, hannerloosst w.e.g. Ären Numm an Är Telefonsnummer um Répondeur."
         },
         "houseVisit": {
             "title": "Hausbesuch",
-            "text": "Wann en Besuch an der Praxis aus verschiddene Grënn net méiglech ass, besteet d’Méiglechkeet fir en Hausbesuch!"
+            "text": "Wann en Besuch an der Praxis aus verschiddene Grënn net méiglech ass, besteet d’Méiglechkeet fir en Besuch doheem!"
         },
         "imageAlt": "Kontakt"
     },

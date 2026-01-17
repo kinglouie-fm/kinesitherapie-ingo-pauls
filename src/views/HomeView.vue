@@ -50,6 +50,7 @@ useHead(() => ({
     { rel: "alternate", hreflang: "de", href: `${siteUrl}/de/` },
     { rel: "alternate", hreflang: "fr", href: `${siteUrl}/fr/` },
     { rel: "alternate", hreflang: "lb", href: `${siteUrl}/lb/` },
+    { rel: "alternate", hreflang: "en", href: `${siteUrl}/en/` },
     { rel: "alternate", hreflang: "x-default", href: `${siteUrl}/de/` },
   ],
 }));

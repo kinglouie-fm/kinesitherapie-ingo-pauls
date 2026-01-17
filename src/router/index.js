@@ -7,6 +7,7 @@ const routes = [
   { path: "/de/", component: HomeView, meta: { locale: "de" } },
   { path: "/fr/", component: HomeView, meta: { locale: "fr" } },
   { path: "/lb/", component: HomeView, meta: { locale: "lb" } },
+  { path: "/en/", component: HomeView, meta: { locale: "en" } },
 ];
 
 const router = createRouter({
