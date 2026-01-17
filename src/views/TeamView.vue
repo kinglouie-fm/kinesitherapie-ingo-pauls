@@ -93,10 +93,6 @@ import { useI18n } from "@/i18n";
 import { Modal } from "bootstrap";
 
 import teamImage from "@/assets/images/team/Team.webp";
-import member1 from "@/assets/images/team/Ingo.min.webp";
-import member2 from "@/assets/images/team/Paul.min.webp";
-import member3 from "@/assets/images/team/Birgit.min.webp";
-import member4 from "@/assets/images/team/Gilles.min.webp";
 
 import ingo900 from "@/assets/images/team/Ingo.900.webp";
 import ingo1600 from "@/assets/images/team/Ingo.1600.webp";
