@@ -33,6 +33,11 @@
                 "role": "Physiotherapeut",
                 "about": "Physiotherapeut mit Erfahrung aus mehreren orthopädischen und sporttherapeutischen Praxen. Sein Schwerpunkt liegt auf aktiver Therapie, funktionellem Training und verständlicher Anleitung, damit Patientinnen und Patienten langfristig selbstständig bleiben."
             },
+            "birgit": {
+                "name": "Birgit",
+                "role": "Physiotherapeutin",
+                "about": "Erfahrene Physiotherapeutin mit Schwerpunkt auf orthopädischer und neurologischer Rehabilitation. Sie legt großen Wert auf eine individuelle und ganzheitliche Betreuung, um die bestmöglichen Therapieergebnisse für ihre Patientinnen und Patienten zu erzielen."
+            },
             "gilles": {
                 "name": "Gilles",
                 "role": "Physiotherapeut",

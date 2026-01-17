@@ -18,7 +18,7 @@
 
       <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
-          <div class="row g-4" ref="teamWrapperRef">
+          <div class="row g-4 justify-content-center" ref="teamWrapperRef">
             <div v-for="(m, idx) in members" :key="idx" class="col-12 col-md-4 gsap-team-card">
               <div class="card border-0 h-100 team-card team-interactive" :class="{ 'is-flipped': flippedIdx === idx }"
                 role="button" tabindex="0" @click="toggleFlip(idx)" @keydown.enter.prevent="toggleFlip(idx)"
@@ -69,7 +69,8 @@ import { useI18n } from "@/i18n";
 import teamImage from "@/assets/images/team/Team.webp";
 import member1 from "@/assets/images/team/Ingo.webp";
 import member2 from "@/assets/images/team/Paul.webp";
-import member3 from "@/assets/images/team/Gilles.webp";
+import member3 from "@/assets/images/team/Birgit.webp";
+import member4 from "@/assets/images/team/Gilles.webp";
 
 const { t } = useI18n();
 
@@ -93,6 +94,12 @@ const members = computed(() => [
   },
   {
     image: member3,
+    name: t("team.members.birgit.name"),
+    role: t("team.members.birgit.role"),
+    about: t("team.members.birgit.about")
+  },
+  {
+    image: member4,
     name: t("team.members.gilles.name"),
     role: t("team.members.gilles.role"),
     about: t("team.members.gilles.about")
