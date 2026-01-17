@@ -91,9 +91,9 @@ import { useI18n } from "@/i18n";
 import { Modal } from "bootstrap";
 
 import teamImage from "@/assets/images/team/Team.webp";
-import member1 from "@/assets/images/team/Ingo.webp";
-import member2 from "@/assets/images/team/Paul.webp";
-import member3 from "@/assets/images/team/Birgit.webp";
+import member1 from "@/assets/images/team/Ingo.min.webp";
+import member2 from "@/assets/images/team/Paul.min.webp";
+import member3 from "@/assets/images/team/Birgit.min.webp";
 import member4 from "@/assets/images/team/Gilles.webp";
 
 const { t } = useI18n();
