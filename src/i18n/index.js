@@ -2,8 +2,9 @@ import { computed, reactive } from "vue";
 import de from "@/locales/de.json";
 import fr from "@/locales/fr.json";
 import lb from "@/locales/lb.json";
+import en from "@/locales/en.json";
 
-const messages = { de, fr, lb };
+const messages = { de, fr, lb, en };
 
 const state = reactive({
   locale: "de",

@@ -13,9 +13,9 @@
               {{ t("hero.titleThirdLine") }}
             </h1>
 
-            <h4 class="mb-5 hero-subtitle">
+            <h5 class="mb-5 hero-subtitle">
               {{ t("hero.subtitle") }}
-            </h4>
+            </h5>
 
             <CallButton phone="+352262803831" :label="t('hero.cta')" />
           </div>

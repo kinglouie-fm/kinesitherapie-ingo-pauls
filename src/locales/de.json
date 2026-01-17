@@ -15,75 +15,156 @@
         "title": "Kinésithérapie",
         "titleSecondLine": "Luxemburg",
         "titleThirdLine": "Ingo Pauls",
-        "subtitle": "Physiotherapie für nachhaltige Schmerzlinderung und Beweglichkeit",
+        "subtitle": "Unsere Praxis besteht seit 2005 und ist spezialisiert auf die Behandlung von orthopädischen, neurologischen, post-operativen und sportspezifischen Beschwerden. Mit modernen Therapieansätzen sowie Spezialtechniken wie Schwindeltherapie oder craniomandibulärer Dysfunktionstherapie begleiten wir Sie auf dem Weg in ein beschwerdefreies Leben. Wir sind durch stetige Fortbildungen auf dem neuesten Wissensstand, um Ihnen eine bestmögliche Behandlung zu ermöglichen.",
         "cta": "Termin vereinbaren"
     },
     "team": {
-        "title": "Lerne unser Team kennen",
-        "subtitle": "Unser Ziel ist es, Ihren Gesundheitszustand mit Hilfe eines ganzheitlichen Ansatz langfristig zu verbessern.",
+        "title": "Lerne das Team kennen",
+        "subtitle": "Bei uns steht der Mensch im Mittelpunkt. Unser Team ist bemüht ihre Schmerzen zu lindern und ihren Gesundheitszustand langzeitlich zu verbessern.",
         "imageAlt": "Unser Team",
+        "openModal": "Details ansehen",
+        "closeModal": "Schließen",
         "members": {
             "ingo": {
-                "name": "Ingo",
+                "name": "Ingo Pauls",
                 "role": "Geschäftsführer & Physiotherapeut",
-                "about": "Gründer der Praxis mit über 20 Jahren Berufserfahrung in Physiotherapie und manueller Therapie. Nach Tätigkeiten in verschiedenen Praxen im In- und Ausland liegt sein Fokus heute auf ganzheitlicher Behandlung, individueller Betreuung und nachhaltigen Therapieerfolgen."
+                "about": "Ausbildung, Fortbildungen und Schwerpunkte",
+                "bullets": [
+                    "Abschluss als Physiotherapeut, erhalten von der „staatlich anerkannten Lehranstalt für Physiotherapie“ in Wittlich im Jahr 1996",
+                    "Komplette Ausbildung zum Fitnesstrainer durch die „Inline Unternehmensberatung GmbH“ in Dorsten",
+                    "Fachweiterbildung mit Anlehnung an das Bobathkonzept 1997 in Betzdorf",
+                    "Eröffnung der eigenen Praxis im Jahr 2005",
+                    "Manualtherapeut nach S.O.M.T. an der „FIM Münster“ im Jahr 2000",
+                    "Ausbildung zum Fazientherapeut durch die „INOMT“ an der „MFZ Hannover“ 2016",
+                    "Weiterbildung Medizinische Trainingstherapie 2018 in Bad Neuenahr",
+                    "Ausbildung zum CMD-Therapeuten im Jahr 2020 durch die „FOMT“ an der „MFZ Hannover“",
+                    "Fortbildung Knorpelrehabilitation im Jahr 2023",
+                    "Ausbildung zum Schwindel- und Vestibulartherapeuten nach „IVRT“ im Jahr 2024 in Koblenz"
+                ]
             },
             "paul": {
-                "name": "Paul",
+                "name": "Paul Schiltz",
                 "role": "Physiotherapeut",
-                "about": "Physiotherapeut mit Erfahrung aus mehreren orthopädischen und sporttherapeutischen Praxen. Sein Schwerpunkt liegt auf aktiver Therapie, funktionellem Training und verständlicher Anleitung, damit Patientinnen und Patienten langfristig selbstständig bleiben."
+                "about": "Ausbildung, Fortbildungen und Schwerpunkte",
+                "bullets": [
+                    "Abschluss als Physiotherapeut („Master en kinésithérapie et réadaptation“), erhalten von der „Université catholique de Louvain“ im Jahr 2013",
+                    "Manualtherapeut nach S.O.M.T. an der „Université de Liège“ im Jahr 2017",
+                    "Zahlreiche Fortbildungen im Bereich der Orthopädie und Sportphysiotherapie",
+                    "Komplette Ausbildung im „Dry Needling“ an der „David G Simmons Academy“",
+                    "Physiotherapeut des Männer-Basketballteams BBC Etzella Ettelbruck",
+                    "Physiotherapeut des Männer-Basketballnationalteams"
+                ]
+            },
+            "birgit": {
+                "name": "Birgit Graf",
+                "role": "Physiotherapeutin",
+                "about": "Ausbildung, Fortbildungen und Schwerpunkte",
+                "bullets": [
+                    "Abschluss als Physiotherapeutin, erhalten von der „staatlichen Schule für Physiotherapie Grünstadt“ im Jahr 1988",
+                    "Ausbildung „manuelle Lymphdrainage/ komplexe Entstauungstherapie“ durch die „Lymphologic GmbH Deutschland“",
+                    "Fortbildungen unter anderem in der Bewegungslehre nach Klein-Vogelbach sowie der therapeutischen Körperarbeit nach Feldenkrais",
+                    "Fortbildung Narbenentstörung mit Hilfe von Fussreflexzonentherapie",
+                    "Jahrelange Erfahrung in der Arbeit mit Menschen mit körperlichen und geistigen Einschränkungen"
+                ]
             },
             "gilles": {
-                "name": "Gilles",
+                "name": "Gilles Reiser",
                 "role": "Physiotherapeut",
-                "about": "Ausgebildeter Physiotherapeut mit beruflicher Erfahrung in Rehabilitationszentren und ambulanten Praxen. Er arbeitet ruhig und präzise und legt großen Wert auf alltagstaugliche Lösungen sowie eine vertrauensvolle Zusammenarbeit."
+                "about": "Ausbildung, Fortbildungen und Schwerpunkte",
+                "bullets": [
+                    "Abschluss als Physiotherapeut („Bachelor of Science“), erhalten von der „staatlich anerkannten, privaten Hochschule Fresenius“ in Köln im Jahr 2024",
+                    "In Ausbildung zum Manualtherapeuten nach S.O.M.T. an der „FIM Münster“",
+                    "Fortbildung zum Faszientherapeut",
+                    "Fortbildung Sportphysiotherapie an der „EDEN-Reha“ in Donaustadt",
+                    "Physiotherapeut der Fussballmannschaft FC47 Bastendorf"
+                ]
             }
         }
     },
     "services": {
         "title": "Leistungen",
-        "subtitle": "Hier finden Sie eine Übersicht zu unserem Angebot an Leistungen. Diese können Sie durch ein Rezept vom Arzt wahrnehmen, aber auch als Privatleistung.",
+        "subtitle": "Zusätzlich zur klassischen Physiotherapie bieten wir folgende Leistungen an:",
         "meta": "Wirkung",
         "items": {
             "omt": {
-                "title": "Manuelle Therapie nach OMT",
-                "description": "Bei der Manuellen Therapie handelt es sich um eine mindestens 2-jährige Fortbildung für Physiotherapeuten. Fortgebildete Manualtherapeuten sind Spezialisten der Gelenkmechanik. Die Grundlage der Manuellen Therapie sind spezielle Handgrifftechniken und Mobilisationstechniken."
+                "title": "Manuelle Therapie nach S.O.M.T",
+                "description": "Die manuelle Therapie ist ein Verfahren, welches sich mit der Diagnostik und Behandlung von Funktionsstörungen der Gelenke, Muskeln und Nerven und ihrer pathologischen Folgeerscheinungen beschäftigt. Hilft bei:",
+                "bullets": [
+                    "Gelenkblockaden und daraus resultierenden Schmerzen",
+                    "Bewegungseinschränkungen"
+                ]
             },
             "stosswelle": {
                 "title": "Stoßwellentherapie",
-                "description": "Die Stoßwellentherapie ist eine moderne Behandlungsmethode, die bei Sehnen- und Muskelbeschwerden eingesetzt werden kann. Ziel ist es, Heilungsprozesse anzuregen, Schmerzen zu reduzieren und die Beweglichkeit zu verbessern."
+                "description": "Die radiale Stoßwellentherapie ist eine nicht-invasive Methode, bei der energiereiche Druckwellen von außen auf schmerzhafte Körperstellen gelenkt werden, um Selbstheilungsprozesse anzuregen und Verhärtungen wie Verkalkungen zu lösen. Hilft bei:",
+                "bullets": [
+                    "Fersensporn",
+                    "Sehnenproblemen wie Entzündungen und Verkalkungen",
+                    "hypertonen Muskeln",
+                    "myofaszialen Syndromen"
+                ]
             },
             "dry-needling": {
                 "title": "Dry Needling",
-                "description": "Dry Needling ist eine Technik zur Behandlung myofaszialer Triggerpunkte. Mit feinen Nadeln können Muskelverspannungen gelöst, Schmerzen reduziert und die Funktion der Muskulatur unterstützt werden."
+                "description": "Dry Needling ist eine spezielle physiotherapeutische Technik, bei der eine dünne, sterile Akkupunkturnadel direkt in verkrampfte Muskelbereiche, sogenannte Triggerpunkte, eingeführt wird. Hierdurch löst man Verklebungen der Faszien und verbessert die Sauerstoffversorgung der verspannten Muskelfasern. Hilft bei:",
+                "bullets": [
+                    "Muskelschmerzen",
+                    "Verspannungen",
+                    "Sehnenproblemen"
+                ]
             },
             "faszien": {
                 "title": "Faszientherapie",
-                "description": "Die Faszientherapie richtet sich auf das Bindegewebe (Faszien), um Spannungen zu lösen, die Beweglichkeit zu verbessern und Schmerzen zu reduzieren. Sie kann bei Verklebungen, Dysbalancen und Bewegungseinschränkungen unterstützen."
+                "description": "Faszientherapie ist der Oberbegriff für manuelle Techniken, die das Bindegewebe (Faszien) behandeln, um Verklebungen zu lösen, die Elastizität zu erhöhen, Schmerzen zu lindern und die Bewegungsfreiheit zu verbessern. Hilft bei:",
+                "bullets": [
+                    "chronischen Muskelbeschwerden",
+                    "Sportverletzungen",
+                    "postoperativen Beschwerden",
+                    "Reduzierter Gelenkmobilität"
+                ]
             },
             "ivrt": {
-                "title": "Schwindeltherapie nach IVRT (vestibuläre Rehabilitationstherapie)",
-                "description": "Die vestibuläre Rehabilitationstherapie (IVRT) ist ein gezieltes Trainingskonzept bei Schwindel und Gleichgewichtsstörungen. Durch spezielle Übungen können Stabilität, Orientierung und Sicherheit im Alltag verbessert werden."
+                "title": "Schwindeltherapie nach IVRT",
+                "description": "Zum Vestibulären System gehören Teile des Innenohrs und Gehirns, welche die Informationen, die an der Gleichgewichtskontrolle und den Augenbewegungen involviert sind, verarbeiten. Wenn eine Erkrankung oder Verletzung diese informationsverarbeitenden Gebiete schädigen, kann eine vestibuläre Störung entstehen. Eine Entstehung aus unbekannten Gründen ist ebenfalls möglich. Hilft bei:",
+                "bullets": [
+                    "Drehschwindel, der durch Störungen des vestibulären Systems ausgelöst wurde",
+                    "Gleichgewichtsproblemen"
+                ]
             },
             "cmd": {
-                "title": "CMD (Craniomandibuläre Dysfunktion)",
-                "description": "Bei CMD können Beschwerden im Kiefergelenk, im Gesicht oder im Nacken auftreten. Die Therapie zielt darauf ab, muskuläre Spannungen zu reduzieren, das Kiefergelenk zu entlasten und die Funktion zu verbessern."
+                "title": "Craniomandibuläre Dysfunktion (CMD)",
+                "description": "Die Craniomandibuläre Dysfunktion ist ein Sammelbegriff für schmerzhafte Fehlfunktionen des Kauapparates, bei der das Zusammenspiel von Kiefergelenk, Kaumuskulatur, Zähnen und oft auch der Halswirbelsäule gestört ist. Dies kann zu Symptomen wie Kopf-, Gesichts- und Ohrenschmerzen, Kieferknacken, Tinnitus, Schwindel oder auch Rückenbeschwerden führen und wird häufig durch Stress oder Zähneknirschen ausgelöst. Hilft bei:",
+                "bullets": [
+                    "Schmerzen, die durch eine Fehlfunktion des Kiefergelenks ausgelöst werden",
+                    "Reduzierter Beweglichkeit des Kiefers"
+                ]
             },
             "lymph": {
-                "title": "Lymphdrainage",
-                "description": "Die manuelle Lymphdrainage ist eine sanfte Technik zur Unterstützung des Lymphabflusses. Sie kann bei Schwellungen und Ödemen helfen, das Gewebe entlasten und das Wohlbefinden verbessern."
+                "title": "Manuelle Lymphdrainage und komplexe Entstauungstherapie",
+                "description": "Die manuelle Lymphdrainage ist eine spezielle Art der medizinischen Massage, die den Transport der Lymphflüssigkeit in den Lymphgefäßen durch sanfte Grifftechniken anregt. Hilft bei:",
+                "bullets": [
+                    "primären Lymphödemen (Fehlanlagen im Lymphgefäßsystem)",
+                    "sekundären Lymphödemen (z.B. aufgrund operativer Eingriffe, Bestrahlung, etc.)",
+                    "Phlebödemen",
+                    "Lipödemen und Lipolymphödemen"
+                ]
             },
             "training": {
-                "title": "Trainingstherapie",
-                "description": "Trainingstherapie ist ein individuell abgestimmtes Übungsprogramm zur Verbesserung von Kraft, Ausdauer, Beweglichkeit und Koordination. Sie unterstützt Rehabilitation, Prävention und die langfristige Stabilisierung."
-            },
-            "fussreflex": {
-                "title": "Fußreflexologie",
-                "description": "Die Fußreflexologie arbeitet mit gezielten Griffen an Reflexzonen am Fuß. Sie kann entspannend wirken, die Körperwahrnehmung fördern und unterstützend bei Stress- und Spannungszuständen eingesetzt werden."
+                "title": "Medizinische Trainingstherapie",
+                "description": "Medizinische Trainingstherapie ist ein gezieltes, therapeutisch begleitetes Aufbautraining, das Kraft, Ausdauer und Koordination stärkt, um nach Verletzungen, Operationen oder bei chronischen Erkrankungen die körperliche Leistungsfähigkeit für Alltag und Sport wiederherzustellen oder zu steigern. Unsere Praxis verfügt über einen gut ausgestatteten Trainingsraum und unser Trainingsprogramm wird individuell angepasst, um die individuellen Beschwerden zu verbessern. Hilft bei:",
+                "bullets": [
+                    "Atrophie der Muskulatur (Muskelschwund)",
+                    "Schwäche des Herz-Kreislauf-Systems",
+                    "Verlust von Koordination & Gleichgewicht"
+                ]
             },
             "physikalisch": {
                 "title": "Physikalische Therapie",
-                "description": "Unter physikalischer Therapie werden Anwendungen wie Wärme, Kälte, Elektrotherapie oder Ultraschall zusammengefasst. Je nach Beschwerdebild können diese Maßnahmen schmerzlindernd wirken und Heilungsprozesse unterstützen."
+                "description": "Die physikalische Therapie umfasst Behandlungen, die physikalische Einflüsse wie Druck, Wärme, Kälte oder Elektrizität nutzen, um auf den Körper einzuwirken. Die Hauptziele der physikalischen Therapie sind Schmerzlinderung, Förderung der Durchblutung und der Stoffwechselaktivität sowie Erhaltung und Steigerung von Beweglichkeit und Muskelkraft. Unsere Praxis verfügt über Tiefenwärme durch hochfrequente Elektrotherapie, Ultraschallgeräte, Elektrostimulation sowie Tiefenoszillation. Hilft bei:",
+                "bullets": [
+                    "Sehnenproblemen wie Entzündungen und Verkalkungen",
+                    "Verspannungen"
+                ]
             }
         }
     },
@@ -93,16 +174,16 @@
         "cta": "Zu Google Rezensionen",
         "items": {
             "1": {
-                "text": "Ich bin seit Jahren hier in Behandlung. Ingo nimmt sich viel Zeit und geht ganzheitlich auf die Patientinnen ein, sehr kompetent, immer freundlich! Vielen Dank! Die Praxis ist sehr zu empfehlen! Solch kompetente und nette Therapeuten und Therapeutinnen sind schwer zu finden.",
-                "name": "Maria Louise"
+                "text": "Ich bin seit etlichen Jahren in Behandlung bei dieser überaus kompetenten, freundlichen, immer hilfsbedürftigen und lösungsuchenden Truppe😀 Auch in Bezug auf meinen speziellen gesundheitlichen Fall,wird stets nach effizienten und auf mich zugeschnitte Lösungen und Behandlungsmodelle gesucht. Vielen Dank für eure super Arbeit😀",
+                "name": "Sabrina G."
             },
             "2": {
-                "text": "Ich bin seit etlichen Jahren in Behandlung bei dieser überaus kompetenten, freundlichen, immer hilfsbedürftigen und lösungsuchenden Truppe😀 Auch in Bezug auf meinen speziellen gesundheitlichen Fall,wird stets nach effizienten und auf mich zugeschnitte Lösungen und Behandlungsmodelle gesucht. Vielen Dank für eure super Arbeit😀",
-                "name": "Sabrina Gloden"
+                "text": "(Übersetzt) Ich gehe seit zwei Wochen dorthin – und noch für längere Zeit, um wieder fit zu werden. Zwei qualifizierte Physiotherapeuten mit viel Know-how. Großzügige Räumlichkeiten, keine Kabinen, sondern einzelne Zimmer. Die technischen Geräte sind leistungsstark und auf dem neuesten Stand; eine effiziente Anwendung ist dank der Fachkenntnisse der Therapeuten garantiert.",
+                "name": "Marc W."
             },
             "3": {
-                "text": "(Übersetzt) Ich gehe seit zwei Wochen dorthin – und noch für längere Zeit, um wieder fit zu werden. Zwei qualifizierte Physiotherapeuten mit viel Know-how. Großzügige Räumlichkeiten, keine Kabinen, sondern einzelne Zimmer. Die technischen Geräte sind leistungsstark und auf dem neuesten Stand; eine effiziente Anwendung ist dank der Fachkenntnisse der Therapeuten garantiert.",
-                "name": "Marc Wagner"
+                "text": "Bin sehr zufrieden! Ingo Pauls und sein Mitarbeiter leisten hervorragende Arbeit und das mit viel Witz und Humor und Freundlichkeit! Freue mich schon auf ein Wiedersehen! Sehr kompetent!👍👍👍👍👍👍",
+                "name": "Mariette S."
             }
         }
     },

@@ -39,6 +39,7 @@
             <button class="lang-btn" :class="{ active: locale === 'lb' }" @click="setLocaleAndClose('lb')">LU</button>
             <button class="lang-btn" :class="{ active: locale === 'de' }" @click="setLocaleAndClose('de')">DE</button>
             <button class="lang-btn" :class="{ active: locale === 'fr' }" @click="setLocaleAndClose('fr')">FR</button>
+            <button class="lang-btn" :class="{ active: locale === 'en' }" @click="setLocaleAndClose('en')">EN</button>
           </div>
         </div>
       </nav>

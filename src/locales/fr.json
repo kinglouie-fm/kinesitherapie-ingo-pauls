@@ -15,75 +15,155 @@
         "title": "Kinésithérapie",
         "titleSecondLine": "Luxembourg",
         "titleThirdLine": "Ingo Pauls",
-        "subtitle": "Physiothérapie pour un soulagement durable de la douleur et une meilleure mobilité",
+        "subtitle": "Notre cabinet existe depuis 2005 et est spécialisé dans le traitement des troubles orthopédiques, neurologiques, postopératoires et liés au sport. Grâce à des approches thérapeutiques modernes et à des techniques spécialisées telles que la thérapie des vertiges ou la thérapie des dysfonctions cranio-mandibulaires, nous vous accompagnons vers une vie sans douleurs.  Grâce à des formations continues, nous sommes à la pointe des connaissances afin de vous offrir le meilleur traitement possible.",
         "cta": "Prendre rendez-vous"
     },
     "team": {
-        "title": "Découvrez notre équipe",
-        "subtitle": "Notre objectif est d’améliorer durablement votre santé grâce à une approche globale.",
+        "title": "Présentation de notre équipe",
+        "subtitle": "Chez nous, l'être humain est au centre de nos préoccupations. Notre équipe s'efforce de soulager vos douleurs et d'améliorer votre état de santé à long terme.",
         "imageAlt": "Notre équipe",
+        "openModal": "Voir les détails",
+        "closeModal": "Fermer",
         "members": {
             "ingo": {
-                "name": "Ingo",
+                "name": "Ingo Pauls",
                 "role": "Gérant & Kinésithérapeute",
-                "about": "Fondateur du cabinet, avec plus de 20 ans d’expérience en kinésithérapie et thérapie manuelle. Après avoir travaillé dans différents cabinets au Luxembourg et à l’étranger, il se concentre aujourd’hui sur une prise en charge globale, un suivi individuel et des résultats durables."
+                "about": "Parcours professionnel et qualifications",
+                "bullets": [
+                    "Diplôme de kinésithérapeute obtenu à la « staatlich anerkannte Lehranstalt für Physiotherapie » à Wittlich (1996)",
+                    "Formation complète de coach sportif via « Inline Unternehmensberatung GmbH » à Dorsten",
+                    "Formation spécialisée inspirée du concept Bobath (1997) à Betzdorf",
+                    "Ouverture de son propre cabinet en 2005",
+                    "Thérapeute manuel (S.O.M.T.) à la « FIM Münster » (2000)",
+                    "Formation de thérapeute des fascias via « INOMT » à la « MFZ Hannover » (2016)",
+                    "Formation continue en thérapie d’entraînement médical (2018) à Bad Neuenahr",
+                    "Formation de thérapeute CMD (2020) via « FOMT » à la « MFZ Hannover »",
+                    "Formation continue en rééducation du cartilage (2023)",
+                    "Formation de thérapeute des vertiges et vestibulaire selon « IVRT » (2024) à Coblence"
+                ]
             },
             "paul": {
-                "name": "Paul",
+                "name": "Paul Schiltz",
                 "role": "Kinésithérapeute",
-                "about": "Kinésithérapeute avec de l’expérience acquise dans plusieurs cabinets orthopédiques et de thérapie du sport. Son approche met l’accent sur la thérapie active, l’entraînement fonctionnel et des explications claires afin que les patients gagnent en autonomie sur le long terme."
+                "about": "Parcours professionnel et qualifications",
+                "bullets": [
+                    "Diplôme de kinésithérapeute (« Master en kinésithérapie et réadaptation ») obtenu à l’« Université catholique de Louvain » (2013)",
+                    "Thérapeute manuel (S.O.M.T.) à l’« Université de Liège » (2017)",
+                    "Nombreuses formations continues en orthopédie et kinésithérapie du sport",
+                    "Formation complète en « dry needling » à la « David G Simmons Academy »",
+                    "Kinésithérapeute de l’équipe masculine de basketball BBC Etzella Ettelbruck",
+                    "Kinésithérapeute de l’équipe nationale masculine de basketball"
+                ]
+            },
+            "birgit": {
+                "name": "Birgit Graf",
+                "role": "Kinésithérapeute",
+                "about": "Parcours professionnel et qualifications",
+                "bullets": [
+                    "Diplôme de kinésithérapeute obtenu à la « staatliche Schule für Physiotherapie Grünstadt » (1988)",
+                    "Formation « drainage lymphatique manuel / thérapie décongestive complexe » via « Lymphologic GmbH Deutschland »",
+                    "Formations continues, notamment en pédagogie du mouvement selon Klein-Vogelbach et en travail corporel thérapeutique selon Feldenkrais",
+                    "Formation continue en traitement des cicatrices à l’aide de la réflexologie plantaire",
+                    "De nombreuses années d’expérience auprès de personnes présentant des limitations physiques et intellectuelles"
+                ]
             },
             "gilles": {
-                "name": "Gilles",
+                "name": "Gilles Reiser",
                 "role": "Kinésithérapeute",
-                "about": "Kinésithérapeute diplômé avec une expérience professionnelle en centres de rééducation et en cabinets ambulatoires. Il travaille avec calme et précision, et accorde une grande importance à des solutions applicables au quotidien ainsi qu’à une collaboration basée sur la confiance."
+                "about": "Parcours professionnel et qualifications",
+                "bullets": [
+                    "Diplôme de kinésithérapeute (« Bachelor of Science ») obtenu à la « staatlich anerkannte, private Hochschule Fresenius » à Cologne (2024)",
+                    "En formation de thérapeute manuel (S.O.M.T.) à la « FIM Münster »",
+                    "Formation continue de thérapeute des fascias",
+                    "Formation continue en kinésithérapie du sport à « EDEN-Reha » à Donaustadt",
+                    "Kinésithérapeute de l’équipe de football FC47 Bastendorf"
+                ]
             }
         }
     },
     "services": {
         "title": "Prestations",
-        "subtitle": "Vous trouverez ici un aperçu de nos prestations. Elles peuvent être effectuées sur ordonnance ou en prestation privée.",
+        "subtitle": "En plus de la kinésithérapie classique, nous vous proposons les prestations suivantes :",
         "meta": "Effet",
         "items": {
             "omt": {
-                "title": "Thérapie manuelle selon l’OMT",
-                "description": "La thérapie manuelle correspond à une formation complémentaire d’au moins 2 ans pour les kinésithérapeutes. Les thérapeutes manuels formés sont spécialisés dans la biomécanique articulaire. La base de la thérapie manuelle repose sur des techniques de mobilisation et des manipulations spécifiques."
+                "title": "Thérapie manuelle selon O.M.T.",
+                "description": "La thérapie manuelle est une méthode qui s'occupe du diagnostic et du traitement des troubles fonctionnels des articulations, des muscles et des nerfs ainsi que de leurs conséquences pathologiques. Aide en cas de :",
+                "bullets": [
+                    "blocages articulaires et douleurs qui en résultent",
+                    "restrictions de la mobilité articulaire"
+                ]
             },
             "stosswelle": {
                 "title": "Thérapie par ondes de choc",
-                "description": "La thérapie par ondes de choc est une méthode moderne utilisée pour les douleurs tendineuses et musculaires. Elle vise à stimuler les processus de guérison, réduire la douleur et améliorer la mobilité."
+                "description": "La thérapie par ondes de choc radiales est une méthode non invasive qui consiste à diriger des ondes de choc à haute énergie vers les zones douloureuses du corps afin de stimuler les processus d'auto-guérison et de dissoudre les calcifications éventuelles. Aide en cas de :",
+                "bullets": [
+                    "épine calcanéenne",
+                    "problèmes tendineux tels que inflammations et calcifications",
+                    "muscles hypertoniques",
+                    "syndromes myofasciaux"
+                ]
             },
             "dry-needling": {
                 "title": "Dry Needling",
-                "description": "Le dry needling est une technique de traitement des points gâchettes myofasciaux. Grâce à de fines aiguilles, les tensions musculaires peuvent être relâchées, la douleur diminuée et la fonction musculaire soutenue."
+                "description": "Le Dry Needling est une technique de kinésithérapie spécifique qui consiste à insérer une fine aiguille d'acupuncture stérile directement dans les zones musculaires contractées, appelées points trigger. Cela permet de traiter les adhérences des fascias et d'améliorer l'apport en oxygène des fibres musculaires souffrant de tensions. Aide en cas de :",
+                "bullets": [
+                    "douleurs et tensions musculaires",
+                    "problèmes tendineux"
+                ]
             },
             "faszien": {
                 "title": "Thérapie des fascias",
-                "description": "La thérapie des fascias cible le tissu conjonctif (fascias) afin de relâcher les tensions, améliorer la mobilité et réduire la douleur. Elle peut aider en cas d’adhérences, de déséquilibres et de limitations de mouvement."
+                "description": "La thérapie des fascias est le terme générique désignant les techniques manuelles qui traitent le tissu conjonctif (fascias) afin de libérer les adhérences, d'augmenter l'élasticité, de soulager la douleur et d'améliorer la liberté de mouvement. Aide en cas de :",
+                "bullets": [
+                    "douleurs musculaires chroniques",
+                    "blessures sportives",
+                    "douleurs postopératoires",
+                    "mobilité articulaire réduite"
+                ]
             },
             "ivrt": {
-                "title": "Thérapie des vertiges selon l’IVRT (rééducation vestibulaire)",
-                "description": "La rééducation vestibulaire (IVRT) est un concept d’entraînement ciblé en cas de vertiges et de troubles de l’équilibre. Des exercices spécifiques permettent d’améliorer la stabilité, l’orientation et la sécurité au quotidien."
+                "title": "Thérapie des vertiges selon l’IVRT",
+                "description": "Le système vestibulaire comprend des parties de l'oreille interne et du cerveau qui traitent les informations impliquées dans le contrôle de l'équilibre et des mouvements oculaires. Si une maladie ou une blessure endommage ces zones de traitement d'information, un trouble vestibulaire peut apparaître. Une apparition pour des raisons inconnues est également possible. Aide en cas de :",
+                "bullets": [
+                    "vertiges rotatoires provoqués par des troubles du système vestibulaire",
+                    "problèmes d'équilibre"
+                ]
             },
             "cmd": {
-                "title": "CMD (Dysfonction cranio-mandibulaire)",
-                "description": "En cas de CMD, des troubles peuvent apparaître au niveau de l’articulation temporo-mandibulaire, du visage ou de la nuque. La thérapie vise à réduire les tensions musculaires, soulager l’articulation et améliorer la fonction."
+                "title": "Thérapie des dysfonctions cranio-mandibulaires",
+                "description": "Le terme « dysfonction cranio-mandibulaire » est un terme générique qui désigne les dysfonctionnements douloureux de l'appareil masticatoire, dans lesquels l'interaction entre l'articulation temporo-mandibulaire, les muscles masticateurs, les dents et souvent aussi la colonne cervicale est perturbée. Cela peut entraîner des symptômes tels que des maux de tête, des douleurs faciales et auriculaires, des craquements de la mâchoire, des acouphènes, des vertiges ou même des douleurs cervicales et est souvent déclenché par le stress ou le grincement des dents. Aide en cas de :",
+                "bullets": [
+                    "douleurs causées par un dysfonctionnement de l'articulation temporo-mandibulaire",
+                    "mobilité réduite de la mâchoire"
+                ]
             },
             "lymph": {
-                "title": "Drainage lymphatique",
-                "description": "Le drainage lymphatique manuel est une technique douce qui favorise l’écoulement de la lymphe. Il peut aider en cas de gonflements et d’œdèmes, soulager les tissus et améliorer le bien-être."
+                "title": "Drainage lymphatique manuel et thérapie décongestive complexe",
+                "description": "Le drainage lymphatique manuel est un type particulier de massage médical qui stimule le transport de la lymphe dans les vaisseaux lymphatiques à l'aide de techniques de manipulation douces. Aide en cas de :",
+                "bullets": [
+                    "lymphœdèmes primaires (malformations du système lymphatique)",
+                    "lymphœdèmes secondaires (par exemple dus à des interventions chirurgicales, à une radiothérapie, etc.)",
+                    "phlébœdèmes",
+                    "lipœdèmes et lipolymphœdèmes"
+                ]
             },
             "training": {
-                "title": "Thérapie par l’exercice",
-                "description": "La thérapie par l’exercice est un programme personnalisé visant à améliorer la force, l’endurance, la mobilité et la coordination. Elle soutient la rééducation, la prévention et la stabilisation à long terme."
-            },
-            "fussreflex": {
-                "title": "Réflexologie plantaire",
-                "description": "La réflexologie plantaire utilise des pressions ciblées sur des zones réflexes du pied. Elle peut favoriser la détente, améliorer la perception corporelle et soutenir en cas de stress et de tensions."
+                "title": "Thérapie médicale par l'entraînement",
+                "description": "La thérapie médicale par l'entraînement est un entraînement ciblé, accompagné par un thérapeute, qui améliore la force musculaire, l'endurance et la coordination afin de rétablir ou d'améliorer les performances physiques et sportives après une blessure, une opération ou en cas de maladie chronique. Notre cabinet dispose d'une salle d'entraînement bien équipée et notre programme d'entraînement est adapté aux besoins personnels afin d'améliorer les troubles individuels. Aide en cas de :",
+                "bullets": [
+                    "atrophie musculaire (fonte musculaire)",
+                    "faiblesse du système cardiovasculaire",
+                    "perte de coordination et d'équilibre"
+                ]
             },
             "physikalisch": {
-                "title": "Thérapie physique",
-                "description": "La thérapie physique regroupe des applications telles que la chaleur, le froid, l’électrothérapie ou les ultrasons. Selon les symptômes, ces mesures peuvent soulager la douleur et soutenir les processus de guérison."
+                "title": "Physiothérapie",
+                "description": "La physiothérapie comprend des traitements qui utilisent des influences physiques telles que la pression, la chaleur, le froid ou l'électricité pour agir sur le corps. Les objectifs principaux de la physiothérapie sont le soulagement de la douleur, la stimulation de la circulation sanguine et de l'activité métabolique, ainsi que le maintien et l'amélioration de la mobilité et de la force musculaire. Notre cabinet dispose d'un système de técarthérapie, d'appareils à ultrasons, d'électrostimulation et d'oscillation profonde. Aide à soulager :",
+                "bullets": [
+                    "les problèmes tendineux tels que les inflammations et les calcifications",
+                    "les tensions musculaires"
+                ]
             }
         }
     },
@@ -93,16 +173,16 @@
         "cta": "Voir les avis Google",
         "items": {
             "1": {
-                "text": "(Traduit) Je suis suivie ici depuis des années. Ingo prend beaucoup de temps et adopte une approche globale, très compétent et toujours aimable ! Merci beaucoup ! Le cabinet est vivement recommandé. Des thérapeutes aussi compétents et sympathiques sont difficiles à trouver.",
-                "name": "Maria Louise"
+                "text": "(Traduit) Je suis en traitement depuis de nombreuses années avec cette équipe extrêmement compétente, sympathique, toujours serviable et à la recherche de solutions 😀 Même pour mon cas de santé particulier, ils cherchent toujours des solutions efficaces et des modèles de traitement adaptés à moi. Merci pour votre super travail 😀",
+                "name": "Sabrina G."
             },
             "2": {
-                "text": "(Traduit) Je suis en traitement depuis de nombreuses années avec cette équipe extrêmement compétente, sympathique, toujours serviable et à la recherche de solutions 😀 Même pour mon cas de santé particulier, ils cherchent toujours des solutions efficaces et des modèles de traitement adaptés à moi. Merci pour votre super travail 😀",
-                "name": "Sabrina Gloden"
+                "text": "J'y vais depuis 2 semaines et pour longtemps encore pour me remettre. Deux kinés qualifiés avec beaucoup de savoi-faire. Spacieux cadre, pas de cabines mais des chambres d'appartement. Les appareils techniques sont performants et up to date, le maniement efficasse est garantie avec les connaissances des kinés.",
+                "name": "Marc W."
             },
             "3": {
-                "text": "J'y vais depuis 2 semaines et pour longtemps encore pour me remettre. Deux kinés qualifiés avec beaucoup de savoi-faire. Spacieux cadre, pas de cabines mais des chambres d'appartement. Les appareils techniques sont performants et up to date, le maniement efficasse est garantie avec les connaissances des kinés.",
-                "name": "Marc Wagner"
+                "text": "(Traduit) Très satisfaite ! Ingo Pauls et son collaborateur font un travail excellent, avec beaucoup d’esprit, d’humour et de gentillesse ! J’ai déjà hâte de les revoir ! Très compétents ! 👍👍👍👍👍👍",
+                "name": "Mariette S."
             }
         }
     },
