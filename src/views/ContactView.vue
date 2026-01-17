@@ -67,12 +67,12 @@
             </div>
           </div>
 
-          <div class="mt-4 gsap-contact-cta">
+          <div class="mt-4 d-none d-md-block gsap-contact-cta">
             <CallButton phone="+352262803831" :label="t('contact.cta')" />
           </div>
         </div>
 
-        <div class="col-12 col-lg-3 d-flex justify-content-center gsap-contact-image">
+        <div class="col-12 col-lg-3 d-none d-lg-flex justify-content-center gsap-contact-image">
           <div class="contact-image shadow-sm">
             <img :src="kontaktImg" class="w-100 h-100 object-fit-cover" :alt="t('contact.imageAlt')" />
           </div>
@@ -115,6 +115,10 @@
               {{ t("contact.houseVisit.text") }}
             </p>
           </div>
+
+          <div class="mt-4 d-md-none gsap-contact-cta-mobile">
+            <CallButton phone="+352262803831" :label="t('contact.cta')" />
+          </div>
         </div>
       </div>
     </div>
@@ -150,6 +154,7 @@ onMounted(async () => {
     revealEach(q, { elements: ".gsap-opening-row", y: 10, start: "top 92%", stagger: 0.06 });
 
     revealEach(q, { elements: ".gsap-contact-cta", y: 12, start: "top 92%" });
+    revealEach(q, { elements: ".gsap-contact-cta-mobile", y: 12, start: "top 92%" });
   }, root.value);
 });
 
