@@ -9,7 +9,7 @@
       </div>
 
       <div class="row g-4 justify-content-center">
-        <div v-for="s in services" :key="s.id" class="col-12 col-md-6 col-lg-4 col-xl-3 gsap-services-card">
+        <div v-for="s in services" :key="s.id" class="col-12 col-md-6 col-lg-4 gsap-services-card">
           <article class="card border-0 shadow-sm service-card" :class="{ 'is-open': openId === s.id }">
             <div class="ratio ratio-4x3">
               <img :src="s.img" class="w-100 h-100 object-fit-cover" :alt="s.title" loading="lazy" />
@@ -170,7 +170,7 @@ onBeforeUnmount(() => ctx?.revert());
   border-radius: 14px;
   overflow: hidden;
   background: #fff;
-  max-width: 320px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
