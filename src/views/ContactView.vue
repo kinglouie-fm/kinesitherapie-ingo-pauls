@@ -68,7 +68,7 @@
           </div>
 
           <div class="mt-4 d-none d-md-block gsap-contact-cta">
-            <CallButton phone="+352262803831" :label="t('contact.cta')" />
+            <CallButton phone="+35226803831" :label="t('contact.cta')" />
           </div>
         </div>
 
@@ -91,7 +91,7 @@
           </div>
 
           <div class="info-body px-3 mb-4">
-            <a class="contact-link d-inline-block mb-2" href="tel:+352262803831">
+            <a class="contact-link d-inline-block mb-2" href="tel:+35226803831">
               +352 26 80 38 31
             </a>
             <p class="text-muted mb-0 lh-lg">
@@ -117,7 +117,7 @@
           </div>
 
           <div class="mt-4 d-md-none gsap-contact-cta-mobile">
-            <CallButton phone="+352262803831" :label="t('contact.cta')" />
+            <CallButton phone="+35226803831" :label="t('contact.cta')" />
           </div>
         </div>
       </div>

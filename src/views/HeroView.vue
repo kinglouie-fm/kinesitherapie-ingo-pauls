@@ -17,7 +17,7 @@
               {{ t("hero.subtitle") }}
             </h5>
 
-            <CallButton phone="+352262803831" :label="t('hero.cta')" />
+            <CallButton phone="+35226803831" :label="t('hero.cta')" />
           </div>
         </div>
       </div>
