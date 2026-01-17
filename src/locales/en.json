@@ -26,22 +26,56 @@
             "ingo": {
                 "name": "Ingo",
                 "role": "Managing Director & Physiotherapist",
-                "about": "Founder of the practice with over 20 years of professional experience in physiotherapy and manual therapy. After working in various practices in Luxembourg and abroad, his focus today is on holistic treatment, individualized care, and sustainable therapy outcomes."
+                "about": "Professional background and qualifications",
+                "bullets": [
+                    "Degree as a physiotherapist from the “state-recognized School of Physiotherapy” in Wittlich (1996)",
+                    "Complete qualification as a fitness trainer through “Inline Unternehmensberatung GmbH” in Dorsten",
+                    "Specialized training aligned with the Bobath concept (1997) in Betzdorf",
+                    "Opened his own practice in 2005",
+                    "Manual therapist (S.O.M.T.) at “FIM Münster” (2000)",
+                    "Training as a fascia therapist through “INOMT” at “MFZ Hannover” (2016)",
+                    "Continuing education in Medical Exercise Therapy (2018) in Bad Neuenahr",
+                    "Training as a CMD therapist (2020) through “FOMT” at “MFZ Hannover”",
+                    "Continuing education in cartilage rehabilitation (2023)",
+                    "Training as a dizziness and vestibular therapist according to “IVRT” (2024) in Koblenz"
+                ]
             },
             "paul": {
                 "name": "Paul",
                 "role": "Physiotherapist",
-                "about": "Physiotherapist with experience from several orthopedic and sports therapy practices. His focus is on active therapy, functional training and clear guidance so that patients can remain independent in the long term."
+                "about": "Professional background and qualifications",
+                "bullets": [
+                    "Degree in physiotherapy (“Master en kinésithérapie et réadaptation”) from the “Université catholique de Louvain” (2013)",
+                    "Manual therapist (S.O.M.T.) at the “Université de Liège” (2017)",
+                    "Numerous continuing-education courses in orthopedics and sports physiotherapy",
+                    "Complete training in “Dry Needling” at the “David G Simmons Academy”",
+                    "Physiotherapist for the men’s basketball team BBC Etzella Ettelbruck",
+                    "Physiotherapist for the men’s national basketball team"
+                ]
             },
             "birgit": {
                 "name": "Birgit",
                 "role": "Physiotherapist",
-                "about": "Experienced physiotherapist specializing in orthopedic and neurological rehabilitation. She places great value on individualized and holistic care in order to achieve the best possible therapy outcomes for her patients."
+                "about": "Professional background and qualifications",
+                "bullets": [
+                    "Degree as a physiotherapist from the “State School of Physiotherapy Grünstadt” (1988)",
+                    "Training in “Manual Lymphatic Drainage / Complex Decongestive Therapy” through “Lymphologic GmbH Deutschland”",
+                    "Continuing education, including movement instruction according to Klein-Vogelbach and therapeutic bodywork according to Feldenkrais",
+                    "Continuing education in scar treatment using foot reflexology",
+                    "Many years of experience working with people with physical and intellectual disabilities"
+                ]
             },
             "gilles": {
                 "name": "Gilles",
                 "role": "Physiotherapist",
-                "about": "Trained physiotherapist with professional experience in rehabilitation centers and outpatient practices. He works calmly and precisely and places great value on practical, everyday solutions as well as a relationship based on trust."
+                "about": "Professional background and qualifications",
+                "bullets": [
+                    "Degree in physiotherapy (“Bachelor of Science”) from the “state-recognized, private Hochschule Fresenius” in Cologne (2024)",
+                    "Currently training to become a manual therapist (S.O.M.T.) at “FIM Münster”",
+                    "Continuing education as a fascia therapist",
+                    "Continuing education in sports physiotherapy at “EDEN-Reha” in Donaustadt",
+                    "Physiotherapist for the football team FC47 Bastendorf"
+                ]
             }
         }
     },

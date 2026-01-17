@@ -26,22 +26,56 @@
             "ingo": {
                 "name": "Ingo",
                 "role": "Geschäftsführer & Physiotherapeut",
-                "about": "Gründer der Praxis mit über 20 Jahren Berufserfahrung in Physiotherapie und manueller Therapie. Nach Tätigkeiten in verschiedenen Praxen im In- und Ausland liegt sein Fokus heute auf ganzheitlicher Behandlung, individueller Betreuung und nachhaltigen Therapieerfolgen."
+                "about": "Ausbildung, Fortbildungen und Schwerpunkte",
+                "bullets": [
+                    "Abschluss als Physiotherapeut, erhalten von der „staatlich anerkannten Lehranstalt für Physiotherapie“ in Wittlich im Jahr 1996",
+                    "Komplette Ausbildung zum Fitnesstrainer durch die „Inline Unternehmensberatung GmbH“ in Dorsten",
+                    "Fachweiterbildung mit Anlehnung an das Bobathkonzept 1997 in Betzdorf",
+                    "Eröffnung der eigenen Praxis im Jahr 2005",
+                    "Manualtherapeut nach S.O.M.T. an der „FIM Münster“ im Jahr 2000",
+                    "Ausbildung zum Fazientherapeut durch die „INOMT“ an der „MFZ Hannover“ 2016",
+                    "Weiterbildung Medizinische Trainingstherapie 2018 in Bad Neuenahr",
+                    "Ausbildung zum CMD-Therapeuten im Jahr 2020 durch die „FOMT“ an der „MFZ Hannover“",
+                    "Fortbildung Knorpelrehabilitation im Jahr 2023",
+                    "Ausbildung zum Schwindel- und Vestibulartherapeuten nach „IVRT“ im Jahr 2024 in Koblenz"
+                ]
             },
             "paul": {
                 "name": "Paul",
                 "role": "Physiotherapeut",
-                "about": "Physiotherapeut mit Erfahrung aus mehreren orthopädischen und sporttherapeutischen Praxen. Sein Schwerpunkt liegt auf aktiver Therapie, funktionellem Training und verständlicher Anleitung, damit Patientinnen und Patienten langfristig selbstständig bleiben."
+                "about": "Ausbildung, Fortbildungen und Schwerpunkte",
+                "bullets": [
+                    "Abschluss als Physiotherapeut („Master en kinésithérapie et réadaptation“), erhalten von der „Université catholique de Louvain“ im Jahr 2013",
+                    "Manualtherapeut nach S.O.M.T. an der „Université de Liège“ im Jahr 2017",
+                    "Zahlreiche Fortbildungen im Bereich der Orthopädie und Sportphysiotherapie",
+                    "Komplette Ausbildung im „Dry Needling“ an der „David G Simmons Academy“",
+                    "Physiotherapeut des Männer-Basketballteams BBC Etzella Ettelbruck",
+                    "Physiotherapeut des Männer-Basketballnationalteams"
+                ]
             },
             "birgit": {
                 "name": "Birgit",
                 "role": "Physiotherapeutin",
-                "about": "Erfahrene Physiotherapeutin mit Schwerpunkt auf orthopädischer und neurologischer Rehabilitation. Sie legt großen Wert auf eine individuelle und ganzheitliche Betreuung, um die bestmöglichen Therapieergebnisse für ihre Patientinnen und Patienten zu erzielen."
+                "about": "Ausbildung, Fortbildungen und Schwerpunkte",
+                "bullets": [
+                    "Abschluss als Physiotherapeutin, erhalten von der „staatlichen Schule für Physiotherapie Grünstadt“ im Jahr 1988",
+                    "Ausbildung „manuelle Lymphdrainage/ komplexe Entstauungstherapie“ durch die „Lymphologic GmbH Deutschland“",
+                    "Fortbildungen unter anderem in der Bewegungslehre nach Klein-Vogelbach sowie der therapeutischen Körperarbeit nach Feldenkrais",
+                    "Fortbildung Narbenentstörung mit Hilfe von Fussreflexzonentherapie",
+                    "Jahrelange Erfahrung in der Arbeit mit Menschen mit körperlichen und geistigen Einschränkungen"
+                ]
             },
             "gilles": {
                 "name": "Gilles",
                 "role": "Physiotherapeut",
-                "about": "Ausgebildeter Physiotherapeut mit beruflicher Erfahrung in Rehabilitationszentren und ambulanten Praxen. Er arbeitet ruhig und präzise und legt großen Wert auf alltagstaugliche Lösungen sowie eine vertrauensvolle Zusammenarbeit."
+                "about": "Ausbildung, Fortbildungen und Schwerpunkte",
+                "bullets": [
+                    "Abschluss als Physiotherapeut („Bachelor of Science“), erhalten von der „staatlich anerkannten, privaten Hochschule Fresenius“ in Köln im Jahr 2024",
+                    "In Ausbildung zum Manualtherapeuten nach S.O.M.T. an der „FIM Münster“",
+                    "Fortbildung zum Faszientherapeut",
+                    "Fortbildung Sportphysiotherapie an der „EDEN-Reha“ in Donaustadt",
+                    "Physiotherapeut der Fussballmannschaft FC47 Bastendorf"
+                ]
             }
         }
     },

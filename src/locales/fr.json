@@ -26,22 +26,56 @@
             "ingo": {
                 "name": "Ingo",
                 "role": "Gérant & Kinésithérapeute",
-                "about": "Fondateur du cabinet, avec plus de 20 ans d’expérience en kinésithérapie et thérapie manuelle. Après avoir travaillé dans différents cabinets au Luxembourg et à l’étranger, il se concentre aujourd’hui sur une prise en charge globale, un suivi individuel et des résultats durables."
+                "about": "Parcours professionnel et qualifications",
+                "bullets": [
+                    "Diplôme de kinésithérapeute obtenu à la « staatlich anerkannte Lehranstalt für Physiotherapie » à Wittlich (1996)",
+                    "Formation complète de coach sportif via « Inline Unternehmensberatung GmbH » à Dorsten",
+                    "Formation spécialisée inspirée du concept Bobath (1997) à Betzdorf",
+                    "Ouverture de son propre cabinet en 2005",
+                    "Thérapeute manuel (S.O.M.T.) à la « FIM Münster » (2000)",
+                    "Formation de thérapeute des fascias via « INOMT » à la « MFZ Hannover » (2016)",
+                    "Formation continue en thérapie d’entraînement médical (2018) à Bad Neuenahr",
+                    "Formation de thérapeute CMD (2020) via « FOMT » à la « MFZ Hannover »",
+                    "Formation continue en rééducation du cartilage (2023)",
+                    "Formation de thérapeute des vertiges et vestibulaire selon « IVRT » (2024) à Coblence"
+                ]
             },
             "paul": {
                 "name": "Paul",
                 "role": "Kinésithérapeute",
-                "about": "Kinésithérapeute avec de l’expérience acquise dans plusieurs cabinets orthopédiques et de thérapie du sport. Son approche met l’accent sur la thérapie active, l’entraînement fonctionnel et des explications claires afin que les patients gagnent en autonomie sur le long terme."
+                "about": "Parcours professionnel et qualifications",
+                "bullets": [
+                    "Diplôme de kinésithérapeute (« Master en kinésithérapie et réadaptation ») obtenu à l’« Université catholique de Louvain » (2013)",
+                    "Thérapeute manuel (S.O.M.T.) à l’« Université de Liège » (2017)",
+                    "Nombreuses formations continues en orthopédie et kinésithérapie du sport",
+                    "Formation complète en « dry needling » à la « David G Simmons Academy »",
+                    "Kinésithérapeute de l’équipe masculine de basketball BBC Etzella Ettelbruck",
+                    "Kinésithérapeute de l’équipe nationale masculine de basketball"
+                ]
             },
             "birgit": {
                 "name": "Birgit",
                 "role": "Kinésithérapeute",
-                "about": "Kinésithérapeute diplômé avec une expérience professionnelle en centres de rééducation et en cabinets ambulatoires. Il travaille avec calme et précision, et accorde une grande importance à des solutions applicables au quotidien ainsi qu’à une collaboration basée sur la confiance."
+                "about": "Parcours professionnel et qualifications",
+                "bullets": [
+                    "Diplôme de kinésithérapeute obtenu à la « staatliche Schule für Physiotherapie Grünstadt » (1988)",
+                    "Formation « drainage lymphatique manuel / thérapie décongestive complexe » via « Lymphologic GmbH Deutschland »",
+                    "Formations continues, notamment en pédagogie du mouvement selon Klein-Vogelbach et en travail corporel thérapeutique selon Feldenkrais",
+                    "Formation continue en traitement des cicatrices à l’aide de la réflexologie plantaire",
+                    "De nombreuses années d’expérience auprès de personnes présentant des limitations physiques et intellectuelles"
+                ]
             },
             "gilles": {
                 "name": "Gilles",
                 "role": "Kinésithérapeute",
-                "about": "Kinésithérapeute diplômée avec une spécialisation en rééducation orthopédique et neurologique. Elle accorde une grande importance à un accompagnement individuel et holistique afin d’obtenir les meilleurs résultats thérapeutiques pour ses patients."
+                "about": "Parcours professionnel et qualifications",
+                "bullets": [
+                    "Diplôme de kinésithérapeute (« Bachelor of Science ») obtenu à la « staatlich anerkannte, private Hochschule Fresenius » à Cologne (2024)",
+                    "En formation de thérapeute manuel (S.O.M.T.) à la « FIM Münster »",
+                    "Formation continue de thérapeute des fascias",
+                    "Formation continue en kinésithérapie du sport à « EDEN-Reha » à Donaustadt",
+                    "Kinésithérapeute de l’équipe de football FC47 Bastendorf"
+                ]
             }
         }
     },

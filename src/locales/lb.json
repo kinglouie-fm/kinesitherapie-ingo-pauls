@@ -20,28 +20,62 @@
     },
     "team": {
         "title": "Léiert d’Team kennen",
-        "subtitle": "Bei eis steet de Mënsch am Mëttelpunkt. Eist Team ass beméit, Är Schmäerzen ze linderen an Äre Gesondheetszoustand laangfristeg ze verbesseren.",
+        "subtitle": "Bei eis steet de Mënsch am Mëttelpunkt. Eist Team ass beméit, Äre Péng ze reduzéieren an Äre Gesondheetszoustand laangfristeg ze verbesseren.",
         "imageAlt": "Eist Team",
         "members": {
             "ingo": {
                 "name": "Ingo",
                 "role": "Gerant & Physiotherapeut",
-                "about": "Grënner vun der Praxis mat iwwer 20 Joer Beruffserfarung an der Physiotherapie an der manueller Therapie. No Aktivitéiten a verschiddene Praxen am In- an Ausland läit säi Fokus haut op enger ganzheetlecher Behandlung, individueller Betreiung an nohaltege Therapieerfolleger."
+                "about": "Beruffleche Werdegang a Qualifikatiounen",
+                "bullets": [
+                    "Ofschloss als Physiotherapeut, kritt vun der „staatlech unerkannten Lehranstalt für Physiotherapie“ zu Wittlich am Joer 1996",
+                    "Komplett Ausbildung zum Fitnesstrainer duerch d’„Inline Unternehmensberatung GmbH“ zu Dorsten",
+                    "Fach-Weiterbildung mat Ulehnung un d’Bobath-Konzept 1997 zu Betzdorf",
+                    "Ouverture vun der eegener Praxis am Joer 2005",
+                    "Manualtherapeut no S.O.M.T. an der „FIM Münster“ am Joer 2000",
+                    "Ausbildung zum Faszientherapeut duerch „INOMT“ an der „MFZ Hannover“ 2016",
+                    "Weiderbildung „Medizinesch Trainingstherapie“ 2018 zu Bad Neuenahr",
+                    "Ausbildung zum CMD-Therapeut am Joer 2020 duerch „FOMT“ an der „MFZ Hannover“",
+                    "Fortbildung „Knorpelrehabilitatioun“ am Joer 2023",
+                    "Ausbildung zum Schwindel- a Vestibulartherapeut no „IVRT“ am Joer 2024 zu Koblenz"
+                ]
             },
             "paul": {
                 "name": "Paul",
                 "role": "Physiotherapeut",
-                "about": "Physiotherapeut mat Erfarung aus verschiddenen orthopädeschen a sporttherapeutesche Praxen. Säi Schwéierpunkt läit op aktiver Therapie, funktionellem Training an enger verständlecher Uleedung, fir datt Patientinnen a Patienten laangfristeg selbstänneg bleiwen."
+                "about": "Beruffleche Werdegang a Qualifikatiounen",
+                "bullets": [
+                    "Ofschloss als Physiotherapeut („Master en kinésithérapie et réadaptation“), kritt vun der „Université catholique de Louvain“ am Joer 2013",
+                    "Manualtherapeut no S.O.M.T. un der „Université de Liège“ am Joer 2017",
+                    "Vill Fortbildungen am Beräich Orthopädie a Sportphysiotherapie",
+                    "Komplett Ausbildung am „Dry Needling“ un der „David G Simmons Academy“",
+                    "Physiotherapeut vum Männer-Basketballteam BBC Etzella Ettelbruck",
+                    "Physiotherapeut vum Männer-Basketballnationalteam"
+                ]
             },
             "birgit": {
                 "name": "Birgit",
                 "role": "Physiotherapeutin",
-                "about": "Erfueren Physiotherapeutin mat Schwéierpunkt op orthopädescher an neurologescher Rehabilitatioun. Si leet grousse Wäert op eng individuell a ganzheetlech Betreiung, fir déi beschtméiglech Therapieerresultater fir hir Patientinnen a Patienten z’erreechen."
+                "about": "Beruffleche Werdegang a Qualifikatiounen",
+                "bullets": [
+                    "Ofschloss als Physiotherapeutin, kritt vun der „staatlecher Schoul fir Physiotherapie Grünstadt“ am Joer 1988",
+                    "Ausbildung „manuell Lymphdrainage / komplex Entstauungstherapie“ duerch d’„Lymphologic GmbH Deutschland“",
+                    "Fortbildungen ë. a. an der Bewegungslehre no Klein-Vogelbach souwéi an der therapeutescher Kierperaarbecht no Feldenkrais",
+                    "Fortbildung „Narbenentstéierung“ mat Hëllef vun der Fussreflexzonentherapie",
+                    "Jorelaang Erfarung an der Aarbecht mat Mënsche mat kierperlechen a geeschtegen Aschränkungen"
+                ]
             },
             "gilles": {
                 "name": "Gilles",
                 "role": "Physiotherapeut",
-                "about": "Ausgebilte Physiotherapeut mat berufflecher Erfarung a Rehabilitatiounszentren an ambulante Praxen. Hie schafft roueg a präzis a leet grousse Wäert op alltagsdaaglech Léisungen an eng vertrauensvoll Zesummenaarbecht."
+                "about": "Beruffleche Werdegang a Qualifikatiounen",
+                "bullets": [
+                    "Ofschloss als Physiotherapeut („Bachelor of Science“), kritt vun der „staatlech unerkannten, privater Hochschule Fresenius“ zu Köln am Joer 2024",
+                    "An Ausbildung zum Manualtherapeut no S.O.M.T. an der „FIM Münster“",
+                    "Fortbildung zum Faszientherapeut",
+                    "Fortbildung „Sportphysiotherapie“ an der „EDEN-Reha“ zu Donaustadt",
+                    "Physiotherapeut vun der Fussballmannschaft FC47 Bastendorf"
+                ]
             }
         }
     },
