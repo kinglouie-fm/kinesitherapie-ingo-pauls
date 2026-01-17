@@ -24,8 +24,7 @@
                 @click="openMember(m)" @keydown.enter.prevent="openMember(m)" @keydown.space.prevent="openMember(m)">
                 <div class="ratio ratio-1x1 member-photo">
                   <img :src="m.image1600" :srcset="`${m.image900} 900w, ${m.image1600} 1600w`"
-                    sizes="(max-width: 768px) 280px, 400px" class="w-100 h-100 object-fit-cover" :alt="m.name"
-                    loading="lazy" decoding="async" />
+                    sizes="(max-width: 768px) 280px, 400px" class="w-100 h-100 object-fit-cover" :alt="m.name" />
                 </div>
 
                 <div class="card-body text-center pt-3 pb-4">
