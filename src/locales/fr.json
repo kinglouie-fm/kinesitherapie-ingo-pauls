@@ -22,9 +22,11 @@
         "title": "Présentation de notre équipe",
         "subtitle": "Chez nous, l'être humain est au centre de nos préoccupations. Notre équipe s'efforce de soulager vos douleurs et d'améliorer votre état de santé à long terme.",
         "imageAlt": "Notre équipe",
+        "openModal": "Voir les détails",
+        "closeModal": "Fermer",
         "members": {
             "ingo": {
-                "name": "Ingo",
+                "name": "Ingo Pauls",
                 "role": "Gérant & Kinésithérapeute",
                 "about": "Parcours professionnel et qualifications",
                 "bullets": [
@@ -41,7 +43,7 @@
                 ]
             },
             "paul": {
-                "name": "Paul",
+                "name": "Paul Schiltz",
                 "role": "Kinésithérapeute",
                 "about": "Parcours professionnel et qualifications",
                 "bullets": [
@@ -54,7 +56,7 @@
                 ]
             },
             "birgit": {
-                "name": "Birgit",
+                "name": "Birgit Graf",
                 "role": "Kinésithérapeute",
                 "about": "Parcours professionnel et qualifications",
                 "bullets": [
@@ -66,7 +68,7 @@
                 ]
             },
             "gilles": {
-                "name": "Gilles",
+                "name": "Gilles Reiser",
                 "role": "Kinésithérapeute",
                 "about": "Parcours professionnel et qualifications",
                 "bullets": [

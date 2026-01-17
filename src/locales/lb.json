@@ -22,9 +22,11 @@
         "title": "Léiert d’Team kennen",
         "subtitle": "Bei eis steet de Mënsch am Mëttelpunkt. Eist Team ass beméit, Äre Péng ze reduzéieren an Äre Gesondheetszoustand laangfristeg ze verbesseren.",
         "imageAlt": "Eist Team",
+        "openModal": "Detailer ukucken",
+        "closeModal": "Zoumaachen",
         "members": {
             "ingo": {
-                "name": "Ingo",
+                "name": "Ingo Pauls",
                 "role": "Gerant & Physiotherapeut",
                 "about": "Beruffleche Werdegang a Qualifikatiounen",
                 "bullets": [
@@ -41,7 +43,7 @@
                 ]
             },
             "paul": {
-                "name": "Paul",
+                "name": "Paul Schiltz",
                 "role": "Physiotherapeut",
                 "about": "Beruffleche Werdegang a Qualifikatiounen",
                 "bullets": [
@@ -54,7 +56,7 @@
                 ]
             },
             "birgit": {
-                "name": "Birgit",
+                "name": "Birgit Graf",
                 "role": "Physiotherapeutin",
                 "about": "Beruffleche Werdegang a Qualifikatiounen",
                 "bullets": [
@@ -66,7 +68,7 @@
                 ]
             },
             "gilles": {
-                "name": "Gilles",
+                "name": "Gilles Reiser",
                 "role": "Physiotherapeut",
                 "about": "Beruffleche Werdegang a Qualifikatiounen",
                 "bullets": [

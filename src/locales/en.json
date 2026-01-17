@@ -22,9 +22,11 @@
         "title": "Get to know the team",
         "subtitle": "For us, the person is at the center. Our team is committed to relieving your pain and improving your health in the long term.",
         "imageAlt": "Our team",
+        "openModal": "View details",
+        "closeModal": "Close",
         "members": {
             "ingo": {
-                "name": "Ingo",
+                "name": "Ingo Pauls",
                 "role": "Managing Director & Physiotherapist",
                 "about": "Professional background and qualifications",
                 "bullets": [
@@ -41,7 +43,7 @@
                 ]
             },
             "paul": {
-                "name": "Paul",
+                "name": "Paul Schiltz",
                 "role": "Physiotherapist",
                 "about": "Professional background and qualifications",
                 "bullets": [
@@ -54,7 +56,7 @@
                 ]
             },
             "birgit": {
-                "name": "Birgit",
+                "name": "Birgit Graf",
                 "role": "Physiotherapist",
                 "about": "Professional background and qualifications",
                 "bullets": [
@@ -66,7 +68,7 @@
                 ]
             },
             "gilles": {
-                "name": "Gilles",
+                "name": "Gilles Reiser",
                 "role": "Physiotherapist",
                 "about": "Professional background and qualifications",
                 "bullets": [

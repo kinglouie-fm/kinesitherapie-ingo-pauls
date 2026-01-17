@@ -22,9 +22,11 @@
         "title": "Lerne das Team kennen",
         "subtitle": "Bei uns steht der Mensch im Mittelpunkt. Unser Team ist bemüht ihre Schmerzen zu lindern und ihren Gesundheitszustand langzeitlich zu verbessern.",
         "imageAlt": "Unser Team",
+        "openModal": "Details ansehen",
+        "closeModal": "Schließen",
         "members": {
             "ingo": {
-                "name": "Ingo",
+                "name": "Ingo Pauls",
                 "role": "Geschäftsführer & Physiotherapeut",
                 "about": "Ausbildung, Fortbildungen und Schwerpunkte",
                 "bullets": [
@@ -41,7 +43,7 @@
                 ]
             },
             "paul": {
-                "name": "Paul",
+                "name": "Paul Schiltz",
                 "role": "Physiotherapeut",
                 "about": "Ausbildung, Fortbildungen und Schwerpunkte",
                 "bullets": [
@@ -54,7 +56,7 @@
                 ]
             },
             "birgit": {
-                "name": "Birgit",
+                "name": "Birgit Graf",
                 "role": "Physiotherapeutin",
                 "about": "Ausbildung, Fortbildungen und Schwerpunkte",
                 "bullets": [
@@ -66,7 +68,7 @@
                 ]
             },
             "gilles": {
-                "name": "Gilles",
+                "name": "Gilles Reiser",
                 "role": "Physiotherapeut",
                 "about": "Ausbildung, Fortbildungen und Schwerpunkte",
                 "bullets": [

@@ -11,44 +11,28 @@
       <div class="row justify-content-center mb-4 gsap-team-hero">
         <div class="col-12 col-lg-10">
           <div class="ratio ratio-21x9 team-hero shadow-sm">
-            <img :src="teamImage" class=" team-image w-100 h-100 object-fit-cover" :alt="t('team.imageAlt')" />
+            <img :src="teamImage" class="team-image w-100 h-100 object-fit-cover" :alt="t('team.imageAlt')" />
           </div>
         </div>
       </div>
 
       <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
-          <div class="row g-4 justify-content-center" ref="teamWrapperRef">
+          <div class="row g-4 justify-content-center">
             <div v-for="(m, idx) in members" :key="idx" class="col-12 col-md-4 gsap-team-card">
-              <div class="card border-0 h-100 team-card team-interactive" :class="{ 'is-flipped': flippedIdx === idx }"
-                role="button" tabindex="0" @click="toggleFlip(idx)" @keydown.enter.prevent="toggleFlip(idx)"
-                @keydown.space.prevent="toggleFlip(idx)">
-                <div class="photo-flip">
-                  <div class="photo-flip-inner">
-                    <div class="photo-face photo-front">
-                      <div class="ratio ratio-1x1 member-photo">
-                        <img :src="m.image" class="w-100 h-100 object-fit-cover" :alt="m.name" />
-                      </div>
-                    </div>
-
-                    <div class="photo-face photo-back">
-                      <div class="member-photo photo-back-surface">
-                        <div class="photo-back-content text-center px-3">
-                          <p class="small mb-0 lh-lg">
-                            {{ m.about }}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="card border-0 h-100 team-card team-interactive shadow-sm" role="button" tabindex="0"
+                @click="openMember(m)" @keydown.enter.prevent="openMember(m)" @keydown.space.prevent="openMember(m)">
+                <div class="ratio ratio-1x1 member-photo">
+                  <img :src="m.image" class="w-100 h-100 object-fit-cover" :alt="m.name" />
                 </div>
 
                 <div class="card-body text-center pt-3 pb-4">
                   <div class="fw-bold team-name mb-1">
                     <h3 class="mb-0">{{ m.name }}</h3>
                   </div>
-                  <div class="text-muted small">
-                    <h5 class="mb-0">{{ m.role }}</h5>
+
+                  <div v-if="m.bullets?.length" class="mt-1">
+                    <span class="small text-muted"> {{ t("team.openModal") }}</span>
                   </div>
                 </div>
               </div>
@@ -56,6 +40,45 @@
           </div>
         </div>
       </div>
+
+      <!-- Modal -->
+      <div ref="modalRef" class="modal fade team-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+          <div class="modal-content team-modal-content">
+            <div class="modal-header">
+              <div class="me-3">
+                <h5 class="modal-title mb-1 fw-bold">
+                  {{ activeMember?.name }}
+                </h5>
+                <div class="text-muted small">
+                  {{ activeMember?.role }}
+                </div>
+              </div>
+
+              <button type="button" class="btn-close" aria-label="Close" @click="closeModal"></button>
+            </div>
+
+            <div class="modal-body">
+              <p v-if="activeMember?.about" class="text-muted small mb-3 modal-about">
+                {{ activeMember.about }}
+              </p>
+
+              <ul v-if="activeMember?.bullets?.length" class="team-bullets text-muted small">
+                <li v-for="(b, i) in activeMember.bullets" :key="i">
+                  {{ b }}
+                </li>
+              </ul>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" @click="closeModal">
+                {{ t("team.closeModal") }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 </template>
@@ -65,6 +88,7 @@ import { ref, onMounted, onBeforeUnmount, nextTick, computed } from "vue";
 import gsap from "gsap";
 import { revealEach } from "@/animations/scroll";
 import { useI18n } from "@/i18n";
+import { Modal } from "bootstrap";
 
 import teamImage from "@/assets/images/team/Team.webp";
 import member1 from "@/assets/images/team/Ingo.webp";
@@ -74,50 +98,72 @@ import member4 from "@/assets/images/team/Gilles.webp";
 
 const { t } = useI18n();
 
-const flippedIdx = ref(null);
-const teamWrapperRef = ref(null);
 const root = ref(null);
 let ctx;
+
+const modalRef = ref(null);
+let bsModal = null;
+
+const activeMember = ref(null);
 
 const members = computed(() => [
   {
     image: member1,
     name: t("team.members.ingo.name"),
     role: t("team.members.ingo.role"),
-    about: t("team.members.ingo.about")
+    about: t("team.members.ingo.about"),
+    bullets: t("team.members.ingo.bullets") || []
   },
   {
     image: member2,
     name: t("team.members.paul.name"),
     role: t("team.members.paul.role"),
-    about: t("team.members.paul.about")
+    about: t("team.members.paul.about"),
+    bullets: t("team.members.paul.bullets") || []
   },
   {
     image: member3,
     name: t("team.members.birgit.name"),
     role: t("team.members.birgit.role"),
-    about: t("team.members.birgit.about")
+    about: t("team.members.birgit.about"),
+    bullets: t("team.members.birgit.bullets") || []
   },
   {
     image: member4,
     name: t("team.members.gilles.name"),
     role: t("team.members.gilles.role"),
-    about: t("team.members.gilles.about")
+    about: t("team.members.gilles.about"),
+    bullets: t("team.members.gilles.bullets") || []
   }
 ]);
 
-function toggleFlip(idx) {
-  flippedIdx.value = flippedIdx.value === idx ? null : idx;
+async function openMember(m) {
+  activeMember.value = m;
+
+  await nextTick();
+  if (!modalRef.value) return;
+
+  if (!bsModal) {
+    bsModal = new Modal(modalRef.value, {
+      backdrop: true,
+      focus: true,
+      keyboard: true
+    });
+
+    // Ensure we clear activeMember when the modal is fully hidden (optional but clean)
+    modalRef.value.addEventListener("hidden.bs.modal", () => {
+      activeMember.value = null;
+    });
+  }
+
+  bsModal.show();
 }
 
-function handleOutsideClick(event) {
-  if (!teamWrapperRef.value) return;
-  const clickedInside = teamWrapperRef.value.contains(event.target);
-  if (!clickedInside) flippedIdx.value = null;
+function closeModal() {
+  bsModal?.hide();
 }
 
 onMounted(async () => {
-  document.addEventListener("click", handleOutsideClick, true);
   await nextTick();
 
   ctx = gsap.context((self) => {
@@ -129,8 +175,9 @@ onMounted(async () => {
 });
 
 onBeforeUnmount(() => {
-  document.removeEventListener("click", handleOutsideClick, true);
   ctx?.revert();
+  bsModal?.dispose();
+  bsModal = null;
 });
 </script>
 
@@ -180,64 +227,41 @@ onBeforeUnmount(() => {
   border-radius: 12px;
 }
 
-.photo-flip {
-  perspective: 1100px;
+/* Reuse the Services bullets aesthetic */
+.service-meta {
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  color: #e31b23;
 }
 
-.photo-flip-inner {
-  position: relative;
-  width: 100%;
-  transform-style: preserve-3d;
-  transition: transform 420ms ease;
-  height: 400px;
+.team-bullets {
+  padding-left: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
 }
 
-.photo-face {
-  position: absolute;
-  inset: 0;
-  backface-visibility: hidden;
+.team-bullets li::marker {
+  color: #e31b23;
 }
 
-.photo-flip-inner,
-.photo-face {
-  height: 100%;
+.modal-about {
+  line-height: 1.8;
 }
 
-.photo-front {
-  position: relative;
+/* Simple centered transition (from middle) */
+.team-modal :deep(.modal-dialog) {
+  transform: translateY(10px) scale(0.98);
+  transition: transform 220ms ease;
 }
 
-.photo-back {
-  transform: rotateY(180deg);
+.team-modal.show :deep(.modal-dialog) {
+  transform: translateY(0) scale(1);
 }
 
-.photo-back-surface {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  border: 3px solid #e5e7eb;
-}
-
-.photo-back-content {
-  max-width: 260px;
-  text-align: center;
-}
-
-.team-interactive.is-flipped .photo-flip-inner {
-  transform: rotateY(180deg);
-}
-
-.team-image {
-  object-fit: cover;
-  object-position: center 50%;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .team-interactive:hover .photo-flip-inner {
-    transform: rotateY(180deg);
-  }
+/* Keep modal clean/simple */
+.team-modal-content {
+  border-radius: 14px;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -258,8 +282,8 @@ onBeforeUnmount(() => {
     height: 280px;
   }
 
-  .photo-flip-inner {
-    height: 280px;
+  .team-bullets {
+    padding-left: 1rem;
   }
 }
 
