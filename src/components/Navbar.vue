@@ -11,7 +11,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div id="mainNav" class="collapse navbar-collapse">
+        <div id="mainNav" ref="collapseRef" class="collapse navbar-collapse">
           <ul class="navbar-nav ms-5 gap-lg-4 text-end">
             <li class="nav-item">
               <RouterLink class="nav-link text-white" :to="homeTo" @click="closeMenu">
@@ -51,74 +51,82 @@
 import { computed, ref, onMounted, onBeforeUnmount, nextTick } from "vue";
 import { RouterLink, useRouter, useRoute } from "vue-router";
 import { useI18n } from "@/i18n";
+import { Collapse } from "bootstrap"; // ✅ use Collapse API
 
 const router = useRouter();
 const route = useRoute();
 
+const { locale, setLocale, t } = useI18n();
+
 const homeTo = computed(() => `/${locale.value}/`);
 const hashTo = (hash) => ({ path: `/${locale.value}/`, hash });
 
-const { locale, setLocale, t } = useI18n();
-
 const isScrolled = ref(false);
 const togglerRef = ref(null);
+const collapseRef = ref(null);
 
-const navRef = ref(null);
+let bsCollapse = null;
 
 function onScroll() {
   isScrolled.value = window.scrollY > 20;
 }
 
-async function onDocumentClick(e) {
-  // only for mobile
-  if (window.matchMedia("(min-width: 992px)").matches) return;
+function isMobile() {
+  return !window.matchMedia("(min-width: 992px)").matches;
+}
 
-  const collapseEl = document.getElementById("mainNav");
-  const isOpen = collapseEl?.classList.contains("show");
+function closeMenu() {
+  // only close on mobile
+  if (!isMobile()) return;
+  bsCollapse?.hide();
+}
+
+function onDocumentClick(e) {
+  if (!isMobile()) return;
+  if (!collapseRef.value || !togglerRef.value) return;
+
+  const isOpen = collapseRef.value.classList.contains("show");
   if (!isOpen) return;
 
   const target = e.target;
 
-  // If click is inside the navbar, do nothing
-  if (navRef.value && navRef.value.contains(target)) return;
+  // If click is on toggler or inside the opened menu -> do nothing
+  if (togglerRef.value.contains(target)) return;
+  if (collapseRef.value.contains(target)) return;
 
   // Otherwise close
-  await closeMenu();
-}
-
-// Closes the collapse by "toggling" it only if it's currently open
-async function closeMenu() {
-  await nextTick();
-
-  const collapseEl = document.getElementById("mainNav");
-  const isOpen = collapseEl?.classList.contains("show");
-
-  // only close on mobile when it's open
-  if (isOpen && togglerRef.value) {
-    togglerRef.value.click(); // ✅ triggers Bootstrap's own close logic
-  }
+  closeMenu();
 }
 
 async function setLocaleAndClose(l) {
   setLocale(l);
-
   await router.push({ path: `/${l}/`, hash: route.hash });
-
-  await closeMenu();
+  await nextTick();
+  closeMenu();
 }
 
-onMounted(() => {
+onMounted(async () => {
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
-  document.addEventListener("pointerdown", onDocumentClick, { passive: true });
+
+  await nextTick();
+
+  if (collapseRef.value) {
+    // Create/get Bootstrap instance (do NOT auto-toggle)
+    bsCollapse = Collapse.getOrCreateInstance(collapseRef.value, { toggle: false });
+  }
+
+  // Use click (capture) so it fires reliably before other handlers
+  document.addEventListener("click", onDocumentClick, true);
 });
 
 onBeforeUnmount(() => {
   window.removeEventListener("scroll", onScroll);
-  document.removeEventListener("pointerdown", onDocumentClick);
+  document.removeEventListener("click", onDocumentClick, true);
+  bsCollapse?.dispose();
+  bsCollapse = null;
 });
 </script>
-
 
 <style scoped>
 .topbar {
