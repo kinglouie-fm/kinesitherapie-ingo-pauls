@@ -23,7 +23,9 @@
               <div class="card border-0 h-100 team-card team-interactive shadow-sm" role="button" tabindex="0"
                 @click="openMember(m)" @keydown.enter.prevent="openMember(m)" @keydown.space.prevent="openMember(m)">
                 <div class="ratio ratio-1x1 member-photo">
-                  <img :src="m.image" class="w-100 h-100 object-fit-cover" :alt="m.name" />
+                  <img :src="m.image1600" :srcset="`${m.image900} 900w, ${m.image1600} 1600w`"
+                    sizes="(max-width: 768px) 280px, 400px" class="w-100 h-100 object-fit-cover" :alt="m.name"
+                    loading="lazy" decoding="async" />
                 </div>
 
                 <div class="card-body text-center pt-3 pb-4">
@@ -96,6 +98,18 @@ import member2 from "@/assets/images/team/Paul.min.webp";
 import member3 from "@/assets/images/team/Birgit.min.webp";
 import member4 from "@/assets/images/team/Gilles.min.webp";
 
+import ingo900 from "@/assets/images/team/Ingo.900.webp";
+import ingo1600 from "@/assets/images/team/Ingo.1600.webp";
+
+import paul900 from "@/assets/images/team/Paul.900.webp";
+import paul1600 from "@/assets/images/team/Paul.1600.webp";
+
+import birgit900 from "@/assets/images/team/Birgit.900.webp";
+import birgit1600 from "@/assets/images/team/Birgit.1600.webp";
+
+import gilles900 from "@/assets/images/team/Gilles.900.webp";
+import gilles1600 from "@/assets/images/team/Gilles.1600.webp";
+
 const { t } = useI18n();
 
 const root = ref(null);
@@ -108,28 +122,32 @@ const activeMember = ref(null);
 
 const members = computed(() => [
   {
-    image: member1,
+    image900: ingo900,
+    image1600: ingo1600,
     name: t("team.members.ingo.name"),
     role: t("team.members.ingo.role"),
     about: t("team.members.ingo.about"),
     bullets: t("team.members.ingo.bullets") || []
   },
   {
-    image: member2,
+    image900: paul900,
+    image1600: paul1600,
     name: t("team.members.paul.name"),
     role: t("team.members.paul.role"),
     about: t("team.members.paul.about"),
     bullets: t("team.members.paul.bullets") || []
   },
   {
-    image: member3,
+    image900: birgit900,
+    image1600: birgit1600,
     name: t("team.members.birgit.name"),
     role: t("team.members.birgit.role"),
     about: t("team.members.birgit.about"),
     bullets: t("team.members.birgit.bullets") || []
   },
   {
-    image: member4,
+    image900: gilles900,
+    image1600: gilles1600,
     name: t("team.members.gilles.name"),
     role: t("team.members.gilles.role"),
     about: t("team.members.gilles.about"),
