@@ -1,8 +1,8 @@
 {
     "seo": {
         "home": {
-            "title": "Physiotherapy Ingo Pauls - Physiotherapy in Luxembourg",
-            "description": "Welcome to Physiotherapy Ingo Pauls in Luxembourg. We offer professional physiotherapy for sustainable pain relief and mobility."
+            "title": "Physiotherapy Ingo Pauls - Physiotherapy in Diekirch",
+            "description": "Welcome to Physiotherapy Ingo Pauls in Diekirch. We offer professional physiotherapy for sustainable pain relief and mobility."
         }
     },
     "nav": {
@@ -13,8 +13,8 @@
     },
     "hero": {
         "title": "Physiotherapy",
-        "titleSecondLine": "Luxembourg",
-        "titleThirdLine": "Ingo Pauls",
+        "titleSecondLine": "Ingo Pauls",
+        "titleThirdLine": "Diekirch",
         "subtitle": "Since 2005, we have been supporting you with modern, specialized physiotherapy for orthopedic, neurological, post-operative and sports-related conditions – competent and always up to date with the latest scientific knowledge.",
         "cta": "Book an appointment"
     },
@@ -75,7 +75,7 @@
                     "Degree in physiotherapy (“Bachelor of Science”) from the “state-recognized, private Hochschule Fresenius” in Cologne (2024)",
                     "Currently training to become a manual therapist (S.O.M.T.) at “FIM Münster”",
                     "Continuing education as a fascia therapist",
-                    "Continuing education in sports physiotherapy at “EDEN-Reha” in Donaustadt",
+                    "Continuing education in sports physiotherapy at “EDEN-Reha” in Donaustauf",
                     "Physiotherapist for the football team FC47 Bastendorf"
                 ]
             }

@@ -1,8 +1,8 @@
 {
     "seo": {
         "home": {
-            "title": "Kinésithérapie Ingo Pauls - Physiotherapie zu Lëtzebuerg",
-            "description": "Wëllkomm bei der Kinésithérapie Ingo Pauls zu Lëtzebuerg. Mir bidden professionell Physiotherapie fir laangfristeg manner Péng a besser Beweglechkeet un."
+            "title": "Kinésithérapie Ingo Pauls - Physiotherapie zu Dikkrech",
+            "description": "Wëllkomm bei der Kinésithérapie Ingo Pauls zu Dikkrech. Mir bidden professionell Physiotherapie fir laangfristeg manner Péng a besser Beweglechkeet un."
         }
     },
     "nav": {
@@ -13,8 +13,8 @@
     },
     "hero": {
         "title": "Kinésithérapie",
-        "titleSecondLine": "Lëtzebuerg",
-        "titleThirdLine": "Ingo Pauls",
+        "titleSecondLine": "Ingo Pauls",
+        "titleThirdLine": "Dikkrech",
         "subtitle": "Zënter 2005 begleede mir Iech mat moderner, spezialiséierter Physiotherapie bei orthopädeschen, neurologeschen, post-operativen an sportsbedéngte Doleancen – kompetent an um neiste Stand vun der Wëssenschaft.",
         "cta": "Rendez-vous huelen"
     },
@@ -27,7 +27,7 @@
         "members": {
             "ingo": {
                 "name": "Ingo Pauls",
-                "role": "Gerant & Physiotherapeut",
+                "role": "Gérant & Kinésithérapeut",
                 "about": "Beruffleche Werdegang a Qualifikatiounen",
                 "bullets": [
                     "Ofschloss als Physiotherapeut, kritt vun der „staatlich anerkannten Lehranstalt für Physiotherapie“ zu Wittlich am Joer 1996",
@@ -44,7 +44,7 @@
             },
             "paul": {
                 "name": "Paul Schiltz",
-                "role": "Physiotherapeut",
+                "role": "Kinésithérapeut",
                 "about": "Beruffleche Werdegang a Qualifikatiounen",
                 "bullets": [
                     "Ofschloss als Physiotherapeut („Master en kinésithérapie et réadaptation“), kritt vun der „Université catholique de Louvain“ am Joer 2013",
@@ -57,7 +57,7 @@
             },
             "birgit": {
                 "name": "Birgit Graf",
-                "role": "Physiotherapeutin",
+                "role": "Kinésithérapeutin",
                 "about": "Beruffleche Werdegang a Qualifikatiounen",
                 "bullets": [
                     "Ofschloss als Physiotherapeutin, kritt vun der „staatlichen Schule für Physiotherapie Grünstadt“ am Joer 1988",
@@ -69,13 +69,13 @@
             },
             "gilles": {
                 "name": "Gilles Reiser",
-                "role": "Physiotherapeut",
+                "role": "Kinésithérapeut",
                 "about": "Beruffleche Werdegang a Qualifikatiounen",
                 "bullets": [
                     "Ofschloss als Physiotherapeut („Bachelor of Science“), kritt vun der „staatlich anerkannten, privaten Hochschule Fresenius“ zu Köln am Joer 2024",
                     "An Ausbildung zum Manualtherapeut no S.O.M.T. an der „FIM Münster“",
                     "Fortbildung zum Faszientherapeut",
-                    "Fortbildung „Sportphysiotherapie“ an der „EDEN-Reha“ zu Donaustadt",
+                    "Fortbildung „Sportphysiotherapie“ an der „EDEN-Reha“ zu Donaustauf",
                     "Physiotherapeut vun der Fussballmannschaft FC47 Bastendorf"
                 ]
             }

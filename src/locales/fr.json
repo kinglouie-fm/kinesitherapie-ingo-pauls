@@ -1,8 +1,8 @@
 {
     "seo": {
         "home": {
-            "title": "Kinésithérapie Ingo Pauls - Physiothérapie au Luxembourg",
-            "description": "Bienvenue chez Kinésithérapie Ingo Pauls au Luxembourg. Nous offrons une physiothérapie professionnelle pour un soulagement durable de la douleur et une meilleure mobilité."
+            "title": "Kinésithérapie Ingo Pauls - Physiothérapie à Diekirch",
+            "description": "Bienvenue chez Kinésithérapie Ingo Pauls à Diekirch. Nous offrons une physiothérapie professionnelle pour un soulagement durable de la douleur et une meilleure mobilité."
         }
     },
     "nav": {
@@ -13,8 +13,8 @@
     },
     "hero": {
         "title": "Kinésithérapie",
-        "titleSecondLine": "Luxembourg",
-        "titleThirdLine": "Ingo Pauls",
+        "titleSecondLine": "Ingo Pauls",
+        "titleThirdLine": "Diekirch",
         "subtitle": "Depuis 2005, nous vous accompagnons avec une kinésithérapie moderne et spécialisée pour les troubles orthopédiques, neurologiques, post-opératoires et liés au sport – avec compétence et selon les connaissances scientifiques les plus récentes.",
         "cta": "Prendre rendez-vous"
     },
@@ -75,7 +75,7 @@
                     "Diplômé en kinésithérapie (« Bachelor of science ») à la « staatlich anerkannten, privaten Hochschule Fresenius » de Cologne en 2024.",
                     "En formation de thérapie manuelle selon O.M.T. à la « FIM Münster »",
                     "Formation continue en thérapie des fascias",
-                    "Formation continue en kinésithérapie du sport à l'« EDEN-Reha » à Donaustadt",
+                    "Formation continue en kinésithérapie du sport à l'« EDEN-Reha » à Donaustauf",
                     "Kinésithérapeute de l'équipe de football FC47 Bastendorf"
                 ]
             }
