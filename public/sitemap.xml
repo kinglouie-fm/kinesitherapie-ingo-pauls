@@ -8,6 +8,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://kine-diekirch.lu/de/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://kine-diekirch.lu/fr/"/>
     <xhtml:link rel="alternate" hreflang="lb" href="https://kine-diekirch.lu/lb/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kine-diekirch.lu/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kine-diekirch.lu/de/"/>
   </url>
 
@@ -16,6 +17,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://kine-diekirch.lu/de/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://kine-diekirch.lu/fr/"/>
     <xhtml:link rel="alternate" hreflang="lb" href="https://kine-diekirch.lu/lb/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kine-diekirch.lu/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kine-diekirch.lu/de/"/>
   </url>
 
@@ -24,6 +26,16 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://kine-diekirch.lu/de/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://kine-diekirch.lu/fr/"/>
     <xhtml:link rel="alternate" hreflang="lb" href="https://kine-diekirch.lu/lb/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kine-diekirch.lu/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kine-diekirch.lu/de/"/>
+  </url>
+
+  <url>
+    <loc>https://kine-diekirch.lu/en/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kine-diekirch.lu/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://kine-diekirch.lu/fr/"/>
+    <xhtml:link rel="alternate" hreflang="lb" href="https://kine-diekirch.lu/lb/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kine-diekirch.lu/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kine-diekirch.lu/de/"/>
   </url>
 </urlset>
