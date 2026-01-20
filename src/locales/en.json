@@ -30,16 +30,16 @@
                 "role": "Managing Director & Physiotherapist",
                 "about": "Professional background and qualifications",
                 "bullets": [
-                    "Degree as a physiotherapist from the “state-recognized School of Physiotherapy” in Wittlich (1996)",
-                    "Complete qualification as a fitness trainer through “Inline Unternehmensberatung GmbH” in Dorsten",
-                    "Specialized training aligned with the Bobath concept (1997) in Betzdorf",
+                    "Degree as a <strong>physiotherapist</strong> from the “state-recognized School of Physiotherapy” in Wittlich (1996)",
+                    "Complete qualification as a <strong>fitness trainer</strong> through “Inline Unternehmensberatung GmbH” in Dorsten",
+                    "Specialized training aligned with the <strong>Bobath concept</strong> (1997) in Betzdorf",
                     "Opened his own practice in 2005",
-                    "Manual therapist (S.O.M.T.) at “FIM Münster” (2000)",
-                    "Training as a fascia therapist through “INOMT” at “MFZ Hannover” (2016)",
-                    "Continuing education in Medical Exercise Therapy (2018) in Bad Neuenahr",
-                    "Training as a CMD therapist (2020) through “FOMT” at “MFZ Hannover”",
-                    "Continuing education in cartilage rehabilitation (2023)",
-                    "Training as a dizziness and vestibular therapist according to “IVRT” (2024) in Koblenz"
+                    "<strong>Manual therapist (S.O.M.T.)</strong> at “FIM Münster” (2000)",
+                    "Training as a <strong>fascia therapist</strong> through “INOMT” at “MFZ Hannover” (2016)",
+                    "Continuing education in <strong>Medical Exercise Therapy</strong> (2018) in Bad Neuenahr",
+                    "Training as a <strong>CMD therapist</strong> (2020) through “FOMT” at “MFZ Hannover”",
+                    "Continuing education in <strong>cartilage rehabilitation</strong> (2023)",
+                    "Training as a <strong>dizziness and vestibular therapist according to “IVRT”</strong> (2024) in Koblenz"
                 ]
             },
             "paul": {
@@ -47,12 +47,12 @@
                 "role": "Physiotherapist",
                 "about": "Professional background and qualifications",
                 "bullets": [
-                    "Degree in physiotherapy (“Master en kinésithérapie et réadaptation”) from the “Université catholique de Louvain” (2013)",
-                    "Manual therapist (S.O.M.T.) at the “Université de Liège” (2017)",
-                    "Numerous continuing-education courses in orthopedics and sports physiotherapy",
-                    "Complete training in “Dry Needling” at the “David G Simmons Academy”",
-                    "Physiotherapist for the men’s basketball team BBC Etzella Ettelbruck",
-                    "Physiotherapist for the men’s national basketball team"
+                    "Degree in <strong>physiotherapy</strong> (“Master en kinésithérapie et réadaptation”) from the “Université catholique de Louvain” (2013)",
+                    "<strong>Manual therapist (S.O.M.T.)</strong> at the “Université de Liège” (2017)",
+                    "Numerous continuing-education courses in <strong>orthopedics</strong> and <strong>sports physiotherapy</strong>",
+                    "Complete training in “<strong>Dry Needling</strong>” at the “David G Simmons Academy”",
+                    "<strong>Physiotherapist</strong> for the men’s basketball team BBC Etzella Ettelbruck",
+                    "<strong>Physiotherapist</strong> for the men’s national basketball team"
                 ]
             },
             "birgit": {
@@ -60,10 +60,10 @@
                 "role": "Physiotherapist",
                 "about": "Professional background and qualifications",
                 "bullets": [
-                    "Degree as a physiotherapist from the “State School of Physiotherapy Grünstadt” (1988)",
-                    "Training in “Manual Lymphatic Drainage / Complex Decongestive Therapy” through “Lymphologic GmbH Deutschland”",
-                    "Numerous continuing-education courses, including movement instruction according to Klein-Vogelbach and therapeutic bodywork according to Feldenkrais",
-                    "Continuing education in scar treatment using foot reflexology",
+                    "Degree as a <strong>physiotherapist</strong> from the “State School of Physiotherapy Grünstadt” (1988)",
+                    "Training in “<strong>Manual Lymphatic Drainage</strong> / <strong>Complex Decongestive Therapy</strong>” through “Lymphologic GmbH Deutschland”",
+                    "Numerous continuing-education courses, including <strong>movement instruction according to Klein-Vogelbach</strong> and <strong>therapeutic bodywork according to Feldenkrais</strong>",
+                    "Continuing education in <strong>scar treatment</strong> using <strong>foot reflexology</strong>",
                     "Many years of experience working with people with physical and intellectual disabilities"
                 ]
             },
@@ -72,11 +72,11 @@
                 "role": "Physiotherapist",
                 "about": "Professional background and qualifications",
                 "bullets": [
-                    "Degree in physiotherapy (“Bachelor of Science”) from the “state-recognized, private Hochschule Fresenius” in Cologne (2024)",
-                    "Currently training to become a manual therapist (S.O.M.T.) at “FIM Münster”",
-                    "Continuing education as a fascia therapist",
-                    "Continuing education in sports physiotherapy at “EDEN-Reha” in Donaustauf",
-                    "Physiotherapist for the football team FC47 Bastendorf"
+                    "Degree in <strong>physiotherapy</strong> (“Bachelor of Science”) from the “state-recognized, private Hochschule Fresenius” in Cologne (2024)",
+                    "Currently training to become a <strong>manual therapist (S.O.M.T.)</strong> at “FIM Münster”",
+                    "Continuing education as a <strong>fascia therapist</strong>",
+                    "Continuing education in <strong>sports physiotherapy</strong> at “EDEN-Reha” in Donaustauf",
+                    "<strong>Physiotherapist</strong> for the football team FC47 Bastendorf"
                 ]
             }
         }
