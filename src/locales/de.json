@@ -129,7 +129,9 @@
                 "bullets": [
                     "Drehschwindel, der durch Störungen des vestibulären Systems ausgelöst wurde",
                     "Gleichgewichtsproblemen"
-                ]
+                ],
+                "linkLabel": "Offizielle IVRT-Website",
+                "linkUrl": "https://ivrt.de/"
             },
             "cmd": {
                 "title": "Craniomandibuläre Dysfunktion (CMD)",

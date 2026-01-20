@@ -34,6 +34,9 @@
 
               <div class="collapse-wrap mt-3" :class="{ open: openId === s.id }">
                 <div class="collapse-inner">
+                  <a v-if="s.linkUrl" :href="s.linkUrl" target="_blank" rel="noopener noreferrer" class="service-link">
+                    {{ s.linkLabel }} ↗
+                  </a>
                   <p class="text-muted small">
                     {{ s.description }}
                   </p>
@@ -107,7 +110,9 @@ const services = computed(() => [
     img: IVRTImg,
     title: t("services.items.ivrt.title"),
     description: t("services.items.ivrt.description"),
-    bullets: t("services.items.ivrt.bullets") || []
+    bullets: t("services.items.ivrt.bullets") || [],
+    linkLabel: t("services.items.ivrt.linkLabel"),
+    linkUrl: t("services.items.ivrt.linkUrl")
   },
   {
     id: "cmd",
@@ -189,6 +194,19 @@ onBeforeUnmount(() => ctx?.revert());
 
 .service-title {
   color: #111827;
+}
+
+.service-link {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 0.85rem;
+  color: #e31b23;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.service-link:hover {
+  text-decoration: underline;
 }
 
 .chev {
