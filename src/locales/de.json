@@ -44,7 +44,7 @@
             },
             "paul": {
                 "name": "Paul Schiltz",
-                "role": "<strong>Physiotherapeut</strong>",
+                "role": "Physiotherapeut",
                 "about": "Ausbildung, Fortbildungen und Schwerpunkte",
                 "bullets": [
                     "Abschluss als <strong>Physiotherapeut</strong> („Master en kinésithérapie et réadaptation“) an der „Université catholique de Louvain“ im Jahr 2013",
@@ -57,7 +57,7 @@
             },
             "birgit": {
                 "name": "Birgit Graf",
-                "role": "<strong>Physiotherapeutin</strong>",
+                "role": "Physiotherapeutin",
                 "about": "Ausbildung, Fortbildungen und Schwerpunkte",
                 "bullets": [
                     "Abschluss als <strong>Physiotherapeutin</strong>, erhalten von der „staatlichen Schule für Physiotherapie Grünstadt“ im Jahr 1988",
@@ -69,7 +69,7 @@
             },
             "gilles": {
                 "name": "Gilles Reiser",
-                "role": "<strong>Physiotherapeut</strong>",
+                "role": "Physiotherapeut",
                 "about": "Ausbildung, Fortbildungen und Schwerpunkte",
                 "bullets": [
                     "Abschluss als <strong>Physiotherapeut</strong> („Bachelor of Science“) an der „staatlich anerkannten, privaten Hochschule Fresenius“ in Köln im Jahr 2024",
