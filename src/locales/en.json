@@ -247,5 +247,57 @@
             "line3": "Luxembourg"
         },
         "rights": "All rights reserved."
+    },
+    "cookies": {
+        "banner": {
+            "title": "Cookies & Data Protection",
+            "text": "We use necessary cookies and – only with your consent – external content such as Google Maps.",
+            "learnMore": "Learn more",
+            "settings": "Settings",
+            "reject": "Reject",
+            "accept": "Accept"
+        },
+        "settings": {
+            "title": "Cookie settings",
+            "subtitle": "Choose which categories you would like to allow.",
+            "close": "Close",
+            "necessary": {
+                "title": "Necessary",
+                "text": "Required for basic website functionality."
+            },
+            "external": {
+                "title": "External content",
+                "text": "e.g. Google Maps (may transfer data to third parties)."
+            },
+            "analytics": {
+                "title": "Analytics",
+                "text": "Helps us improve the website (only if enabled)."
+            },
+            "rejectAll": "Reject all",
+            "save": "Save"
+        },
+        "map": {
+            "title": "Google Maps is disabled",
+            "text": "To protect your privacy, the map is only loaded after you give your consent.",
+            "cta": "Load map",
+            "reject": "Reject"
+        },
+        "page": {
+            "back": "Back to website",
+            "title": "Cookie Policy",
+            "intro": "This website uses cookies and similar technologies. Necessary cookies are required for the operation of the site. External content (e.g. Google Maps) is only loaded after consent.",
+            "typesTitle": "Cookie categories",
+            "necessaryTitle": "Necessary",
+            "necessaryText": "Ensure basic functions such as language settings and site operation.",
+            "externalTitle": "External content",
+            "externalText": "Embeds such as Google Maps. Data (e.g. IP address) may be transferred to third parties.",
+            "analyticsTitle": "Analytics",
+            "analyticsText": "Only used if enabled (e.g. for visitor statistics).",
+            "manageTitle": "Manage consent",
+            "manageText": "You can change or withdraw your consent at any time.",
+            "reset": "Reset consent",
+            "acceptAll": "Accept all",
+            "rejectAll": "Reject all"
+        }
     }
 }

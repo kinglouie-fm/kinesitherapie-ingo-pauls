@@ -21,10 +21,6 @@
     <ReviewsView />
   </section>
 
-  <!-- <section id="map">
-    <MapView />
-  </section> -->
-
   <FooterView />
 </template>
 
@@ -35,7 +31,6 @@ import TeamView from "@/views/TeamView.vue";
 import ServicesView from "@/views/ServicesView.vue";
 import ContactView from "@/views/ContactView.vue";
 import ReviewsView from "@/views/ReviewsView.vue";
-import MapView from "@/views/MapView.vue";
 import FooterView from "@/views/FooterView.vue";
 import { useHead } from "@vueuse/head";
 import { useI18n } from "@/i18n";

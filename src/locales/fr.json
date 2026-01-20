@@ -246,5 +246,57 @@
             "line3": "Luxembourg"
         },
         "rights": "Tous droits réservés."
+    },
+    "cookies": {
+        "banner": {
+            "title": "Cookies et protection des données",
+            "text": "Nous utilisons des cookies nécessaires et – uniquement avec votre consentement – des contenus externes tels que Google Maps.",
+            "learnMore": "En savoir plus",
+            "settings": "Paramètres",
+            "reject": "Refuser",
+            "accept": "Accepter"
+        },
+        "settings": {
+            "title": "Paramètres des cookies",
+            "subtitle": "Choisissez les catégories que vous souhaitez autoriser.",
+            "close": "Fermer",
+            "necessary": {
+                "title": "Nécessaires",
+                "text": "Indispensables au bon fonctionnement du site."
+            },
+            "external": {
+                "title": "Contenus externes",
+                "text": "par ex. Google Maps (peut transmettre des données à des tiers)."
+            },
+            "analytics": {
+                "title": "Analyse",
+                "text": "Nous aide à améliorer le site (uniquement si activé)."
+            },
+            "rejectAll": "Tout refuser",
+            "save": "Enregistrer"
+        },
+        "map": {
+            "title": "Google Maps est désactivé",
+            "text": "Pour protéger vos données, la carte n’est chargée qu’après votre consentement.",
+            "cta": "Afficher la carte",
+            "reject": "Refuser"
+        },
+        "page": {
+            "back": "Retour au site",
+            "title": "Politique relative aux cookies",
+            "intro": "Ce site utilise des cookies et des technologies similaires. Les cookies nécessaires sont requis pour le fonctionnement du site. Les contenus externes (par ex. Google Maps) ne sont chargés qu’après consentement.",
+            "typesTitle": "Catégories de cookies",
+            "necessaryTitle": "Nécessaires",
+            "necessaryText": "Assurent des fonctions de base telles que les paramètres de langue et le fonctionnement du site.",
+            "externalTitle": "Contenus externes",
+            "externalText": "Intégrations telles que Google Maps. Des données (par ex. l’adresse IP) peuvent être transmises à des tiers.",
+            "analyticsTitle": "Analyse",
+            "analyticsText": "Utilisé uniquement si activé (par ex. pour les statistiques de fréquentation).",
+            "manageTitle": "Gérer le consentement",
+            "manageText": "Vous pouvez modifier ou révoquer votre consentement à tout moment.",
+            "reset": "Réinitialiser le consentement",
+            "acceptAll": "Tout accepter",
+            "rejectAll": "Tout refuser"
+        }
     }
 }

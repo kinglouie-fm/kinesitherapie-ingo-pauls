@@ -247,5 +247,57 @@
             "line3": "Lëtzebuerg"
         },
         "rights": "All Rechter virbehalen."
+    },
+    "cookies": {
+        "banner": {
+            "title": "Cookies & Dateschutz",
+            "text": "Mir benotzen noutwenneg Cookies an – nëmme mat Ärer Zoustëmmung – extern Inhalter wéi Google Maps.",
+            "learnMore": "Méi gewuer ginn",
+            "settings": "Astellungen",
+            "reject": "Refuséieren",
+            "accept": "Akzeptéieren"
+        },
+        "settings": {
+            "title": "Cookie-Astellungen",
+            "subtitle": "Wielt w.e.g., wéi eng Kategorien Dir erlabe wëllt.",
+            "close": "Zoumaachen",
+            "necessary": {
+                "title": "Noutwenneg",
+                "text": "Néideg fir d’Grondfunktioune vun der Websäit."
+            },
+            "external": {
+                "title": "Extern Inhalter",
+                "text": "z. B. Google Maps (kënne Date mat Drëttpersounen deelen)."
+            },
+            "analytics": {
+                "title": "Analyse",
+                "text": "Hëlleft eis d’Websäit ze verbesseren (nëmme wann aktivéiert)."
+            },
+            "rejectAll": "Alles refuséieren",
+            "save": "Späicheren"
+        },
+        "map": {
+            "title": "Google Maps ass desaktivéiert",
+            "text": "Fir Är Donnéeën ze schützen, gëtt d’Kaart eréischt no Ärer Zoustëmmung gelueden.",
+            "cta": "Kaart lueden",
+            "reject": "Refuséieren"
+        },
+        "page": {
+            "back": "Zréck op d’Websäit",
+            "title": "Cookie-Richtlinn",
+            "intro": "Dës Websäit benotzt Cookies an ähnlech Technologien. Noutwenneg Cookies si fir de Fonctionnement erfuerderlech. Extern Inhalter (z. B. Google Maps) ginn eréischt no Zoustëmmung gelueden.",
+            "typesTitle": "Cookie-Kategorien",
+            "necessaryTitle": "Noutwenneg",
+            "necessaryText": "Sécherstellung vun den Grondfunktiounen wéi d'Sproochastellungen an de Betrib vun der Säit.",
+            "externalTitle": "Extern Inhalter",
+            "externalText": "Integratioune wéi Google Maps. Dobäi kënnen Donnéeën (z. B. IP-Adress) un Drëttpersoune weidergi ginn.",
+            "analyticsTitle": "Analyse",
+            "analyticsText": "Nëmme benotzt wann aktivéiert (z. B. fir Besuchsstatistiken).",
+            "manageTitle": "Zoustëmmung verwalten",
+            "manageText": "Dir kënnt Är Zoustëmmung zu all Moment änneren oder zerécksetzen.",
+            "reset": "Zoustëmmung zerécksetzen",
+            "acceptAll": "Alles akzeptéieren",
+            "rejectAll": "Alles refuséieren"
+        }
     }
 }

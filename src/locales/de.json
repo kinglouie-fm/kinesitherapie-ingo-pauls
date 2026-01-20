@@ -247,5 +247,57 @@
             "line3": "Luxemburg"
         },
         "rights": "Alle Rechte vorbehalten."
+    },
+    "cookies": {
+        "banner": {
+            "title": "Cookies & Datenschutz",
+            "text": "Wir verwenden notwendige Cookies und – nur mit Ihrer Einwilligung – externe Inhalte wie Google Maps.",
+            "learnMore": "Mehr erfahren",
+            "settings": "Einstellungen",
+            "reject": "Ablehnen",
+            "accept": "Akzeptieren"
+        },
+        "settings": {
+            "title": "Cookie-Einstellungen",
+            "subtitle": "Wählen Sie, welche Kategorien Sie erlauben möchten.",
+            "close": "Schließen",
+            "necessary": {
+                "title": "Notwendig",
+                "text": "Erforderlich für grundlegende Funktionen der Website."
+            },
+            "external": {
+                "title": "Externe Inhalte",
+                "text": "z. B. Google Maps (kann Daten an Drittanbieter übertragen)."
+            },
+            "analytics": {
+                "title": "Analyse",
+                "text": "Hilft uns, die Website zu verbessern (nur wenn eingesetzt)."
+            },
+            "rejectAll": "Alles ablehnen",
+            "save": "Speichern"
+        },
+        "map": {
+            "title": "Google Maps ist deaktiviert",
+            "text": "Zum Schutz Ihrer Daten wird die Karte erst nach Ihrer Einwilligung geladen.",
+            "cta": "Karte laden",
+            "reject": "Ablehnen"
+        },
+        "page": {
+            "back": "Zurück zur Website",
+            "title": "Cookie-Richtlinie",
+            "intro": "Diese Website verwendet Cookies und vergleichbare Technologien. Notwendige Cookies sind für den Betrieb erforderlich. Externe Inhalte (z. B. Google Maps) werden erst nach Einwilligung geladen.",
+            "typesTitle": "Cookie-Kategorien",
+            "necessaryTitle": "Notwendig",
+            "necessaryText": "Sichert grundlegende Funktionen wie Spracheinstellungen und Seitenbetrieb.",
+            "externalTitle": "Externe Inhalte",
+            "externalText": "Einbettungen wie Google Maps. Dabei können Daten (z. B. IP-Adresse) an Drittanbieter übertragen werden.",
+            "analyticsTitle": "Analyse",
+            "analyticsText": "Wird nur genutzt, wenn aktiviert (z. B. zur Besuchsstatistik).",
+            "manageTitle": "Einwilligung verwalten",
+            "manageText": "Sie können Ihre Einwilligung jederzeit ändern oder zurücksetzen.",
+            "reset": "Einwilligung zurücksetzen",
+            "acceptAll": "Alles akzeptieren",
+            "rejectAll": "Alles ablehnen"
+        }
     }
 }
