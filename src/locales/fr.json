@@ -128,7 +128,9 @@
                 "bullets": [
                     "vertiges rotatoires provoqués par des troubles du système vestibulaire",
                     "problèmes d'équilibre"
-                ]
+                ],
+                "linkLabel": "Site officiel de l’IVRT",
+                "linkUrl": "https://ivrt.de/"
             },
             "cmd": {
                 "title": "Thérapie des dysfonctions cranio-mandibulaires",

@@ -129,7 +129,9 @@
                 "bullets": [
                     "Vertigo caused by disorders of the vestibular system",
                     "Balance problems"
-                ]
+                ],
+                "linkLabel": "Official IVRT website",
+                "linkUrl": "https://ivrt.de/"
             },
             "cmd": {
                 "title": "Craniomandibular Dysfunction (CMD)",

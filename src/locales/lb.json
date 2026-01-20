@@ -129,7 +129,9 @@
                 "bullets": [
                     "Dréischwindel, deen duerch Stéierungen am vestibuläre System ausgeléist gouf",
                     "Problemer mam Gläichgewiicht"
-                ]
+                ],
+                "linkLabel": "Offiziell IVRT-Websäit",
+                "linkUrl": "https://ivrt.de/"
             },
             "cmd": {
                 "title": "Kraniomandibulär Dysfunktioun (CMD)",

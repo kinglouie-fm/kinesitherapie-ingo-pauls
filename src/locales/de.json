@@ -27,56 +27,56 @@
         "members": {
             "ingo": {
                 "name": "Ingo Pauls",
-                "role": "Geschäftsführer & Physiotherapeut",
+                "role": "Geschäftsführer & <strong>Physiotherapeut</strong>",
                 "about": "Ausbildung, Fortbildungen und Schwerpunkte",
                 "bullets": [
-                    "Abschluss als Physiotherapeut, erhalten von der „staatlich anerkannten Lehranstalt für Physiotherapie“ in Wittlich im Jahr 1996",
+                    "Abschluss als <strong>Physiotherapeut</strong>, erhalten von der „staatlich anerkannten Lehranstalt für Physiotherapie“ in Wittlich im Jahr 1996",
                     "Komplette Ausbildung zum Fitnesstrainer durch die „Inline Unternehmensberatung GmbH“ in Dorsten",
-                    "Fachweiterbildung mit Anlehnung an das Bobathkonzept 1997 in Betzdorf",
+                    "Fachweiterbildung mit Anlehnung an das <strong>Bobathkonzept</strong> 1997 in Betzdorf",
                     "Eröffnung der eigenen Praxis im Jahr 2005",
-                    "Manualtherapeut nach S.O.M.T. an der „FIM Münster“ im Jahr 2000",
-                    "Ausbildung zum Faszientherapeuten durch die „INOMT“ an der „MFZ Hannover“ 2016",
-                    "Weiterbildung Medizinische Trainingstherapie 2018 in Bad Neuenahr",
-                    "Ausbildung zum CMD-Therapeuten im Jahr 2020 durch die „FOMT“ an der „MFZ Hannover“",
-                    "Fortbildung Knorpelrehabilitation im Jahr 2023",
-                    "Ausbildung zum Schwindel- und Vestibulartherapeuten nach „IVRT“ im Jahr 2024 in Koblenz"
+                    "<strong>Manualtherapeut nach S.O.M.T.</strong> an der „FIM Münster“ im Jahr 2000",
+                    "Ausbildung zum <strong>Faszientherapeuten</strong> durch die „INOMT“ an der „MFZ Hannover“ 2016",
+                    "Weiterbildung <strong>Medizinische Trainingstherapie</strong> 2018 in Bad Neuenahr",
+                    "Ausbildung zum <strong>CMD-Therapeuten</strong> im Jahr 2020 durch die „FOMT“ an der „MFZ Hannover“",
+                    "Fortbildung <strong>Knorpelrehabilitation</strong> im Jahr 2023",
+                    "Ausbildung zum <strong>Schwindel- und Vestibulartherapeuten nach \"IVRT\"</strong> im Jahr 2024 in Koblenz"
                 ]
             },
             "paul": {
                 "name": "Paul Schiltz",
-                "role": "Physiotherapeut",
+                "role": "<strong>Physiotherapeut</strong>",
                 "about": "Ausbildung, Fortbildungen und Schwerpunkte",
                 "bullets": [
-                    "Abschluss als Physiotherapeut („Master en kinésithérapie et réadaptation“), erhalten von der „Université catholique de Louvain“ im Jahr 2013",
-                    "Manualtherapeut nach S.O.M.T. an der „Université de Liège“ im Jahr 2017",
-                    "Zahlreiche Fortbildungen im Bereich der Orthopädie und Sportphysiotherapie",
-                    "Komplette Ausbildung im „Dry Needling“ an der „David G Simmons Academy“",
-                    "Physiotherapeut des Männer-Basketballteams BBC Etzella Ettelbruck",
-                    "Physiotherapeut des Männer-Basketballnationalteams"
+                    "Abschluss als <strong>Physiotherapeut</strong> („Master en kinésithérapie et réadaptation“) an der „Université catholique de Louvain“ im Jahr 2013",
+                    "<strong>Manualtherapeut nach S.O.M.T.</strong> an der „Université de Liège“ im Jahr 2017",
+                    "Zahlreiche Fortbildungen im Bereich der <strong>Orthopädie</strong> und <strong>Sportphysiotherapie</strong>",
+                    "Komplette Ausbildung im <strong>\"Dry Needling\"</strong> an der „David G Simmons Academy“",
+                    "<strong>Physiotherapeut</strong> des Männer-Basketballteams BBC Etzella Ettelbruck",
+                    "<strong>Physiotherapeut</strong> des Männer-Basketballnationalteams"
                 ]
             },
             "birgit": {
                 "name": "Birgit Graf",
-                "role": "Physiotherapeutin",
+                "role": "<strong>Physiotherapeutin</strong>",
                 "about": "Ausbildung, Fortbildungen und Schwerpunkte",
                 "bullets": [
-                    "Abschluss als Physiotherapeutin, erhalten von der „staatlichen Schule für Physiotherapie Grünstadt“ im Jahr 1988",
-                    "Ausbildung „manuelle Lymphdrainage/ komplexe Entstauungstherapie“ durch die „Lymphologic GmbH Deutschland“",
-                    "Fortbildungen unter anderem in der Bewegungslehre nach Klein-Vogelbach sowie der therapeutischen Körperarbeit nach Feldenkrais",
-                    "Fortbildung Narbenentstörung mit Hilfe von Fussreflexzonentherapie",
-                    "Jahrelange Erfahrung in der Arbeit mit Menschen mit körperlichen und geistigen Einschränkungen"
+                    "Abschluss als <strong>Physiotherapeutin</strong>, erhalten von der „staatlichen Schule für Physiotherapie Grünstadt“ im Jahr 1988",
+                    "Ausbildung in <strong>manueller Lymphdrainage</strong> und <strong>komplexer Entstauungstherapie</strong> durch die „Lymphologic GmbH Deutschland“",
+                    "Fortbildungen u.a. in der <strong>Bewegungslehre nach Klein-Vogelbach</strong> sowie der <strong>therapeutischen Körperarbeit nach Feldenkrais</strong>",
+                    "Fortbildung <strong>Narbenentstörung</strong> mit Hilfe von <strong>Fußreflexzonentherapie</strong>",
+                    "Langjährige Erfahrung in der Arbeit mit Menschen mit körperlichen und geistigen Einschränkungen"
                 ]
             },
             "gilles": {
                 "name": "Gilles Reiser",
-                "role": "Physiotherapeut",
+                "role": "<strong>Physiotherapeut</strong>",
                 "about": "Ausbildung, Fortbildungen und Schwerpunkte",
                 "bullets": [
-                    "Abschluss als Physiotherapeut („Bachelor of Science“), erhalten von der „staatlich anerkannten, privaten Hochschule Fresenius“ in Köln im Jahr 2024",
-                    "In Ausbildung zum Manualtherapeuten nach S.O.M.T. an der „FIM Münster“",
-                    "Fortbildung zum Faszientherapeut",
-                    "Fortbildung Sportphysiotherapie an der „EDEN-Reha“ in Donaustauf",
-                    "Physiotherapeut der Fussballmannschaft FC47 Bastendorf"
+                    "Abschluss als <strong>Physiotherapeut</strong> („Bachelor of Science“) an der „staatlich anerkannten, privaten Hochschule Fresenius“ in Köln im Jahr 2024",
+                    "In Ausbildung zum <strong>Manualtherapeuten nach S.O.M.T.</strong> an der „FIM Münster“",
+                    "Fortbildung zum <strong>Faszientherapeuten</strong>",
+                    "Fortbildung <strong>Sportphysiotherapie</strong> an der „EDEN-Reha“ in Donaustauf",
+                    "<strong>Physiotherapeut</strong> der Fußballmannschaft FC47 Bastendorf"
                 ]
             }
         }

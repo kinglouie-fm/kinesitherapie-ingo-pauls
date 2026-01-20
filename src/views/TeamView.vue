@@ -65,8 +65,7 @@
               </p>
 
               <ul v-if="activeMember?.bullets?.length" class="team-bullets text-muted small">
-                <li v-for="(b, i) in activeMember.bullets" :key="i">
-                  {{ b }}
+                <li v-for="(b, i) in activeMember.bullets" :key="i" v-html="b">
                 </li>
               </ul>
             </div>
