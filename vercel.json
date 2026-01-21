@@ -1,4 +1,26 @@
 {
+    "redirects": [
+        {
+            "source": "/de",
+            "destination": "/de/",
+            "permanent": true
+        },
+        {
+            "source": "/fr",
+            "destination": "/fr/",
+            "permanent": true
+        },
+        {
+            "source": "/lb",
+            "destination": "/lb/",
+            "permanent": true
+        },
+        {
+            "source": "/en",
+            "destination": "/en/",
+            "permanent": true
+        }
+    ],
     "rewrites": [
         {
             "source": "/(.*)",
