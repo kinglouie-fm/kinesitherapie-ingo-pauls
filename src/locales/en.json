@@ -62,6 +62,7 @@
                 "bullets": [
                     "Degree as a <strong>physiotherapist</strong> from the “State School of Physiotherapy Grünstadt” (1988)",
                     "Training in “<strong>Manual Lymphatic Drainage</strong> / <strong>Complex Decongestive Therapy</strong>” through “Lymphologic GmbH Deutschland”",
+                    "Training in psychosomatic <strong>birth preparation</strong>",
                     "Numerous continuing-education courses, including <strong>movement instruction according to Klein-Vogelbach</strong> and <strong>therapeutic bodywork according to Feldenkrais</strong>",
                     "Continuing education in <strong>scar treatment</strong> using <strong>foot reflexology</strong>",
                     "Many years of experience working with people with physical and intellectual disabilities"
@@ -246,7 +247,8 @@
             "line2": "L-9264 Diekirch",
             "line3": "Luxembourg"
         },
-        "rights": "All rights reserved."
+        "rights": "All rights reserved.",
+        "impressum": "Legal Notice"
     },
     "cookies": {
         "banner": {
@@ -298,6 +300,24 @@
             "reset": "Reset consent",
             "acceptAll": "Accept all",
             "rejectAll": "Reject all"
+        }
+    },
+    "impressum": {
+        "back": "Back",
+        "title": "Legal Notice",
+        "operator": {
+            "title": "Operator",
+            "nameLabel": "Name:",
+            "addressLabel": "Address:"
+        },
+        "contact": {
+            "title": "Contact",
+            "phoneLabel": "Phone:",
+            "emailLabel": "Email:"
+        },
+        "company": {
+            "title": "Company Information",
+            "vatLabel": "VAT Number:"
         }
     }
 }

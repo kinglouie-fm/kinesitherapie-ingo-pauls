@@ -62,6 +62,7 @@
                 "bullets": [
                     "Abschluss als <strong>Physiotherapeutin</strong>, erhalten von der „staatlichen Schule für Physiotherapie Grünstadt“ im Jahr 1988",
                     "Ausbildung in <strong>manueller Lymphdrainage</strong> und <strong>komplexer Entstauungstherapie</strong> durch die „Lymphologic GmbH Deutschland“",
+                    "Ausbildung in psychosomatischer <strong>Geburtsvorbereitung</strong>",
                     "Zahlreiche Fortbildungen u.a. in der <strong>Bewegungslehre nach Klein-Vogelbach</strong> sowie der <strong>therapeutischen Körperarbeit nach Feldenkrais</strong>",
                     "Fortbildung <strong>Narbenentstörung</strong> mit Hilfe von <strong>Fußreflexzonentherapie</strong>",
                     "Langjährige Erfahrung in der Arbeit mit Menschen mit körperlichen und geistigen Einschränkungen"
@@ -246,7 +247,8 @@
             "line2": "L-9264 Diekirch",
             "line3": "Luxemburg"
         },
-        "rights": "Alle Rechte vorbehalten."
+        "rights": "Alle Rechte vorbehalten.",
+        "impressum": "Impressum"
     },
     "cookies": {
         "banner": {
@@ -298,6 +300,24 @@
             "reset": "Einwilligung zurücksetzen",
             "acceptAll": "Alles akzeptieren",
             "rejectAll": "Alles ablehnen"
+        }
+    },
+    "impressum": {
+        "back": "Zurück",
+        "title": "Impressum",
+        "operator": {
+            "title": "Betreiber",
+            "nameLabel": "Name:",
+            "addressLabel": "Adresse:"
+        },
+        "contact": {
+            "title": "Kontakt",
+            "phoneLabel": "Telefon:",
+            "emailLabel": "E-Mail:"
+        },
+        "company": {
+            "title": "Unternehmensangaben",
+            "vatLabel": "USt.-IdNr. (TVA):"
         }
     }
 }

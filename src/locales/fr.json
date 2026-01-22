@@ -62,6 +62,7 @@
                 "bullets": [
                     "Diplômé en <strong>kinésithérapie</strong> à la »staatlichen Schule für Physiotherapie Grünstadt« en 1988",
                     "Formation en « <strong>drainage lymphatique manuel</strong>/<strong>thérapie décongestive complexe</strong> » auprès de la société « Lymphologic GmbH Deutschland »",
+                    "Formation en <strong>préparation psychosomatique à la naissance</strong>",
                     "Nombreuses formations continues, entre autres en <strong>kinésiologie selon Klein-Vogelbach</strong> et en <strong>travail corporel thérapeutique selon Feldenkrais</strong>",
                     "Formation continue en <strong>traitement des cicatrices</strong> à l'aide de la <strong>réflexologie plantaire</strong>",
                     "Plusieurs années d'expérience dans le travail avec des personnes atteints de handicaps physiques et mentaux"
@@ -245,7 +246,8 @@
             "line2": "L-9264 Diekirch",
             "line3": "Luxembourg"
         },
-        "rights": "Tous droits réservés."
+        "rights": "Tous droits réservés.",
+        "impressum": "Mentions légales"
     },
     "cookies": {
         "banner": {
@@ -297,6 +299,24 @@
             "reset": "Réinitialiser le consentement",
             "acceptAll": "Tout accepter",
             "rejectAll": "Tout refuser"
+        }
+    },
+    "impressum": {
+        "back": "Retour",
+        "title": "Mentions légales",
+        "operator": {
+            "title": "Exploitant",
+            "nameLabel": "Nom :",
+            "addressLabel": "Adresse :"
+        },
+        "contact": {
+            "title": "Contact",
+            "phoneLabel": "Téléphone :",
+            "emailLabel": "E-mail :"
+        },
+        "company": {
+            "title": "Informations sur l’entreprise",
+            "vatLabel": "Numéro de TVA :"
         }
     }
 }

@@ -23,18 +23,24 @@
                     <div class="footer-copy">
                         © {{ year }} {{ t("footer.name") }}. {{ t("footer.rights") }}
                     </div>
+                    <RouterLink class="text-decoration-underline" :to="impressumTo">
+                        {{ t("footer.impressum") }}
+                    </RouterLink>
                 </div>
+
             </div>
         </div>
     </footer>
 </template>
 
 <script setup>
+import { computed } from "vue";
 import { useI18n } from "@/i18n";
 import MapView from "@/components/MapView.vue";
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
 const year = new Date().getFullYear();
+const impressumTo = computed(() => `/${locale.value}/impressum`);
 </script>
 
 <style scoped>

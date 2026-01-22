@@ -62,6 +62,7 @@
                 "bullets": [
                     "Ofschloss als <strong>Physiotherapeutin</strong>, kritt vun der „staatlichen Schule für Physiotherapie Grünstadt“ am Joer 1988",
                     "Ausbildung „<strong>manuelle Lymphdrainage</strong>/ <strong>komplexe Entstauungstherapie</strong>“ duerch d’„Lymphologic GmbH Deutschland“",
+                    "Formatioun an der psychosomatescher <strong>Gebuertsvirbereedung</strong>",
                     "Vill Fortbildungen, ënner anerem an der <strong>Bewegungslehre no Klein-Vogelbach</strong> souwéi an der <strong>therapeutescher Kierperaarbecht no Feldenkrais</strong>",
                     "Fortbildung „<strong>Narbenentstéierung</strong>“ mat Hëllef vun der <strong>Fussreflexzonentherapie</strong>",
                     "Jorelaang Erfarung an der Aarbecht mat Mënsche mat kierperlechen a geeschtegen Aschränkungen"
@@ -246,7 +247,8 @@
             "line2": "L-9264 Diekirch",
             "line3": "Lëtzebuerg"
         },
-        "rights": "All Rechter virbehalen."
+        "rights": "All Rechter virbehalen.",
+        "impressum": "Impressum"
     },
     "cookies": {
         "banner": {
@@ -298,6 +300,24 @@
             "reset": "Zoustëmmung zerécksetzen",
             "acceptAll": "Alles akzeptéieren",
             "rejectAll": "Alles refuséieren"
+        }
+    },
+    "impressum": {
+        "back": "Zréck",
+        "title": "Impressum",
+        "operator": {
+            "title": "Bedreiwer",
+            "nameLabel": "Numm:",
+            "addressLabel": "Adress:"
+        },
+        "contact": {
+            "title": "Kontakt",
+            "phoneLabel": "Telefon:",
+            "emailLabel": "E-Mail:"
+        },
+        "company": {
+            "title": "Donnéeën vun der Entreprise",
+            "vatLabel": "TVA-Nummer:"
         }
     }
 }
