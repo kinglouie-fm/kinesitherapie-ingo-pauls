@@ -10,5 +10,3 @@ The site is built with:
 - SEO optimization (structured data, sitemap, hreflang)
 - Cookie consent with GDPR-compliant handling (Google Maps loaded on consent)
 - Hosted on Vercel
-
-This project serves as a modern, fast, and accessible web presence for the physiotherapy practice.
