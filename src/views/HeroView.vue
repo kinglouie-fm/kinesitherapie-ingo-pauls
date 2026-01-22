@@ -73,7 +73,7 @@ const { t } = useI18n();
 
   .hero {
     min-height: 75vh;
-    background-position: 40% 30%;
+    background-position: 70% 30%;
   }
 
   .hero-overlay {
