@@ -1,19 +1,14 @@
-# kinesitherapie-ingo-pauls
+# Kinésithérapie Ingo Pauls – Website
 
-## Project setup
-```
-npm install
-```
+Official website for **Kinésithérapie Ingo Pauls** in Diekirch, Luxembourg.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+The site is built with:
+- Vue 3
+- Vite
+- Bootstrap
+- Multilingual support (DE, FR, LU, EN)
+- SEO optimization (structured data, sitemap, hreflang)
+- Cookie consent with GDPR-compliant handling (Google Maps loaded on consent)
+- Hosted on Vercel
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+This project serves as a modern, fast, and accessible web presence for the physiotherapy practice.
