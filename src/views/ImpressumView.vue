@@ -20,11 +20,6 @@
             <p class="text-muted mb-2">
                 <strong>{{ t("impressum.contact.phoneLabel") }}</strong> +352 26 80 38 31<br />
             </p>
-
-            <h2 class="h4 fw-bold mt-4 mb-2">{{ t("impressum.company.title") }}</h2>
-            <p class="text-muted mb-2">
-                <strong>{{ t("impressum.company.vatLabel") }}</strong> LU...<br />
-            </p>
         </div>
     </section>
 </template>
