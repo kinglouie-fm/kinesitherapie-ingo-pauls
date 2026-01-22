@@ -247,7 +247,8 @@
             "line3": "Luxembourg"
         },
         "rights": "Tous droits réservés.",
-        "impressum": "Mentions légales"
+        "impressum": "Mentions légales",
+        "privacy": "Politique de confidentialité"
     },
     "cookies": {
         "banner": {
@@ -302,7 +303,7 @@
         }
     },
     "impressum": {
-        "back": "Retour",
+        "back": "Retour au site",
         "title": "Mentions légales",
         "operator": {
             "title": "Exploitant",
@@ -318,5 +319,74 @@
             "title": "Informations sur l’entreprise",
             "vatLabel": "Numéro de TVA :"
         }
+    },
+    "privacy": {
+        "seoTitle": "Protection des données – Kinésithérapie Ingo Pauls",
+        "back": "Retour au site",
+        "title": "Politique de confidentialité",
+        "intro": "Nous prenons la protection de vos données personnelles au sérieux. Cette page explique quelles données sont traitées lors de votre visite et quels sont vos droits.",
+        "controller": {
+            "title": "Responsable du traitement",
+            "nameLabel": "Nom :",
+            "addressLabel": "Adresse :",
+            "phoneLabel": "Téléphone :",
+            "name": "Kinésithérapie Ingo Pauls",
+            "address": "19, Rue Pierre Olinger, L-9264 Diekirch, Luxembourg",
+            "phone": "+352 26 80 38 31",
+            "phoneRaw": "+35226803831"
+        },
+        "hosting": {
+            "title": "Hébergement",
+            "text": "Ce site est hébergé par un prestataire externe. Des données techniques (p. ex. adresse IP) peuvent être traitées afin d’assurer un service sûr et fiable.",
+            "provider": "Hébergeur : Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, United States",
+            "purpose": "Finalité : exploitation, diffusion et sécurité du site (p. ex. prévention des attaques).",
+            "legal": "Base légale : intérêt légitime (art. 6, §1, f RGPD)."
+        },
+        "logs": {
+            "title": "Journaux serveur (logs)",
+            "text": "Lors de l’accès au site, des journaux serveur peuvent être traités par l’hébergeur afin d’exploiter et de protéger le site.",
+            "items": {
+                "ip": "Adresse IP",
+                "time": "Date et heure de l’accès",
+                "userAgent": "Type de navigateur / système d’exploitation (User-Agent)",
+                "referrer": "URL de provenance (referrer)"
+            }
+        },
+        "cookies": {
+            "title": "Cookies & consentement",
+            "text": "Nous utilisons des fonctions nécessaires (p. ex. paramètres de langue). Les contenus externes (p. ex. Google Maps) ne sont chargés qu’après votre consentement. Votre choix est enregistré localement dans le navigateur (statut de consentement)."
+        },
+        "external": {
+            "title": "Contenus externes (Google Maps)",
+            "text": "Si vous activez des contenus externes, une connexion à des tiers peut être établie. Des données (p. ex. votre adresse IP) peuvent alors leur être transmises.",
+            "googleMaps": "Google Maps (intégration/iframe) – chargé uniquement après consentement.",
+            "consent": "Base légale : consentement (art. 6, §1, a RGPD).",
+            "withdraw": "Vous pouvez retirer ou réinitialiser votre consentement à tout moment via les paramètres de cookies."
+        },
+        "contact": {
+            "title": "Prise de contact",
+            "text": "Si vous nous contactez par téléphone ou e-mail, nous traitons vos informations afin de répondre à votre demande. Base légale : exécution de mesures précontractuelles/contrat (art. 6, §1, b RGPD) ou intérêt légitime (art. 6, §1, f RGPD)."
+        },
+        "rights": {
+            "title": "Vos droits",
+            "text": "Conformément au RGPD, vous disposez notamment des droits suivants :",
+            "items": {
+                "access": "Droit d’accès (art. 15 RGPD)",
+                "rectification": "Droit de rectification (art. 16 RGPD)",
+                "erasure": "Droit à l’effacement (art. 17 RGPD)",
+                "restriction": "Droit à la limitation du traitement (art. 18 RGPD)",
+                "objection": "Droit d’opposition (art. 21 RGPD)",
+                "portability": "Droit à la portabilité (art. 20 RGPD)",
+                "withdraw": "Retrait du consentement pour l’avenir"
+            }
+        },
+        "cnpd": {
+            "title": "Droit de réclamation",
+            "text": "Vous pouvez déposer une réclamation auprès d’une autorité de contrôle. Au Luxembourg, l’autorité compétente est la CNPD :",
+            "name": "Commission nationale pour la protection des données (CNPD)",
+            "address": "15, Boulevard du Jazz, L-4370 Belvaux, Luxembourg",
+            "emailLabel": "E-mail :"
+        },
+        "lastUpdated": "Mise à jour : janvier 2026"
     }
 }

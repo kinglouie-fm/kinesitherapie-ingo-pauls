@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
 import CookiePolicyView from "@/views/CookiePolicyView.vue";
 import ImpressumView from "@/views/ImpressumView.vue";
+import PrivacyPolicyView from "@/views/PrivacyPolicyView.vue";
 import { setLocaleFromRoute } from "@/i18n";
 
 const routes = [
@@ -20,6 +21,11 @@ const routes = [
   { path: "/fr/impressum", component: ImpressumView, meta: { locale: "fr" } },
   { path: "/lb/impressum", component: ImpressumView, meta: { locale: "lb" } },
   { path: "/en/impressum", component: ImpressumView, meta: { locale: "en" } },
+
+  { path: "/de/privacy", component: PrivacyPolicyView, meta: { locale: "de" } },
+  { path: "/fr/privacy", component: PrivacyPolicyView, meta: { locale: "fr" } },
+  { path: "/lb/privacy", component: PrivacyPolicyView, meta: { locale: "lb" } },
+  { path: "/en/privacy", component: PrivacyPolicyView, meta: { locale: "en" } },
 ];
 
 const router = createRouter({

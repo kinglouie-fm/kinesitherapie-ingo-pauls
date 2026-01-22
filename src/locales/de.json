@@ -248,7 +248,8 @@
             "line3": "Luxemburg"
         },
         "rights": "Alle Rechte vorbehalten.",
-        "impressum": "Impressum"
+        "impressum": "Impressum",
+        "privacy": "Datenschutz"
     },
     "cookies": {
         "banner": {
@@ -303,7 +304,7 @@
         }
     },
     "impressum": {
-        "back": "Zurück",
+        "back": "Zurück zur Website",
         "title": "Impressum",
         "operator": {
             "title": "Betreiber",
@@ -319,5 +320,74 @@
             "title": "Unternehmensangaben",
             "vatLabel": "USt.-IdNr. (TVA):"
         }
+    },
+    "privacy": {
+        "seoTitle": "Datenschutz – Kinésithérapie Ingo Pauls",
+        "back": "Zurück zur Website",
+        "title": "Datenschutzerklärung",
+        "intro": "Wir nehmen den Schutz Ihrer personenbezogenen Daten ernst. Diese Erklärung informiert darüber, welche Daten beim Besuch dieser Website verarbeitet werden und welche Rechte Sie haben.",
+        "controller": {
+            "title": "Verantwortliche Stelle",
+            "nameLabel": "Name:",
+            "addressLabel": "Adresse:",
+            "phoneLabel": "Telefon:",
+            "name": "Kinésithérapie Ingo Pauls",
+            "address": "19, Rue Pierre Olinger, L-9264 Diekirch, Luxemburg",
+            "phone": "+352 26 80 38 31",
+            "phoneRaw": "+35226803831"
+        },
+        "hosting": {
+            "title": "Hosting",
+            "text": "Diese Website wird extern gehostet. Dabei können technische Daten (z. B. IP-Adresse) verarbeitet werden, um die Website sicher und zuverlässig bereitzustellen.",
+            "provider": "Hosting-Anbieter: Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, United States",
+            "purpose": "Zweck: Betrieb, Auslieferung und Sicherheit der Website (z. B. Abwehr von Angriffen).",
+            "legal": "Rechtsgrundlage: berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO)."
+        },
+        "logs": {
+            "title": "Server-Logdaten",
+            "text": "Beim Aufruf unserer Website können durch den Hosting-Anbieter Server-Logdaten verarbeitet werden, um die Website zu betreiben und zu schützen.",
+            "items": {
+                "ip": "IP-Adresse",
+                "time": "Datum und Uhrzeit des Abrufs",
+                "userAgent": "Browsertyp / Betriebssystem (User-Agent)",
+                "referrer": "Referrer-URL (die zuvor besuchte Seite)"
+            }
+        },
+        "cookies": {
+            "title": "Cookies & Einwilligung",
+            "text": "Wir nutzen notwendige Funktionen (z. B. Spracheinstellungen). Externe Inhalte (z. B. Google Maps) werden erst nach Ihrer Einwilligung geladen. Ihre Auswahl speichern wir lokal im Browser (Einwilligungsstatus)."
+        },
+        "external": {
+            "title": "Externe Inhalte (Google Maps)",
+            "text": "Wenn Sie externe Inhalte aktivieren, kann dabei eine Verbindung zu Drittanbietern hergestellt werden. Dabei können Daten (z. B. Ihre IP-Adresse) an diese übertragen werden.",
+            "googleMaps": "Google Maps (Einbettung/iframe) – wird nur nach Einwilligung geladen.",
+            "consent": "Rechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).",
+            "withdraw": "Sie können Ihre Einwilligung jederzeit über die Cookie-Einstellungen widerrufen oder zurücksetzen."
+        },
+        "contact": {
+            "title": "Kontaktaufnahme",
+            "text": "Wenn Sie uns per Telefon oder E-Mail kontaktieren, verarbeiten wir Ihre Angaben zur Bearbeitung Ihrer Anfrage. Rechtsgrundlage ist die Durchführung vorvertraglicher Maßnahmen/Vertrag (Art. 6 Abs. 1 lit. b DSGVO) oder unser berechtigtes Interesse an der Bearbeitung (Art. 6 Abs. 1 lit. f DSGVO)."
+        },
+        "rights": {
+            "title": "Ihre Rechte",
+            "text": "Sie haben nach DSGVO u. a. folgende Rechte:",
+            "items": {
+                "access": "Auskunft (Art. 15 DSGVO)",
+                "rectification": "Berichtigung (Art. 16 DSGVO)",
+                "erasure": "Löschung (Art. 17 DSGVO)",
+                "restriction": "Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+                "objection": "Widerspruch (Art. 21 DSGVO)",
+                "portability": "Datenübertragbarkeit (Art. 20 DSGVO)",
+                "withdraw": "Widerruf einer Einwilligung mit Wirkung für die Zukunft"
+            }
+        },
+        "cnpd": {
+            "title": "Beschwerderecht",
+            "text": "Sie können sich bei einer Datenschutz-Aufsichtsbehörde beschweren. Zuständig in Luxemburg ist die CNPD:",
+            "name": "Commission nationale pour la protection des données (CNPD)",
+            "address": "15, Boulevard du Jazz, L-4370 Belvaux, Luxemburg",
+            "emailLabel": "E-Mail:"
+        },
+        "lastUpdated": "Stand: Januar 2026"
     }
 }

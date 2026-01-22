@@ -29,6 +29,10 @@
                     </RouterLink>
 
                     <RouterLink class="footer-link ms-3" :to="cookiesTo">Cookies</RouterLink>
+
+                    <RouterLink class="footer-link ms-3" :to="privacyTo">
+                        {{ t("footer.privacy") }}
+                    </RouterLink>
                 </div>
 
             </div>
@@ -45,6 +49,7 @@ const { t, locale } = useI18n();
 const year = new Date().getFullYear();
 const cookiesTo = computed(() => `/${locale.value}/cookies`);
 const impressumTo = computed(() => `/${locale.value}/impressum`);
+const privacyTo = computed(() => `/${locale.value}/privacy`);
 </script>
 
 <style scoped>

@@ -248,7 +248,8 @@
             "line3": "Lëtzebuerg"
         },
         "rights": "All Rechter virbehalen.",
-        "impressum": "Impressum"
+        "impressum": "Impressum",
+        "privacy": "Dateschutz"
     },
     "cookies": {
         "banner": {
@@ -303,7 +304,7 @@
         }
     },
     "impressum": {
-        "back": "Zréck",
+        "back": "Zréck op d’Websäit",
         "title": "Impressum",
         "operator": {
             "title": "Bedreiwer",
@@ -319,5 +320,74 @@
             "title": "Donnéeën vun der Entreprise",
             "vatLabel": "TVA-Nummer:"
         }
+    },
+    "privacy": {
+        "seoTitle": "Dateschutz – Kinésithérapie Ingo Pauls",
+        "back": "Zréck op d’Websäit",
+        "title": "Dateschutzerklärung",
+        "intro": "Mir huelen de Schutz vun Äre perséinlechen Donnéeën eescht. Hei erkläre mir, wéi eng Donnéeë beim Besuch vun dëser Websäit veraarbecht kënne ginn a wéi eng Rechter Dir hutt.",
+        "controller": {
+            "title": "Responsabel Stell",
+            "nameLabel": "Numm:",
+            "addressLabel": "Adress:",
+            "phoneLabel": "Telefon:",
+            "name": "Kinésithérapie Ingo Pauls",
+            "address": "19, Rue Pierre Olinger, L-9264 Diekirch, Lëtzebuerg",
+            "phone": "+352 26 80 38 31",
+            "phoneRaw": "+35226803831"
+        },
+        "hosting": {
+            "title": "Hosting",
+            "text": "Dës Websäit gëtt bei engem externe Provider gehost. Dobäi kënne technesch Donnéeën (z. B. IP-Adress) veraarbecht ginn, fir de Site sécher a zouverlässeg ze bedreiwen.",
+            "provider": "Hosting-Provider: Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, United States",
+            "purpose": "Zweck: Betrib, Ausliwwerung a Sécherheet vun der Websäit (z. B. Ofwäer vu Attacken).",
+            "legal": "Rechtsgrondlag: berechtegt Interessi (Art. 6(1)(f) DSGVO/GDPR)."
+        },
+        "logs": {
+            "title": "Server-Logdaten",
+            "text": "Beim Opruff vun eiser Websäit kënne Server-Logdaten vum Hosting-Provider veraarbecht ginn, fir de Site ze bedreiwen a ze schützen.",
+            "items": {
+                "ip": "IP-Adress",
+                "time": "Datum an Auerzäit vum Opruff",
+                "userAgent": "Browser / Betribssystem (User-Agent)",
+                "referrer": "Referrer-URL (virdrun besichte Säit)"
+            }
+        },
+        "cookies": {
+            "title": "Cookies & Zoustëmmung",
+            "text": "Mir benotze noutwendeg Funktiounen (z. B. Sprooch-Astellungen). Extern Inhalter (z. B. Google Maps) ginn eréischt no Ärer Zoustëmmung gelueden. Är Auswiel gëtt lokal am Browser gespäichert (Zoustëmmungs-Status)."
+        },
+        "external": {
+            "title": "Extern Inhalter (Google Maps)",
+            "text": "Wann Dir extern Inhalter aktivéiert, kann eng Verbindung mat Drëttpersounen/Drëttanbieter hiergestallt ginn. Dobäi kënnen Donnéeën (z. B. Är IP-Adress) un dës weidergeleet ginn.",
+            "googleMaps": "Google Maps (Embed/iframe) – gëtt just no Zoustëmmung gelueden.",
+            "consent": "Rechtsgrondlag: Zoustëmmung (Art. 6(1)(a) DSGVO/GDPR).",
+            "withdraw": "Dir kënnt Är Zoustëmmung zu all Moment iwwer d’Cookie-Astellungen zréckzéien oder zerécksetzen."
+        },
+        "contact": {
+            "title": "Kontakt",
+            "text": "Wann Dir eis per Telefon oder E-Mail kontaktéiert, veraarbechte mir Är Donnéeën fir Är Ufro ze behandelen. Rechtsgrondlag: virvertraglech Moossnamen/Vertrag (Art. 6(1)(b) DSGVO/GDPR) oder eist berechtegt Interessi un der Beaarbechtung (Art. 6(1)(f) DSGVO/GDPR)."
+        },
+        "rights": {
+            "title": "Är Rechter",
+            "text": "No der DSGVO/GDPR hutt Dir ë. a. dës Rechter:",
+            "items": {
+                "access": "Recht op Auskunft (Art. 15 DSGVO/GDPR)",
+                "rectification": "Recht op Beriichtegung (Art. 16 DSGVO/GDPR)",
+                "erasure": "Recht op Läschen (Art. 17 DSGVO/GDPR)",
+                "restriction": "Recht op Aschränkung vun der Veraarbechtung (Art. 18 DSGVO/GDPR)",
+                "objection": "Recht op Widdersproch (Art. 21 DSGVO/GDPR)",
+                "portability": "Recht op Dateportabilitéit (Art. 20 DSGVO/GDPR)",
+                "withdraw": "Zréckzéie vun der Zoustëmmung mat Wierkung fir d’Zukunft"
+            }
+        },
+        "cnpd": {
+            "title": "Recht op Reklamatioun",
+            "text": "Dir kënnt eng Reklamatioun bei enger Dateschutz-Opsechtsautoritéit areechen. Zu Lëtzebuerg ass d’CNPD zoustänneg:",
+            "name": "Commission nationale pour la protection des données (CNPD)",
+            "address": "15, Boulevard du Jazz, L-4370 Belvaux, Lëtzebuerg",
+            "emailLabel": "E-Mail:"
+        },
+        "lastUpdated": "Stand: Januar 2026"
     }
 }

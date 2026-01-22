@@ -248,7 +248,8 @@
             "line3": "Luxembourg"
         },
         "rights": "All rights reserved.",
-        "impressum": "Legal Notice"
+        "impressum": "Legal Notice",
+        "privacy": "Privacy Policy"
     },
     "cookies": {
         "banner": {
@@ -285,7 +286,7 @@
             "reject": "Reject"
         },
         "page": {
-            "back": "Back to website",
+            "back": "Back to the website",
             "title": "Cookie Policy",
             "intro": "This website uses cookies and similar technologies. Necessary cookies are required for the operation of the site. External content (e.g. Google Maps) is only loaded after consent.",
             "typesTitle": "Cookie categories",
@@ -303,7 +304,7 @@
         }
     },
     "impressum": {
-        "back": "Back",
+        "back": "Back to the website",
         "title": "Legal Notice",
         "operator": {
             "title": "Operator",
@@ -319,5 +320,74 @@
             "title": "Company Information",
             "vatLabel": "VAT Number:"
         }
+    },
+    "privacy": {
+        "seoTitle": "Privacy – Kinésithérapie Ingo Pauls",
+        "back": "Back to the website",
+        "title": "Privacy Policy",
+        "intro": "We take the protection of your personal data seriously. This page explains what data may be processed when you visit this website and what rights you have.",
+        "controller": {
+            "title": "Data controller",
+            "nameLabel": "Name:",
+            "addressLabel": "Address:",
+            "phoneLabel": "Phone:",
+            "name": "Kinésithérapie Ingo Pauls",
+            "address": "19, Rue Pierre Olinger, L-9264 Diekirch, Luxembourg",
+            "phone": "+352 26 80 38 31",
+            "phoneRaw": "+35226803831"
+        },
+        "hosting": {
+            "title": "Hosting",
+            "text": "This website is hosted by an external provider. Technical data (e.g., IP address) may be processed to deliver the site securely and reliably.",
+            "provider": "Hosting provider: Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, United States",
+            "purpose": "Purpose: operation, delivery and security of the website (e.g., protection against attacks).",
+            "legal": "Legal basis: legitimate interest (Art. 6(1)(f) GDPR)."
+        },
+        "logs": {
+            "title": "Server log data",
+            "text": "When you access our website, server log data may be processed by the hosting provider to operate and protect the website.",
+            "items": {
+                "ip": "IP address",
+                "time": "Date and time of access",
+                "userAgent": "Browser / operating system (user agent)",
+                "referrer": "Referrer URL (previous page)"
+            }
+        },
+        "cookies": {
+            "title": "Cookies & consent",
+            "text": "We use necessary features (e.g., language settings). External content (e.g., Google Maps) is loaded only after your consent. Your choice is stored locally in your browser (consent status)."
+        },
+        "external": {
+            "title": "External content (Google Maps)",
+            "text": "If you enable external content, a connection to third-party providers may be established and data (e.g., your IP address) may be transmitted to them.",
+            "googleMaps": "Google Maps (embed/iframe) – loaded only after consent.",
+            "consent": "Legal basis: consent (Art. 6(1)(a) GDPR).",
+            "withdraw": "You can withdraw or reset your consent at any time via the cookie settings."
+        },
+        "contact": {
+            "title": "Contact",
+            "text": "If you contact us by phone or email, we process your information to handle your request. Legal basis: pre-contractual measures/contract (Art. 6(1)(b) GDPR) or our legitimate interest in handling requests (Art. 6(1)(f) GDPR)."
+        },
+        "rights": {
+            "title": "Your rights",
+            "text": "Under the GDPR you have, among others, the following rights:",
+            "items": {
+                "access": "Right of access (Art. 15 GDPR)",
+                "rectification": "Right to rectification (Art. 16 GDPR)",
+                "erasure": "Right to erasure (Art. 17 GDPR)",
+                "restriction": "Right to restriction of processing (Art. 18 GDPR)",
+                "objection": "Right to object (Art. 21 GDPR)",
+                "portability": "Right to data portability (Art. 20 GDPR)",
+                "withdraw": "Withdrawal of consent with effect for the future"
+            }
+        },
+        "cnpd": {
+            "title": "Right to lodge a complaint",
+            "text": "You may lodge a complaint with a data protection supervisory authority. In Luxembourg, the competent authority is the CNPD:",
+            "name": "Commission nationale pour la protection des données (CNPD)",
+            "address": "15, Boulevard du Jazz, L-4370 Belvaux, Luxembourg",
+            "emailLabel": "Email:"
+        },
+        "lastUpdated": "Last updated: January 2026"
     }
 }

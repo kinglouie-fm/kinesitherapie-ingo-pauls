@@ -65,4 +65,17 @@
   <url>
     <loc>https://kine-diekirch.lu/en/impressum</loc>
   </url>
+
+  <url>
+    <loc>https://kine-diekirch.lu/de/privacy</loc>
+  </url>
+  <url>
+    <loc>https://kine-diekirch.lu/fr/privacy</loc>
+  </url>
+  <url>
+    <loc>https://kine-diekirch.lu/lb/privacy</loc>
+  </url>
+  <url>
+    <loc>https://kine-diekirch.lu/en/privacy</loc>
+  </url>
 </urlset>
