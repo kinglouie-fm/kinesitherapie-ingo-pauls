@@ -23,9 +23,12 @@
                     <div class="footer-copy">
                         © {{ year }} {{ t("footer.name") }}. {{ t("footer.rights") }}
                     </div>
-                    <RouterLink class="text-decoration-underline" :to="impressumTo">
+
+                    <RouterLink class="footer-link" :to="impressumTo">
                         {{ t("footer.impressum") }}
                     </RouterLink>
+
+                    <RouterLink class="footer-link ms-3" :to="cookiesTo">Cookies</RouterLink>
                 </div>
 
             </div>
@@ -40,6 +43,7 @@ import MapView from "@/components/MapView.vue";
 
 const { t, locale } = useI18n();
 const year = new Date().getFullYear();
+const cookiesTo = computed(() => `/${locale.value}/cookies`);
 const impressumTo = computed(() => `/${locale.value}/impressum`);
 </script>
 
@@ -50,9 +54,9 @@ const impressumTo = computed(() => `/${locale.value}/impressum`);
 }
 
 .footer-name {
-    font-weight: 700;
+    font-style: normal;
     letter-spacing: 0.2px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .footer-address {
@@ -64,6 +68,16 @@ const impressumTo = computed(() => `/${locale.value}/impressum`);
 .footer-copy {
     font-size: 0.95rem;
     color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 576px) {
