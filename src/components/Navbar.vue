@@ -1,5 +1,8 @@
 <template>
-  <header class="topbar w-100 z-3" :class="{ 'is-scrolled': isScrolled }">
+  <header class="topbar w-100 z-3" :class="{
+    'is-scrolled': isScrolled,
+    'is-hidden': isNavbarHidden
+  }">
     <div class="container py-3">
       <nav ref="navRef" class="navbar navbar-expand-lg navbar-dark p-0">
         <RouterLink class="navbar-brand d-flex align-items-center gap-2 ms-3 ms-lg-0" :to="homeTo">
@@ -11,8 +14,8 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div id="mainNav" ref="collapseRef" class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-5 gap-lg-4 text-end">
+        <div id="mainNav" ref="collapseRef" class="collapse navbar-collapse align-items-lg-center">
+          <ul class="navbar-nav ms-5 gap-lg-4 text-end align-items-lg-center">
             <li class="nav-item">
               <RouterLink class="nav-link text-white" :to="homeTo" @click="closeMenu">
                 {{ t("nav.home") }}
@@ -51,7 +54,7 @@
 import { computed, ref, onMounted, onBeforeUnmount, nextTick } from "vue";
 import { RouterLink, useRouter, useRoute } from "vue-router";
 import { useI18n } from "@/i18n";
-import { Collapse } from "bootstrap"; // ✅ use Collapse API
+import { Collapse } from "bootstrap";
 
 const router = useRouter();
 const route = useRoute();
@@ -62,13 +65,41 @@ const homeTo = computed(() => `/${locale.value}/`);
 const hashTo = (hash) => ({ path: `/${locale.value}/`, hash });
 
 const isScrolled = ref(false);
+const isNavbarHidden = ref(false);
+
 const togglerRef = ref(null);
 const collapseRef = ref(null);
 
 let bsCollapse = null;
+let lastScrollY = 0;
+
+function isDesktop() {
+  return window.matchMedia("(min-width: 992px)").matches;
+}
 
 function onScroll() {
-  isScrolled.value = window.scrollY > 20;
+  const currentY = window.scrollY;
+
+  isScrolled.value = currentY > 20;
+
+  if (!isDesktop()) {
+    isNavbarHidden.value = false;
+    lastScrollY = currentY;
+    return;
+  }
+
+  const scrollingDown = currentY > lastScrollY;
+  const scrollingUp = currentY < lastScrollY;
+
+  if (scrollingDown && currentY > 120) {
+    isNavbarHidden.value = true;
+  }
+
+  if (scrollingUp) {
+    isNavbarHidden.value = false;
+  }
+
+  lastScrollY = currentY;
 }
 
 function isMobile() {
@@ -76,7 +107,6 @@ function isMobile() {
 }
 
 function closeMenu() {
-  // only close on mobile
   if (!isMobile()) return;
   bsCollapse?.hide();
 }
@@ -90,11 +120,9 @@ function onDocumentClick(e) {
 
   const target = e.target;
 
-  // If click is on toggler or inside the opened menu -> do nothing
   if (togglerRef.value.contains(target)) return;
   if (collapseRef.value.contains(target)) return;
 
-  // Otherwise close
   closeMenu();
 }
 
@@ -106,23 +134,24 @@ async function setLocaleAndClose(l) {
 }
 
 onMounted(async () => {
+  lastScrollY = window.scrollY;
   onScroll();
+
   window.addEventListener("scroll", onScroll, { passive: true });
 
   await nextTick();
 
   if (collapseRef.value) {
-    // Create/get Bootstrap instance (do NOT auto-toggle)
     bsCollapse = Collapse.getOrCreateInstance(collapseRef.value, { toggle: false });
   }
 
-  // Use click (capture) so it fires reliably before other handlers
   document.addEventListener("click", onDocumentClick, true);
 });
 
 onBeforeUnmount(() => {
   window.removeEventListener("scroll", onScroll);
   document.removeEventListener("click", onDocumentClick, true);
+
   bsCollapse?.dispose();
   bsCollapse = null;
 });
@@ -134,7 +163,12 @@ onBeforeUnmount(() => {
   top: 0;
   left: 0;
   right: 0;
-  transition: background-color 200ms ease, box-shadow 200ms ease, backdrop-filter 200ms ease;
+  transition:
+    background-color 200ms ease,
+    box-shadow 200ms ease,
+    backdrop-filter 200ms ease,
+    transform 250ms ease,
+    opacity 250ms ease;
   background: transparent;
 }
 
@@ -202,12 +236,33 @@ onBeforeUnmount(() => {
 }
 
 @media (min-width: 992px) {
-  .nav-link {
+  .topbar.is-hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .navbar-collapse {
+    align-items: center;
+  }
+
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .navbar-brand {
+    padding-top: 0;
     padding-bottom: 0;
   }
 
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
   .nav-link::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: -2px;
