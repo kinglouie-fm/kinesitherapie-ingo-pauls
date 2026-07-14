@@ -251,6 +251,12 @@
         "impressum": "Impressum",
         "privacy": "Dateschutz"
     },
+    "notFound": {
+        "title": "Säit net fonnt",
+        "text": "Ups, Dir hutt Iech verlaf. Mee mir hëllefen Iech gär, de Wee zeréck bei eise Cabinet ze fannen.",
+        "home": "Zréck op d'Startsäit",
+        "contact": "Kontakt"
+    },
     "cookies": {
         "banner": {
             "title": "Cookies & Dateschutz",

@@ -75,13 +75,20 @@
 </template>
 
 <script setup>
+import { useRoute } from "vue-router";
 import { useI18n } from "@/i18n";
 import { useHead } from "@vueuse/head";
+import { buildLocalizedHead } from "@/seo/meta";
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
+const route = useRoute();
 
-useHead(() => ({
-    title: t("privacy.seoTitle"),
-    meta: [{ name: "robots", content: "index,follow" }],
-}));
+useHead(() =>
+    buildLocalizedHead({
+        locale: locale.value,
+        page: "privacy",
+        t,
+        path: route.path,
+    }),
+);
 </script>

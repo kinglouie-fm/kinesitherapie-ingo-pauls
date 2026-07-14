@@ -3,6 +3,7 @@ import HomeView from "@/views/HomeView.vue";
 import CookiePolicyView from "@/views/CookiePolicyView.vue";
 import ImpressumView from "@/views/ImpressumView.vue";
 import PrivacyPolicyView from "@/views/PrivacyPolicyView.vue";
+import NotFoundView from "@/views/NotFoundView.vue";
 import { setLocaleFromRoute } from "@/i18n";
 
 const routes = [
@@ -26,6 +27,8 @@ const routes = [
   { path: "/fr/privacy", component: PrivacyPolicyView, meta: { locale: "fr" } },
   { path: "/lb/privacy", component: PrivacyPolicyView, meta: { locale: "lb" } },
   { path: "/en/privacy", component: PrivacyPolicyView, meta: { locale: "en" } },
+
+  { path: "/:pathMatch(.*)*", component: NotFoundView, meta: { page: "notFound" } },
 ];
 
 const router = createRouter({
@@ -38,7 +41,8 @@ const router = createRouter({
 });
 
 router.beforeEach((to) => {
-  const locale = to.meta.locale;
+  const pathLocale = to.path.split("/")[1];
+  const locale = ["de", "fr", "lb", "en"].includes(pathLocale) ? pathLocale : to.meta.locale;
   if (locale) setLocaleFromRoute(locale);
 });
 

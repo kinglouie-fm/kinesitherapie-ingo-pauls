@@ -251,6 +251,12 @@
         "impressum": "Impressum",
         "privacy": "Datenschutz"
     },
+    "notFound": {
+        "title": "Seite nicht gefunden",
+        "text": "Ups, Sie haben sich wohl verlaufen. Aber wir helfen Ihnen gern, den Weg zurück zu unserer Praxis zu finden.",
+        "home": "Zur Startseite",
+        "contact": "Kontakt"
+    },
     "cookies": {
         "banner": {
             "title": "Cookies & Datenschutz",

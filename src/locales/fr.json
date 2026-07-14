@@ -250,6 +250,12 @@
         "impressum": "Mentions légales",
         "privacy": "Politique de confidentialité"
     },
+    "notFound": {
+        "title": "Page introuvable",
+        "text": "Oups, vous vous êtes peut-être égaré. Mais nous vous aidons volontiers à retrouver le chemin vers notre cabinet.",
+        "home": "Retour à l’accueil",
+        "contact": "Contact"
+    },
     "cookies": {
         "banner": {
             "title": "Cookies et protection des données",

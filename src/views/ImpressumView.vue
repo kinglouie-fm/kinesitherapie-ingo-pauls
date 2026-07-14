@@ -25,6 +25,20 @@
 </template>
 
 <script setup>
+import { useRoute } from "vue-router";
+import { useHead } from "@vueuse/head";
 import { useI18n } from "@/i18n";
-const { t } = useI18n();
+import { buildLocalizedHead } from "@/seo/meta";
+
+const { t, locale } = useI18n();
+const route = useRoute();
+
+useHead(() =>
+    buildLocalizedHead({
+        locale: locale.value,
+        page: "impressum",
+        t,
+        path: route.path,
+    }),
+);
 </script>
