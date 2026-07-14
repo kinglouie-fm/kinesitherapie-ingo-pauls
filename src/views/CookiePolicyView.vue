@@ -35,10 +35,23 @@
 </template>
 
 <script setup>
+import { useRoute } from "vue-router";
+import { useHead } from "@vueuse/head";
 import { useI18n } from "@/i18n";
 import { useConsent } from "@/consent";
+import { buildLocalizedHead } from "@/seo/meta";
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
+const route = useRoute();
 
 const { acceptAll, rejectAll, resetConsent } = useConsent();
+
+useHead(() =>
+    buildLocalizedHead({
+        locale: locale.value,
+        page: "cookies",
+        t,
+        path: route.path,
+    }),
+);
 </script>

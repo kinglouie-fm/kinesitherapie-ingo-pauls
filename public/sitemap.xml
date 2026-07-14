@@ -3,7 +3,6 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
 >
-
   <url>
     <loc>https://kine-diekirch.lu/de/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://kine-diekirch.lu/de/"/>
@@ -12,7 +11,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://kine-diekirch.lu/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kine-diekirch.lu/de/"/>
   </url>
-
   <url>
     <loc>https://kine-diekirch.lu/fr/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://kine-diekirch.lu/de/"/>
@@ -21,7 +19,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://kine-diekirch.lu/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kine-diekirch.lu/de/"/>
   </url>
-
   <url>
     <loc>https://kine-diekirch.lu/lb/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://kine-diekirch.lu/de/"/>
@@ -30,7 +27,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://kine-diekirch.lu/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kine-diekirch.lu/de/"/>
   </url>
-
   <url>
     <loc>https://kine-diekirch.lu/en/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://kine-diekirch.lu/de/"/>
@@ -39,20 +35,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://kine-diekirch.lu/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kine-diekirch.lu/de/"/>
   </url>
-
-  <url>
-    <loc>https://kine-diekirch.lu/de/cookies</loc>
-  </url>
-  <url>
-    <loc>https://kine-diekirch.lu/fr/cookies</loc>
-  </url>
-  <url>
-    <loc>https://kine-diekirch.lu/lb/cookies</loc>
-  </url>
-  <url>
-    <loc>https://kine-diekirch.lu/en/cookies</loc>
-  </url>
-
   <url>
     <loc>https://kine-diekirch.lu/de/impressum</loc>
   </url>
@@ -64,18 +46,5 @@
   </url>
   <url>
     <loc>https://kine-diekirch.lu/en/impressum</loc>
-  </url>
-
-  <url>
-    <loc>https://kine-diekirch.lu/de/privacy</loc>
-  </url>
-  <url>
-    <loc>https://kine-diekirch.lu/fr/privacy</loc>
-  </url>
-  <url>
-    <loc>https://kine-diekirch.lu/lb/privacy</loc>
-  </url>
-  <url>
-    <loc>https://kine-diekirch.lu/en/privacy</loc>
   </url>
 </urlset>

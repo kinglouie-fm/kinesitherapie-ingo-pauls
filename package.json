@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "postbuild": "node scripts/prerender.mjs",
+    "preview": "vite preview",
+    "validate:seo": "node scripts/validate-seo.mjs",
+    "build:check": "npm run build && npm run validate:seo"
   },
   "dependencies": {
     "@vueuse/head": "^2.0.0",

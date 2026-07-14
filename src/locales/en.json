@@ -251,6 +251,12 @@
         "impressum": "Legal Notice",
         "privacy": "Privacy Policy"
     },
+    "notFound": {
+        "title": "Page not found",
+        "text": "Oops, looks like you got lost. But we’ll help you find your way back to our practice.",
+        "home": "Go home",
+        "contact": "Contact"
+    },
     "cookies": {
         "banner": {
             "title": "Cookies & Data Protection",
